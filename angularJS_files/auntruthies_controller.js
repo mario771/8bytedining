@@ -4,6 +4,7 @@ app.controller('RecipeController', function($scope) {
 		name: "Aunt Ruthie's Pot Roast",
 		//not sure if this works for the img...looking into it
 		img: "https://api.pearson.com/kitchen-manager/v1/images/full/aunt_ruthies_pot_roast.jpg",
+		serving: "Serves 12, Yields 7.5lb",
 		ingredients: [
 			"3 fl oz vegetable oil",
 			"6 lb beef brisket",
