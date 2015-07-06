@@ -3,25 +3,7 @@ HOST: http://8bytedining.me
 
 # 8bytedining
 
-Polls is a simple API allowing consumers to view polls and vote in them.
-
-# Polls API Root [/]
-
-This resource does not have any attributes. Instead it offers the initial
-API affordances in the form of the links in the JSON body.
-
-It is recommend to follow the “url” link values,
-[Link](https://tools.ietf.org/html/rfc5988) or Location headers where
-applicable to retrieve resources. Instead of constructing your own URLs,
-to keep your client decoupled from implementation details.
-
-## Retrieve the Entry Point [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "questions_url": "/questions"
-        }
+8bytedining is a simple API allowing consumers to retreave information about recipes, cuisines, and ingredents.
 
 # Group Recipes
 
@@ -33,7 +15,7 @@ Resources related to recipes in the API.
 A recipe object has the following attributes:
 
 + Parameters
-    + recipe_id: 1 (required, number) - ID of the Question in form of an integer
+    + recipe_id: 1 (required, string, 'barley-risotto') ... String recipe_id of the recipe to perform action with. Has example value.
 
 ### Obtain a Recipe [GET]
 
@@ -64,7 +46,45 @@ A recipe object has the following attributes:
          "etc...."
         }
     ]
-    
+
+## Similar recipes [api/Recipes/?id={recipe_id}?]
+
+A recipe object has the following attributes:
+
++ Parameters
+    + id: 1 (required, number) - ID of the Question in form of an integer
+
+### Obtain a Recipe [GET]
+
++ Response 200 (application/json)
+
+    [
+      {
+        "name": "Barley Risotto",
+        "id": "barley-risotto",
+        "url": "https://api.pearson.com/kitchen-manager/v1/recipes/barley-risotto",
+        "cuisine": "Italian",
+        "cooking_method": "Risotto method",
+        "ingredients": [
+        "barley",
+        "water",
+        "butter",
+        "garlic clove",
+        "Chicken Stock",
+        "green onion",
+        "asiago cheese",
+        "kosher salt",
+        "ground black pepper"
+        ],
+        "image": "https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg",
+        "thumb": "https://api.pearson.com/kitchen-manager/v1/images/thumbs/defaultrecipe.jpg"
+       }
+       { 
+         "etc...."
+        }
+    ]
+
+
 # Group Ingredients
 
 Resources related to ingredients in the API.
