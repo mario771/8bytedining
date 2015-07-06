@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://8bytedining.me
 
 # 8bytedining
 
@@ -23,159 +23,103 @@ to keep your client decoupled from implementation details.
             "questions_url": "/questions"
         }
 
-## Group Question
+# Group Recipes
 
-Resources related to questions in the API.
+Resources related to recipes in the API.
 
-## Question [/questions/{question_id}]
 
-A Question object has the following attributes:
+## Recipes [api/Recipes/{recipe_id}]
 
-+ question
-+ published_at - An ISO8601 date when the question was published.
-+ url
-+ choices - An array of Choice objects.
+A recipe object has the following attributes:
 
 + Parameters
-    + question_id: 1 (required, number) - ID of the Question in form of an integer
+    + recipe_id: 1 (required, number) - ID of the Question in form of an integer
 
-### View a Questions Detail [GET]
+### Obtain a Recipe [GET]
 
 + Response 200 (application/json)
 
-        {
-            "question": "Favourite programming language?",
-            "published_at": "2014-11-11T08:40:51.620Z",
-            "url": "/questions/1",
-            "choices": [
-                {
-                    "choice": "Swift",
-                    "url": "/questions/1/choices/1",
-                    "votes": 2048
-                }, {
-                    "choice": "Python",
-                    "url": "/questions/1/choices/2",
-                    "votes": 1024
-                }, {
-                    "choice": "Objective-C",
-                    "url": "/questions/1/choices/3",
-                    "votes": 512
-                }, {
-                    "choice": "Ruby",
-                    "url": "/questions/1/choices/4",
-                    "votes": 256
-                }
-            ]
+    [
+      {
+        "name": "Barley Risotto",
+        "id": "barley-risotto",
+        "url": "https://api.pearson.com/kitchen-manager/v1/recipes/barley-risotto",
+        "cuisine": "Italian",
+        "cooking_method": "Risotto method",
+        "ingredients": [
+        "barley",
+        "water",
+        "butter",
+        "garlic clove",
+        "Chicken Stock",
+        "green onion",
+        "asiago cheese",
+        "kosher salt",
+        "ground black pepper"
+        ],
+        "image": "https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg",
+        "thumb": "https://api.pearson.com/kitchen-manager/v1/images/thumbs/defaultrecipe.jpg"
+       }
+       { 
+         "etc...."
         }
+    ]
+    
+# Group Ingredients
 
-## Choice [/questions/{question_id}/choices/{choice_id}]
+Resources related to ingredients in the API.
 
-+ Parameters
-    + question_id: 1 (required, number) - ID of the Question in form of an integer
-    + choice_id: 1 (required, number) - ID of the Choice in form of an integer
+## Ingredients [api/ingredients/{ingredient_id}]
 
-### Vote on a Choice [POST]
-
-This action allows you to vote on a question's choice.
-
-+ Response 201
-
-    + Headers
-
-            Location: /questions/1
-
-## Questions Collection [/questions{?page}]
-
-+ Parameters
-    + page: 1 (optional, number) - The page of questions to return
-
-### List All Questions [GET]
+### Obtain an Ingredient [GET]
 
 + Response 200 (application/json)
 
-    + Headers
-
-            Link: </questions?page=2>; rel="next"
-
-    + Body
-
-            [
-                {
-                    "question": "Favourite programming language?",
-                    "published_at": "2014-11-11T08:40:51.620Z",
-                    "url": "/questions/1",
-                    "choices": [
-                        {
-                            "choice": "Swift",
-                            "url": "/questions/1/choices/1",
-                            "votes": 2048
-                        }, {
-                            "choice": "Python",
-                            "url": "/questions/1/choices/2",
-                            "votes": 1024
-                        }, {
-                            "choice": "Objective-C",
-                            "url": "/questions/1/choices/3",
-                            "votes": 512
-                        }, {
-                            "choice": "Ruby",
-                            "url": "/questions/1/choices/4",
-                            "votes": 256
-                        }
-                    ]
-                }
-            ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ question (string) - The question
-+ choices (array[string]) - A collection of choices.
-
-+ Request (application/json)
-
+    [
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
+            "ingredients": [
+                "barley",
+                "water",
+                "butter",
+                "garlic clove",
+                "Chicken Stock",
+                "green onion",
+                "asiago cheese",
+                "kosher salt",
+                "ground black pepper"
+      ]
+        } , 
+        {
+         "more ingredients..."
         }
+    ]
 
-+ Response 201 (application/json)
+#Group Cusine
 
-    + Headers
+Resources related to ingredients in the API.
 
-            Location: /questions/2
+## Cusines [api/cusines/{cusinie_id}]
 
-    + Body
+### Obtain a Cusine [GET]
 
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2014-11-11T08:40:51.620Z",
-                "url": "/questions/2",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "url": "/questions/2/choices/1",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "url": "/questions/2/choices/2",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "url": "/questions/2/choices/3",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "url": "/questions/2/choices/4",
-                        "votes": 0
-                    }
-                ]
-            }
++ Response 200 (application/json)
+
+    [
+      {
+        "name": "African",
+        "id": "african",
+        "url": "https://api.pearson.com/kitchen-manager/v1/cuisines/african",
+        "recipe_count": 0
+      },
+      {
+        "more cusines..."
+      }
+    ]
+
+
+
+
+
+
+
+
