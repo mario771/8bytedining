@@ -15,7 +15,7 @@ Resources related to recipes in the API.
 A recipe object has the following attributes:
 
 + Parameters
-    + recipe_id: 1 (required, string, 'barley-risotto') ... String recipe_id of the recipe to perform action with. Has example value.
+    + id(required, string, 'barley-risotto') ... String id of the recipe to perform action with. Has example value.
 
 ### Obtain a Recipe [GET]
 
@@ -47,13 +47,57 @@ A recipe object has the following attributes:
         }
     ]
 
-## Similar recipes [api/Recipes/?id={recipe_id}?]
+Returns a json file with recipes similar in ingredient to the specified recipe
+## Similar recipes [api/Recipes/?similar={True}?id={recipe_id}]
 
-A recipe object has the following attributes:
+A Similar recipes object has the following attributes:
 
 + Parameters
-    + id: 1 (required, number) - ID of the Question in form of an integer
+    + similar(required, string, 'True') ...String 'similar' is need to perform the similar recipe search. Has example value.
+    + id(required, string, 'barley-risotto') ...String 'id' String id of the recipe to perform action with. Has example value.
 
++ Response 200 (application/json)
+
+    [
+     {
+      "name": "Cheddar and Leek Soup",
+      "id": "cheddar-and-leek-soup",
+      "url": "https://api.pearson.com/kitchen-manager/v1/recipes/cheddar-and-leek-soup",
+      "cuisine": "American",
+      "cooking_method": "Cream",
+      "ingredients": [
+        "butter",
+        "Mirepoix",
+        "leeks",
+        "all purpose flour",
+        "Chicken Stock",
+        "dried bay leaves",
+        "dried whole thyme",
+        "whole black pepper",
+        "dry white wine",
+        "half & half cream",
+        "cheddar cheese",
+        "salt",
+        "cayenne pepper",
+        "fresh parsley",
+        "Croutons"
+      ],
+      "image": "https://api.pearson.com/kitchen-manager/v1/images/full/cheddar_and_leek_soup.jpg",
+      "thumb": "https://api.pearson.com/kitchen-manager/v1/images/thumbs/cheddar_and_leek_soup_thumb.jpg"
+    },
+       { 
+         "etc...."
+        }
+    ]
+
+Returns a json with recipes that fall within the price offset and price limit if offset is not specified offset starts from zero.
+## Price Range [api/Recipes/?offset={offset}&limit={limit}]
+
+A Price Range object has the following attributes:
+
++ Parameters
+    + offset(not required, number, '1') ... number 'offset' of the recipe price to perform action with. Has example value.
+    + limit(required, number, '10') ... number 'limit' of the recipe price to perform actiion with. Has example value.
 ### Obtain a Recipe [GET]
 
 + Response 200 (application/json)
@@ -83,40 +127,49 @@ A recipe object has the following attributes:
          "etc...."
         }
     ]
+
 
 
 # Group Ingredients
 
 Resources related to ingredients in the API.
 
-## Ingredients [api/ingredients/{ingredient_id}]
+## Ingredient [api/ingredients/{ingredient_id}]
 
 ### Obtain an Ingredient [GET]
 
 + Response 200 (application/json)
 
     [
-        {
-            "ingredients": [
-                "barley",
-                "water",
-                "butter",
-                "garlic clove",
-                "Chicken Stock",
-                "green onion",
-                "asiago cheese",
-                "kosher salt",
-                "ground black pepper"
-      ]
-        } , 
-        {
-         "more ingredients..."
+         {
+        "name": "Barley Risotto",
+        "id": "barley-risotto",
+        "url": "https://api.pearson.com/kitchen-manager/v1/recipes/barley-risotto",
+        "cuisine": "Italian",
+        "cooking_method": "Risotto method",
+        "ingredients": [
+        "barley",
+        "water",
+        "butter",
+        "garlic clove",
+        "Chicken Stock",
+        "green onion",
+        "asiago cheese",
+        "kosher salt",
+        "ground black pepper"
+        ],
+        "image": "https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg",
+        "thumb": "https://api.pearson.com/kitchen-manager/v1/images/thumbs/defaultrecipe.jpg"
+       }
+       { 
+         "etc...."
         }
     ]
 
 #Group Cusine
 
 Resources related to ingredients in the API.
+
 
 ## Cusines [api/cusines/{cusinie_id}]
 
@@ -135,6 +188,46 @@ Resources related to ingredients in the API.
         "more cusines..."
       }
     ]
+
+Returns a json with recipes of the given cuisinie and that fall within the specified price range.
+## Cusines Range [api/cusines/{cusinie_id}]
+A Price Range object has the following attributes:
+
++ Parameters
+    + cusinie (required, string, 'Mexican') ... string 'cusinie' required to specify the cusinie. Has example value.
+    + offset(not required, number, '1') ... number 'offset' of the cusinie price to perform action with. Has example value.
+    + limit(required, number, '10') ... number 'limit' of the cusinie price to perform actiion with. Has example value.
+### Obtain a Cusine [GET]
+
++ Response 200 (application/json)
+
+    [
+      {
+      "name": "Avocado Relish",
+      "id": "avocado-relish",
+      "url": "https://api.pearson.com/kitchen-manager/v1/recipes/avocado-relish",
+      "cuisine": "Mexican",
+      "cooking_method": "Uncooked",
+      "ingredients": [
+        "lime",
+        "avocado",
+        "jalapeno chile pepper",
+        "fresh cilantro",
+        "ground cumin",
+        "olive oil",
+        "Tomato ConcassÃ©",
+        "salt",
+        "ground black pepper",
+        "onion"
+      ],
+      "image": "https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg",
+      "thumb": "https://api.pearson.com/kitchen-manager/v1/images/thumbs/defaultrecipe.jpg"
+    },
+      {
+        "more recipes from the given cusinie and price range..."
+      }
+    ]
+
 
 
 
