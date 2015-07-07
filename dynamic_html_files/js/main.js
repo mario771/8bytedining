@@ -8,7 +8,7 @@ app.controller('RecipeController', function($scope, $http) {
 });
 
 app.controller('CuisineController', function($scope, $http) {
-	$http.get('data/Cuisines.json').then(function(res) {
+	$http.get('data/cuisines_.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
 });

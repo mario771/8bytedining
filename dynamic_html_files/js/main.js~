@@ -1,7 +1,8 @@
 var app = angular.module('myApp', []);
 
 app.controller('RecipeController', function($scope, $http) {
-	$http.get('data/Recipies.json').then(function(res) {
+	//needs renaming!
+	$http.get('data/data.json').then(function(res) {
 		$scope.recipies = res.data;
 	});
 });
