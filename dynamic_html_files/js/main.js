@@ -14,7 +14,7 @@ app.controller('CuisineController', function($scope, $http) {
 });
 
 app.controller('IngredientController', function($scope, $http) {
-	$http.get('data/Ingredients.json').then(function(res) {
+	$http.get('data/Ingredients_.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
 });
