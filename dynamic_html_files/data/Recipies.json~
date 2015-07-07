@@ -1,4 +1,4 @@
-{"Aunt Ruthie's Pot Roast" : {
+{	"Aunt Ruthie's Pot Roast" : {
 		"name" : "Aunt Ruthie's Pot Roast",
 		"cuisine": "American",
 		"img": "https://api.pearson.com/kitchen-manager/v1/images/full/aunt_ruthies_pot_roast.jpg",
@@ -37,5 +37,20 @@
 			"Protein" : "50.17 g per 100g"
 		}
 	},
-"Test" : { "cuisine" : "Italian" }
+	"Example" : {
+		"name" : "String - same as Example",
+		"cuisine" : "String",
+		"img": "link to image, http String",
+		"serving": "String",
+		"ingredients" : [
+			"array",
+			"of",
+			"strings"
+		],
+		"directions": "really long string",
+		"nutritionalInfo": {
+			"dictionary" : "of string-string pairs",
+			"type on left" : "amound on right"
+		}
+	}
 }

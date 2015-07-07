@@ -17,14 +17,14 @@
       <title> {{ recipies[recipe].name }} </title>
 
       <h1> {{ recipies[recipe].name }} </h1>
-      <h3> <em> {{ recipies[recipe].cuisine }} Cuisine </em> </h3>
+      <h3> <em> <a href = "file:///cuisineIndex.html"> {{ recipies[recipe].cuisine }} Cuisine </a> </em> </h3>
       <img ng-src = "{{ recipies[recipe].img }}">
 
       <h2> Ingredients <h2>
         <p style = "font-size: 14px"> {{ recipies[recipe].serving }} </p>
       <ul>
-      	<div ng-repeat="(key, value) in recipies[recipe].ingredients">
-          <li style="font-size: 14px"> {{ value }} {{ key }} </li>
+      	<div ng-repeat="(ingredient, amount) in recipies[recipe].ingredients">
+          <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
         </div>
       </ul>
 

@@ -1,3 +1,7 @@
+warning: this file is now obsolete.
+ingredients are now stored in a dictionary.
+please do not use as a template as of 1:01pm 7/7/15
+
 {	"Aunt Ruthie's Pot Roast" : {
 		"name" : "Aunt Ruthie's Pot Roast",
 		"cuisine": "American",
