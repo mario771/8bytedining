@@ -23,8 +23,8 @@
       <h2> Ingredients <h2>
         <p style = "font-size: 14px"> {{ recipies[recipe].serving }} </p>
       <ul>
-      	<div ng-repeat="ingredient in recipies[recipe].ingredients">
-          <li style="font-size: 14px"> {{ ingredient }} </li>
+      	<div ng-repeat="(ingredient, amount) in recipies[recipe].ingredients">
+          <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
         </div>
       </ul>
 
