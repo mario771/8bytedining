@@ -20,14 +20,21 @@
       <title> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </title>
 
       <h1> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </h1>
-      <h3> <em> <a ng-href = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].cuisine }}"> {{ recipies["Aunt Ruthie's Pot Roast"].cuisine }} Cuisine </a> </em> </h3>
+
+      <h3> <em>
+        <a ng-href = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].cuisine }}.html"> {{ recipies["Aunt Ruthie's Pot Roast"].cuisine }} Cuisine </a>
+      </em> </h3>
+
       <img ng-src = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].img }}">
 
       <h2> Ingredients <h2>
         <p style = "font-size: 14px"> {{ recipies["Aunt Ruthie's Pot Roast"].serving }} </p>
       <ul>
       	<div ng-repeat="(ingredient, amount) in recipies[&quot;Aunt Ruthie's Pot Roast&quot;].ingredients">
-          <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
+          <li style="font-size: 14px">
+            {{ amount }}
+            <a ng-href = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].ingredients[amount] }}.html"> {{ ingredient }} </a>
+          </li>
         </div>
       </ul>
 

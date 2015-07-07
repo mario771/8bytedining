@@ -17,27 +17,31 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ recipies["Naan (Indian Flatbread)"].name }} </title>
+      <title> {{ recipies["Risotto Milanese"].name }} </title>
 
-      <h1> {{ recipies["Naan (Indian Flatbread)"].name }} </h1>
-      <h3> <em> <a href = "cuisineIndex.html"> {{ recipies["Naan (Indian Flatbread)"].cuisine }} Cuisine </a> </em> </h3>
-      <img ng-src = "{{ recipies[&quot;Naan (Indian Flatbread)&quot;].img }}">
+      <h1> {{ recipies["Risotto Milanese"].name }} </h1>
+
+      <h3> <em>
+        <a ng-href = "{{ recipies[&quot;Risotto Milanese&quot;].cuisine }}.html"> {{ recipies["Risotto Milanese"].cuisine }} Cuisine </a>
+      </em> </h3>
+
+      <img ng-src = "{{ recipies[&quot;Risotto Milanese&quot;].img }}">
 
       <h2> Ingredients <h2>
-        <p style = "font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].serving }} </p>
+        <p style = "font-size: 14px"> {{ recipies["Risotto Milanese"].serving }} </p>
       <ul>
-      	<div ng-repeat="(ingredient, amount) in recipies[&quot;Naan (Indian Flatbread)&quot;].ingredients">
+      	<div ng-repeat="(ingredient, amount) in recipies[&quot;Risotto Milanese&quot;].ingredients">
           <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
         </div>
       </ul>
 
       <h2> Directions <h2>
-        <p style="font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].directions }} </p>
+        <p style="font-size: 14px"> {{ recipies["Risotto Milanese"].directions }} </p>
 
 
       <h2> Nutritional Info </h2>
         <table border = 5px>
-          <tr ng-repeat="(key, value) in recipies[&quot;Naan (Indian Flatbread)&quot;].nutritional_info">
+          <tr ng-repeat="(key, value) in recipies[&quot;Risotto Milanese&quot;].nutritional_info">
             <td style= "font-size: 14px"> {{ key }} </td>
             <td style= "font-size: 14px"> {{ value }} </td>
           </tr>

@@ -17,27 +17,31 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </title>
+      <title> {{ recipies["Naan (Indian Flatbread)"].name }} </title>
 
-      <h1> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </h1>
-      <h3> <em> <a href = "cuisineIndex.html"> {{ recipies["Aunt Ruthie's Pot Roast"].cuisine }} Cuisine </a> </em> </h3>
-      <img ng-src = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].img }}">
+      <h1> {{ recipies["Naan (Indian Flatbread)"].name }} </h1>
+
+      <h3> <em>
+        <a ng-href = "{{ recipies[&quot;Naan (Indian Flatbread)&quot;].cuisine }}.html"> {{ recipies["Naan (Indian Flatbread)"].cuisine }} Cuisine </a>
+      </em> </h3>
+
+      <img ng-src = "{{ recipies[&quot;Naan (Indian Flatbread)&quot;].img }}">
 
       <h2> Ingredients <h2>
-        <p style = "font-size: 14px"> {{ recipies["Aunt Ruthie's Pot Roast"].serving }} </p>
+        <p style = "font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].serving }} </p>
       <ul>
-      	<div ng-repeat="(ingredient, amount) in recipies[&quot;Aunt Ruthie's Pot Roast&quot;].ingredients">
+      	<div ng-repeat="(ingredient, amount) in recipies[&quot;Naan (Indian Flatbread)&quot;].ingredients">
           <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
         </div>
       </ul>
 
       <h2> Directions <h2>
-        <p style="font-size: 14px"> {{ recipies["Aunt Ruthie's Pot Roast"].directions }} </p>
+        <p style="font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].directions }} </p>
 
 
       <h2> Nutritional Info </h2>
         <table border = 5px>
-          <tr ng-repeat="(key, value) in recipies[&quot;Aunt Ruthie's Pot Roast&quot;].nutritional_info">
+          <tr ng-repeat="(key, value) in recipies[&quot;Naan (Indian Flatbread)&quot;].nutritional_info">
             <td style= "font-size: 14px"> {{ key }} </td>
             <td style= "font-size: 14px"> {{ value }} </td>
           </tr>
