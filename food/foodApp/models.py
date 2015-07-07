@@ -6,7 +6,7 @@ from django.db import models
 #Recipe Model
 #-------------
 
-class Recipes(models.Model) : 
+class Recipes (models.Model) : 
 
  """ 
   The Recipe model returns name, id (recipe name)  url,
@@ -33,7 +33,7 @@ class Recipes(models.Model) :
 #Ingredients Model
 #------------------
 
-class Ingredients(models.Model) :
+class Ingredients (models.Model) :
 
    """
    
