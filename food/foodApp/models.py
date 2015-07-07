@@ -16,7 +16,7 @@ class Recipes (models.Model) :
  name = models.CharField(max_length=500)
  recipe_id = models.CharField(max_length=500)
  url = models.CharField(max_length=500)
- cuisine = models.ForeignKey(Cuisine)
+ cuisine = models.CharField(max_length=500)
  cooking_method = models.CharField(max_length = 500)
  # How to put ingredients into list?? I think there's models.ManytoMany ?
  image = models.CharField(max_length=500) 
