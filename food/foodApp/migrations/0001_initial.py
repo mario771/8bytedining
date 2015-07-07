@@ -11,11 +11,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Cusine',
+            name='Cuisine',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=500)),
-                ('cusine_id', models.CharField(max_length=500)),
+                ('cuisine_id', models.CharField(max_length=500)),
                 ('url', models.CharField(max_length=500)),
                 ('recipe_count', models.IntegerField(default=0)),
             ],
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=500)),
                 ('recipe_id', models.CharField(max_length=500)),
                 ('url', models.CharField(max_length=500)),
-                ('cusine', models.CharField(max_length=500)),
+                ('cuisine', models.CharField(max_length=500)),
                 ('cooking_method', models.CharField(max_length=500)),
                 ('image', models.CharField(max_length=500)),
                 ('thumb', models.CharField(max_length=500)),

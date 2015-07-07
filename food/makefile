@@ -57,8 +57,8 @@ get:
 	sudo apt-get -y install git python-pip python-virtualenv
 
 virt:
-	virtualenv my-venv
-	source my-venv/bin/activate
+	echo 'virtualenv my-venv'
+	echo 'source my-venv/bin/activate'
 
 lego:
 	git clone https://github.com/MDamien/legoit.git

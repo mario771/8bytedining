@@ -7,6 +7,7 @@ from django.contrib import admin
 
 
 urlpatterns = [
+    url(r'^$',include('foodApp.urls')),
     url(r'^foodApp/',include('foodApp.urls')),
     url(r'^admin/', include(admin.site.urls)),
     
