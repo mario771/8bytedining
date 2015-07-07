@@ -18,7 +18,7 @@
 
       <h1> {{ recipies[recipe].name }} </h1>
       <h3> <em> {{ recipies[recipe].cuisine }} Cuisine </em> </h3>
-      <img ng-src = "{{ recipies[recipe].img }}">
+      <img ng-src = "{{ recipies[recipe.img }}">
 
       <h2> Ingredients <h2>
         <p style = "font-size: 14px"> {{ recipies[recipe].serving }} </p>
