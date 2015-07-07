@@ -23,12 +23,16 @@
 
       <h2> <em> Suggested Recipes: </em> </h2>
         <ul ng-repeat="recipe in ingredients[&quot;bread flour&quot;].recipies">
-          <li style="font-size: 14px"> {{ recipe }} </li>
+          <li style="font-size: 14px">
+            <a ng-href = "{{ recipe }}.html"> {{ recipe }} </a>
+          </li>
         </ul>
 
       <h2> <em> Used in: </em> </h2>
         <ul ng-repeat="cuisine in ingredients[&quot;bread flour&quot;].cuisines">
-          <li style="font-size: 14px"> {{ cuisine }} cuisine</li>
+          <li style="font-size: 14px">
+            <a ng-href = "{{ cuisine }}.html"> {{ cuisine }} </a>
+          </li>
         </ul>
 
     </div>

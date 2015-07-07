@@ -30,9 +30,7 @@
 
       <h2> <em> Used in: </em> </h2>
         <ul ng-repeat="cuisine in ingredients[&quot;parmesan cheese&quot;].cuisines">
-          <li style="font-size: 14px">
-            <a ng-href = "{{ cuisine }}.html"> {{ cuisine }} </a>
-          </li>
+          <li style="font-size: 14px"> {{ cuisine }} cuisine</li>
         </ul>
 
     </div>
