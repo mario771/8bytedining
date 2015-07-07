@@ -8,12 +8,14 @@
   </head>
   <body ng-app="myApp">
 
+    <h4> <a ng-href="8byte_splash.html"> Back to home </a> <p></p> </h4>
+
     <div ng-controller = "IngredientController">
 
       <h3> All Ingredients </h3>
 
       <div ng-repeat="ingredient in ingredients">
-        <a href = "{{ ingredient.name }}.html"> {{ ingredient.name }} </a>
+        <a ng-href = "{{ ingredient.name }}.html"> {{ ingredient.name }} </a>
       </div>
 
     </div>

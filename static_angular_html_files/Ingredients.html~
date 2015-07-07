@@ -10,10 +10,10 @@
 
     <div ng-controller = "IngredientController">
 
-      <h3> All Recipies </h3>
+      <h3> All Ingredients </h3>
 
       <div ng-repeat="ingredient in ingredients">
-        <a href = "{{ ingredient.name }}.html"> {{ ingredient.name }} </a>
+        <a ng-href = "{{ ingredient.name }}.html"> {{ ingredient.name }} </a>
       </div>
 
     </div>

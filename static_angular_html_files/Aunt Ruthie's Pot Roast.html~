@@ -17,7 +17,7 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ recipies.Aunt Ruthie's Pot Roast.name }} </title>
+      <title> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </title>
 
       <h1> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </h1>
 

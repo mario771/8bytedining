@@ -50,7 +50,9 @@
         </thead>
         <tbody>
           <tr ng-repeat="ingredient in cuisines[&quot;Indian&quot;].ingredients">
-            <td style = "font-size: 14px"> {{ ingredient }} </td>
+            <td style = "font-size: 14px">
+              <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
+            </td>
           </tr>
         </tbody>
       </table>
