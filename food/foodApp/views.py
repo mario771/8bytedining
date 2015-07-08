@@ -9,12 +9,12 @@ def home(request):
 
 def Cuisines (request) :
    context = RequestContext(request)
-   return render_to_response('Cuisines.html',context)
+   return render_to_response('CuisineModel.html',context)
 
 def Ingredients (request) :
    context = RequestContext(request)
-   return render_to_response('Ingredients.html',context)
+   return render_to_response('IngredientModel.html',context)
 
 def Recipes (request) :
    context = RequestContext(request)
-   return render_to_response('Recipes.html',context)
+   return render_to_response('RecipeModel.html',context)

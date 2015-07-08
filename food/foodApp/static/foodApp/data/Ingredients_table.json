@@ -1,0 +1,24 @@
+{
+"beef brisket":
+	{
+	"name": "beef brisket" ,
+	"recipe_count" : "1",
+	"cuisine" : "American",
+	"recipes" :  ["Aunt Ruthie's Pot Roast"]
+	},
+"hazelnut flour":
+	{
+	"name": "hazelnut flour",
+	"recipe_count" : "1",
+	"cuisine" : "Italian",
+	"recipes" : ["Biscotti"]
+	},
+"beef skirt steak":
+	{
+	"name": "beef skirt steak",
+	"recipe_count": "1",
+	"cuisine" : "Mexican",
+	"recipes" : ["Beef Fajitas"]
+	}
+
+}

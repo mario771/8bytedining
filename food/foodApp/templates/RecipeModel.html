@@ -4,12 +4,12 @@
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="static/foodApp/js/main.js"></script>
 
   </head>
   <body ng-app="myApp">
 
-    <h4> <a ng-href = "8byte_splash.html"> Back to home </a> </h4>
+    <h4> <a ng-href = "/home"> Back to home </a> </h4>
 
     <div ng-controller = "RecipeController">
 
@@ -21,7 +21,7 @@
             <th>Name</th><th>ID</th><th>Source url</th><th>Directions</th><th>Cuisine</th><th>Ingredients</th>
           </tr>
           <tr ng-repeat="(recipe, attrs) in rmodels">
-            <td style= "font-size: 14px"> <a ng-href="{[{ recipe }]}.html"> {[{ recipe }]} </a> </td>
+            <td style= "font-size: 14px"> <a ng-href="{[{ recipe }]}"> {[{ recipe }]} </a> </td>
             <td style= "font-size: 14px"> {[{ attrs["recipe_id"] }]} </td>
             <td style= "font-size: 14px"> {[{ attrs["url"] }]} </td>
             <td style= "font-size: 14px"> {[{ attrs["directions"] }]} </td>
@@ -31,13 +31,13 @@
           </tr>
         </table>
 
-      <a href="Recipes.html"><h5> View all recipes </h5></a>
+      <a href="/Recipes"><h5> View all recipes </h5></a>
 
     </div>
 
     <!-- Modules -->
-    <script src="js/main.js"></script>
-    <script src="js/sorttable.js"></script>
+    <script src="static/foodApp/js/main.js"></script>
+    <script src="static/foodApp/js/sorttable.js"></script>
 
     <!-- Controllers -->
     <!-- default -->
