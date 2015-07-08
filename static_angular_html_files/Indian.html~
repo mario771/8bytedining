@@ -9,8 +9,6 @@
   </head>
   <body ng-app="myApp">
 
-    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
-
     <div ng-controller = "CuisineController">
 
       <!-- Prompting for now, will internally assign when finished
@@ -19,9 +17,9 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ cuisines["American"].name }} Cuisine</title>
+      <title> {{ cuisines["Indian"].name }} Cuisine</title>
 
-      <h1> {{ cuisines["American"].name }} Cuisine</h1>
+      <h1> {{ cuisines["Indian"].name }} Cuisine</h1>
 
       <table border = 5px>
         <thead>
@@ -32,7 +30,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="recipe in cuisines[&quot;American&quot;].recipies">
+          <tr ng-repeat="recipe in cuisines[&quot;Indian&quot;].recipies">
             <td style = "font-size: 14px">
               <a ng-href = "{{ recipe }}.html"> {{ recipe }} </a>
             </td>
@@ -51,7 +49,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="ingredient in cuisines[&quot;American&quot;].ingredients">
+          <tr ng-repeat="ingredient in cuisines[&quot;Indian&quot;].ingredients">
             <td style = "font-size: 14px">
               <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
             </td>

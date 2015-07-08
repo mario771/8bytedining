@@ -5,6 +5,11 @@ app.controller('RecipeController', function($scope, $http) {
 	$http.get('data/data.json').then(function(res) {
 		$scope.recipies = res.data;
 	});
+/*
+	$http.get('data/recipemodels.json').then(function(res) {
+		$scope.rmodels = res.data;
+	});
+*/
 });
 
 app.controller('CuisineController', function($scope, $http) {

@@ -31,7 +31,9 @@
         <p style = "font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].serving }} </p>
       <ul>
       	<div ng-repeat="(ingredient, amount) in recipies[&quot;Naan (Indian Flatbread)&quot;].ingredients">
-          <li style="font-size: 14px"> {{ amount }} {{ ingredient }} </li>
+          <li style="font-size: 14px">
+            {{ amount }}
+            <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
         </div>
       </ul>
 

@@ -10,7 +10,7 @@
 
     <div ng-controller = "CuisineController">
 
-      <h3> All Recipies </h3>
+      <h3> All Cuisines </h3>
 
       <div ng-repeat="cuisine in cuisines">
         <a href = "{{ cuisine.name }}.html"> {{ cuisine.name }} </a>
