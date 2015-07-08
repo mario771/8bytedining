@@ -75,7 +75,7 @@ get:
 v1:
 	virtualenv my-venv
 v2:
-	source my-venv/bin/activate
+	. my-venv/bin/activate
 
 lego:
 	git clone https://github.com/MDamien/legoit.git
