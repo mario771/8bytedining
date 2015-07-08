@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+
+    <div ng-controller = "RecipeController">
+
+      <h3> Recipies </h3>
+
+      <div ng-repeat="recipe in recipies">
+        <a href = "{{ recipe.name }}.html"> {{ recipe.name }} </a>
+      </div>
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>

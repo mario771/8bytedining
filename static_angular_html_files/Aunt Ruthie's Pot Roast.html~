@@ -1,0 +1,63 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+
+    <div ng-controller = "RecipeController">
+
+      <!-- Prompting for now, will internally assign when finished
+      <input type = "text" ng-model = "recipe" placeholder = "Enter a recipe" />
+      Commented out for static html creation.
+      Recipe will be explicitly assigned for these static pages.
+      -->
+
+      <title> {{ recipies.Aunt Ruthie's Pot Roast.name }} </title>
+
+      <h1> {{ recipies["Aunt Ruthie's Pot Roast"].name }} </h1>
+
+      <h3> <em>
+        <a ng-href = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].cuisine }}.html"> {{ recipies["Aunt Ruthie's Pot Roast"].cuisine }} Cuisine </a>
+      </em> </h3>
+
+      <img ng-src = "{{ recipies[&quot;Aunt Ruthie's Pot Roast&quot;].img }}">
+
+      <h2> Ingredients <h2>
+        <p style = "font-size: 14px"> {{ recipies["Aunt Ruthie's Pot Roast"].serving }} </p>
+      <ul>
+      	<div ng-repeat="(ingredient, amount) in recipies[&quot;Aunt Ruthie's Pot Roast&quot;].ingredients">
+          <li style="font-size: 14px">
+            {{ amount }}
+            <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
+          </li>
+        </div>
+      </ul>
+
+      <h2> Directions <h2>
+        <p style="font-size: 14px"> {{ recipies["Aunt Ruthie's Pot Roast"].directions }} </p>
+
+
+      <h2> Nutritional Info </h2>
+        <table border = 5px>
+          <tr ng-repeat="(key, value) in recipies[&quot;Aunt Ruthie's Pot Roast&quot;].nutritional_info">
+            <td style= "font-size: 14px"> {{ key }} </td>
+            <td style= "font-size: 14px"> {{ value }} </td>
+          </tr>
+        </table>
+
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>
