@@ -18,6 +18,9 @@ urlpatterns = [
     url(r'^Ingredients$', views.Ingredients, name='Ingredients'),
     url(r'^Cuisines$', views.Cuisines, name='Cuisines'),
     url(r'^Recipes$', views.Recipes, name='Recipes'),
+    url(r'^American$', views.American, name='American'),
+    url(r'^Italian$', views.Italian, name='Italian'),
+
 
 
     

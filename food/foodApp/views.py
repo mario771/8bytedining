@@ -30,3 +30,11 @@ def Cuisines (request) :
 def Recipes (request) :
    context = RequestContext(request)
    return render_to_response('Recipes.html',context)
+
+def American (request) :
+   context = RequestContext(request)
+   return render_to_response('American.html',context)
+
+def Italian (request) :
+   context = RequestContext(request)
+   return render_to_response('Italian.html',context)
