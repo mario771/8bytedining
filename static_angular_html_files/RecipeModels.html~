@@ -9,18 +9,22 @@
   </head>
   <body ng-app="myApp">
 
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+
     <div ng-controller = "RecipeController">
 
       
       <h2> Recipe Models </h2>
         <table border = 5px>
-          <tr ng-repeat="(recipe, attr1, attr2, attr3, attr4, attr5) in rmodels[&quot;Aunt Ruthie's Pot Roast&quot;].attributes">
+          <tr ng-repeat="(recipe) in rmodels">
             <td style= "font-size: 14px"> <b> {{ recipe }} </b> </td>
-            <td style= "font-size: 14px"> {{ attr1 }} </td>
-            <td style= "font-size: 14px"> {{ attr2 }} </td>
-            <td style= "font-size: 14px"> {{ attr3 }} </td>
-            <td style= "font-size: 14px"> {{ attr4 }} </td>
-            <td style= "font-size: 14px"> {{ attr5 }} </td>
+            <div ng-repeat="(attr1, attr2, attr3, attr4, attr5) in rmodels[recipe]">
+              <td style= "font-size: 14px"> {{ attr1 }} </td>
+              <td style= "font-size: 14px"> {{ attr2 }} </td>
+              <td style= "font-size: 14px"> {{ attr3 }} </td>
+              <td style= "font-size: 14px"> {{ attr4 }} </td>
+              <td style= "font-size: 14px"> {{ attr5 }} </td>
+            </div>
           </tr>
         </table>
 
