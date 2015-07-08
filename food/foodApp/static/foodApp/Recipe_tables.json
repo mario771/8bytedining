@@ -1,0 +1,33 @@
+{
+"Beef Fajitas":
+{
+"name": "Beef Fajitas",
+"recipe_id": "Beef_Fajitas",
+"url": "https://api.pearson.com/kitchen-manager/v1/recipes/beef-fajitas",
+"directions": "Make the marinade by chopping and mashing the garlic into a paste. In a bowl, combine the garlic paste with the remaining marinade ingredients. Trim the fat from the skirt steak. Cut the steak into two or three pieces if necessary. Add the steaks to the marinade, turning them several times to coat all sides. Cover the steak and mari-nate in the refrigerator for at least 1 hour or overnight. Grill the steak on a hot grill to the desired doneness. Remove the steak and allow it to rest for 10 minutes. Add the oil to a heavy sautÃ© pan, heat the pan until very hot and sautÃ© the bell peppers, onion and garlic just until they begin to soften. Slice the steak against the grain into thin slices. Arrange the steak and the pepper mixture on very hot cast-iron platters and garnish with the cilantro. The platters should be sizzling as they are presented to the table. Serve the fajitas accompanied by warm flour or corn tortillas, fresh salsa, sour cream, and guacamole. ",
+"cuisineGivenRecipe" : "Mexican",
+"ingredients" : "whole black pepper, beef skirt steak, vegetable oil, green bell pepper, red bell pepper, salt, onion, garlic clove, onion powder, yellow bell pepper, chili powder, fresh cilantro, ground cumin",
+"image" : "https://api.pearson.com/kitchen-manager/v1/images/full/beef_fajitas.jpg"
+},
+"Biscotti":
+{
+"name" : "Biscotti",
+"recipe_id" : "Biscotti_ID",
+"url" : "https://api.pearson.com/kitchen-manager/v1/recipes/biscotti",
+"directions" : "Sift together the cinnamon and ammonium carbonate or baking powder. Stir in the hazelnut, almond and pastry flours. Set aside. In a large bowl, whisk together the eggs and sugar to the ribbon stage, approximately 3 minutes. Add the butter. Stir in the flour mixture with a rubber spatula, then stir in the whole hazelnuts. Divide the dough into three even pieces. Refrigerate until cold. Roll each piece of dough into a 12-inch (30-centimeter) log. Place on a paper-lined sheet pan, leaving at least 3 inches (7.5 centimeters) of space between each log. Bake at 350Â°F (180Â°C) until golden in color, approximately 20 minutes. Cool the logs, then slice them into 1-inch- (3-centimeter-) thick slices. Place the sliced cookies upright on paper-lined sheet pans. Double-tray the pans. Reduce heat to 325Â°F (160Â°C) and bake until the biscotti are thoroughly crisp, approximately 40 minutes. Once cool, the biscotti may be dipped in tempered chocolate. VARIATIONS: Orange Biscottiâ€”Add 1 tablespoon (15 milliliters) grated orange zest to the flour mixture. Anise Biscottiâ€”Add 1 teaspoon (5 milliliters) chopped anise seeds to the flour mixture. Chocolate Biscottiâ€”Replace 5 ounces (150 grams) pastry flour with cocoa powder. Add 1/2 tea-spoon (2 milliliters) coffee extract and 1/2 teaspoon (2 milliliters) cinnamon to the flour mixture. ",
+"cuisineGivenRecipe" : "Italian",
+"ingredients": "eggs, hazelnut flour, pastry flour, ground cinnamon, semisweet chocolate, whole unblanched hazelnuts, unsalted butter, baking powder, granulated sugar, almond flour",
+"image" : "https://api.pearson.com/kitchen-manager/v1/images/full/biscotti.jpg"
+},
+"Aunt Ruthie's Pot Roast":
+{
+"name" : "Aunt Ruthie's Pot Roast",
+"recipe_id" : "Aunt_Ruthie's_Pot_Roast_ID",
+"url" : "https://api.pearson.com/kitchen-manager/v1/recipes/aunt-ruthie-s-pot-roast",
+"directions" : "Heat the oil in a large rondeau. Add the beef and brown thoroughly. Remove and reserve the brisket. Add the onions and garlic to the pan and sautÃ©. Add the stock and tomato sauce to the pan. Return the brisket to the pan, cover tightly and bring to a boil. Braise at 325°F (160°C) for 2 hours, basting or turning the brisket often. Combine the remaining ingredients and add to the pan. Continue cooking and basting the brisket until tender, approximately 1 hour. Add additional stock or water as needed during braising. Remove the brisket, degrease the sauce and adjust its consistency and seasonings. Do not strain the sauce. Slice the brisket against the grain and serve with the sauce. ",
+"cuisineGivenRecipe" : "American",
+"ingredients" : "garlic, Lemon Juice (fresh), tomato sauce , ketchup, salt, Brown Veal Stock, ground black pepper, beef brisket, onion, vegetable oil, light brown sugar, red wine vinegar, worcestershire sauce, paprika, dry mustard",
+"image" : "https://api.pearson.com/kitchen-manager/v1/images/full/aunt_ruthies_pot_roast.jpg"
+}
+
+}

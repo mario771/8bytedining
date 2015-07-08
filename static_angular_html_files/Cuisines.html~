@@ -15,7 +15,7 @@
       <h3> All Cuisines </h3>
 
       <div ng-repeat="cuisine in cuisines">
-        <a href = "{{ cuisine.name }}.html"> {{ cuisine.name }} </a>
+        <a href = "{[{ cuisine.name }]}.html"> {[{ cuisine.name }]} </a>
       </div>
 
     </div>
