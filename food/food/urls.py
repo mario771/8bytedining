@@ -16,6 +16,9 @@ urlpatterns = [
     url(r'^RecipeModel$', views.RecipesModel, name='RecipesModel'),
     url(r'^CuisineModel$', views.CuisinesModel, name='CuisinesModel'),
     url(r'^Ingredients$', views.Ingredients, name='Ingredients'),
-    
+    url(r'^Cuisines$', views.Cuisines, name='Cuisines'),
+    url(r'^Recipes$', views.Recipes, name='Recipes'),
+
+
     
 ] 
