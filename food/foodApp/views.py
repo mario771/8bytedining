@@ -11,7 +11,7 @@ def Cuisines (request) :
    context = RequestContext(request)
    return render_to_response('CuisineModel.html',context)
 
-def Ingredients (request) :
+def IngredientsModel (request) :
    context = RequestContext(request)
    return render_to_response('IngredientModel.html',context)
 
