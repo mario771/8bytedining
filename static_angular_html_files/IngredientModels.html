@@ -16,9 +16,9 @@
       
       <h2> Ingredient Models </h2>
         <table border = 5px>
-          <tr ng-repeat="(ingredient) in rmodels">
+          <tr ng-repeat="(ingredient) in imodels">
             <td style= "font-size: 14px"> <b> {{ ingredient }} </b> </td>
-            <div ng-repeat="(key, attr) in rmodels[ingredient]">
+            <div ng-repeat="(key, attr) in imodels[ingredient]">
               <td style= "font-size: 14px"> {{ attr }} </td>
             </div>
           </tr>

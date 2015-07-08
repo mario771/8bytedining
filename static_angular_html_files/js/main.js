@@ -14,8 +14,8 @@ app.controller('CuisineController', function($scope, $http) {
 	$http.get('data/cuisines_.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
-	$http.get('data/recipemodels_placeholder.json').then(function(res) {
-		$scope.cmodels = res.data;
+	$http.get('data/Cuisine_tables.json').then(function(ces) {
+		$scope.cmodels = ces.data;
 	});
 });
 

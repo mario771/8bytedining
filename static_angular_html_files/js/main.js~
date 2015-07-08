@@ -11,14 +11,22 @@ app.controller('RecipeController', function($scope, $http) {
 });
 
 app.controller('CuisineController', function($scope, $http) {
+/*
 	$http.get('data/cuisines_.json').then(function(res) {
 		$scope.cuisines = res.data;
+	});
+*/
+	$http.get('data/Cuisine_tables.json').then(function(ces) {
+		$scope.cmodels = ces.data;
 	});
 });
 
 app.controller('IngredientController', function($scope, $http) {
 	$http.get('data/Ingredients_.json').then(function(res) {
 		$scope.ingredients = res.data;
+	});
+	$http.get('data/recipemodels_placeholder.json').then(function(res) {
+		$scope.imodels = res.data;
 	});
 });
 
