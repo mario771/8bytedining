@@ -6,16 +6,32 @@ FILES :=              \
     tests.py          \
     apiary.apib       \
     UML.pdf           \
+    .gitignore
 
 IP := 104.239.231.99
 
 all:
 
 check:
+	@echo "\nFiles found:\n=================================="
 	@for i in $(FILES);                                         \
-    do                                                          \
-        [ -e $$i ] && echo "$$i found" || echo "$$i NOT FOUND"; \
-    done
+	do                                                          \
+		[ -e $$i ] && echo "$$i"; \
+	done
+	@echo "\n*********************"
+	@echo "* Files NOT FOUND:  *"
+	@echo "*********************"
+	@echo "=================================="
+	@for i in $(FILES);                                         \
+	do                                                          \
+		[ -e $$i ] || echo "$$i"; \
+	done
+	@echo ""
+
+final:
+	pydoc3 -w models
+	git log>IDB.log
+	git rev-parse HEAD
 
 clean:
 	rm -f  .coverage
@@ -56,9 +72,10 @@ secure:
 get:
 	sudo apt-get -y install git python-pip python-virtualenv
 
-virt:
-	echo 'virtualenv my-venv'
-	echo 'source my-venv/bin/activate'
+v1:
+	virtualenv my-venv
+v2:
+	source my-venv/bin/activate
 
 lego:
 	git clone https://github.com/MDamien/legoit.git
