@@ -6,4 +6,5 @@ __pycache__
 .gitignore
 *.pyc
 
-*.*~
+*.html~
+static_angular_html_files/American.html~
