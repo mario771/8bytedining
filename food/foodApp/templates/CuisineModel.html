@@ -21,7 +21,7 @@
             <th>Name</th><th>ID</th><th>Source url</th><th>Recipe Count</th><th>Ingredients</th><th>Recipes</th>
           </tr>
           <tr ng-repeat="(cuisine, attrs) in cmodels">
-            <td style= "font-size: 14px"> <a ng-href="{[{ cuisine }]}.html"> {[{ cuisine }]} </a> </td>
+            <td style= "font-size: 14px"> <a ng-href="{[{ cuisine }]}"> {[{ cuisine }]} </a> </td>
             <td style= "font-size: 14px"> {[{ attrs["cuisine_id"] }]} </td>
             <td style= "font-size: 14px"> {[{ attrs["url"] }]} </td>
             <td style= "font-size: 14px"> {[{ attrs["recipe_count"] }]} </td>
