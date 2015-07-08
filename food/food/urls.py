@@ -13,8 +13,8 @@ urlpatterns = [
     url(r'^$', views.home,name='home'),
       
     url(r'^IngredientModel$', views.IngredientsModel, name='IngredientsModel'),
-    url(r'^RecipeModel$', views.Recipes, name='Recipes'),
-    url(r'^CuisineModel$', views.Cuisines, name='Cuisines'),
+    url(r'^RecipeModel$', views.RecipesModel, name='RecipesModel'),
+    url(r'^CuisineModel$', views.CuisinesModel, name='CuisinesModel'),
     url(r'^Ingredients$', views.Ingredients, name='Ingredients'),
     
     
