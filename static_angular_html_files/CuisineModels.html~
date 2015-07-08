@@ -13,14 +13,19 @@
 
     <div ng-controller = "CuisineController">
 
-      {{ cuisines }}
-      {{ cmodels }}
+
       <h2> Cuisine Models </h2>
-        <table border = 5px>
-          <tr ng-repeat="(cuisine) in cmodels">
-            <td style= "font-size: 14px"> {{ cuisine }} </td>
-            <div ng-repeat="(key, attr) in cmodels[cuisine]">
-              <td style= "font-size: 14px"> {{ attr }} </td>
+        <table class="sortable" border=5px>
+          <tr>
+            <th>Name</th><th>ID</th><th>Source url</th><th>Recipe Count</th><th>Ingredients</th><th>Recipes</th>
+          </tr>
+          <tr ng-repeat="(cuisine, attrs) in cmodels">
+            <td style= "font-size: 14px"> {[{ cuisine }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["cuisine_id"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["url"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["recipe_count"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["ingredients"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["recipes"] }]} </td>
             </div>
           </tr>
         </table>
@@ -29,6 +34,7 @@
 
     <!-- Modules -->
     <script src="js/main.js"></script>
+    <script src="js/sorttable.js"></script>
 
     <!-- Controllers -->
     <!-- default -->

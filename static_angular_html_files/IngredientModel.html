@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a> </h4>
+
+    <div ng-controller = "IngredientController">
+
+      <title> Ingredient Model </title>
+      
+      <h2> Ingredient Model </h2>
+        <table class="sortable" border=5px>
+          <tr>
+            <th>Name</th><th>Recipe Count</th><th>Cuisine</th><th>Recipes</th>
+          </tr>
+          <tr ng-repeat="(ingredient, attrs) in imodels">
+            <td style= "font-size: 14px"> <a ng-href="{[{ ingredient }]}.html"> {[{ ingredient }]} </a> </td>
+            <td style= "font-size: 14px"> {[{ attrs["recipe_count"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["cuisine"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["recipes"] }]} </td>
+            </div>
+          </tr>
+        </table>
+
+      <a href="Ingredients.html"><h5> View all ingredients </h5></a>
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+    <script src="js/sorttable.js"></script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>

@@ -9,21 +9,23 @@
   </head>
   <body ng-app="myApp">
 
-    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a> </h4>
 
     <div ng-controller = "RecipeController">
 
       
       <h2> Recipe Models </h2>
-        <table border = 5px>
-          <tr ng-repeat="(recipe) in rmodels">
-            <td style= "font-size: 14px"> <b> {{ recipe }} </b> </td>
-            <div ng-repeat="(attr1, attr2, attr3, attr4, attr5) in rmodels[recipe]">
-              <td style= "font-size: 14px"> {{ attr1 }} </td>
-              <td style= "font-size: 14px"> {{ attr2 }} </td>
-              <td style= "font-size: 14px"> {{ attr3 }} </td>
-              <td style= "font-size: 14px"> {{ attr4 }} </td>
-              <td style= "font-size: 14px"> {{ attr5 }} </td>
+        <table class="sortable" border=5px>
+          <tr>
+            <th>Name</th><th>ID</th><th>Source url</th><th>Directions</th><th>Cuisine</th><th>Ingredients</th>
+          </tr>
+          <tr ng-repeat="(recipe, attrs) in rmodels">
+            <td style= "font-size: 14px"> {[{ recipe }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["recipe_id"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["url"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["directions"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["cuisineGivenRecipe"] }]} </td>
+            <td style= "font-size: 14px"> {[{ attrs["ingredients"] }]} </td>
             </div>
           </tr>
         </table>
@@ -32,6 +34,7 @@
 
     <!-- Modules -->
     <script src="js/main.js"></script>
+    <script src="js/sorttable.js"></script>
 
     <!-- Controllers -->
     <!-- default -->

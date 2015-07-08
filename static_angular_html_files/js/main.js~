@@ -1,5 +1,10 @@
 var app = angular.module('myApp', []);
 
+app.config(function($interpolateProvider) {
+	$interpolateProvider.startSymbol('{[{');
+	$interpolateProvider.endSymbol('}]}');
+});
+
 app.controller('RecipeController', function($scope, $http) {
 	//needs renaming!
 	$http.get('data/data.json').then(function(res) {
