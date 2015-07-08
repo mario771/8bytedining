@@ -9,6 +9,8 @@
   </head>
   <body ng-app="myApp">
 
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+
     <div ng-controller = "RecipeController">
 
       <!-- Prompting for now, will internally assign when finished
@@ -17,35 +19,35 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ recipies["Naan (Indian Flatbread)"].name }} </title>
+      <title> {[{ recipies["Naan (Indian Flatbread)"].name }]} </title>
 
-      <h1> {{ recipies["Naan (Indian Flatbread)"].name }} </h1>
+      <h1> {[{ recipies["Naan (Indian Flatbread)"].name }]} </h1>
 
       <h3> <em>
-        <a ng-href = "{{ recipies[&quot;Naan (Indian Flatbread)&quot;].cuisine }}.html"> {{ recipies["Naan (Indian Flatbread)"].cuisine }} Cuisine </a>
+        <a ng-href = "{[{ recipies[&quot;Naan (Indian Flatbread)&quot;].cuisine }]}.html"> {[{ recipies["Naan (Indian Flatbread)"].cuisine }]} Cuisine </a>
       </em> </h3>
 
-      <img ng-src = "{{ recipies[&quot;Naan (Indian Flatbread)&quot;].img }}">
+      <img ng-src = "{[{ recipies[&quot;Naan (Indian Flatbread)&quot;].img }]}">
 
       <h2> Ingredients <h2>
-        <p style = "font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].serving }} </p>
+        <p style = "font-size: 14px"> {[{ recipies["Naan (Indian Flatbread)"].serving }]} </p>
       <ul>
       	<div ng-repeat="(ingredient, amount) in recipies[&quot;Naan (Indian Flatbread)&quot;].ingredients">
           <li style="font-size: 14px">
-            {{ amount }}
-            <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
+            {[{ amount }]}
+            <a ng-href = "{{ ingredient }}.html"> {[{ ingredient }]} </a>
         </div>
       </ul>
 
       <h2> Directions <h2>
-        <p style="font-size: 14px"> {{ recipies["Naan (Indian Flatbread)"].directions }} </p>
+        <p style="font-size: 14px"> {[{ recipies["Naan (Indian Flatbread)"].directions }]} </p>
 
 
       <h2> Nutritional Info </h2>
         <table border = 5px>
           <tr ng-repeat="(key, value) in recipies[&quot;Naan (Indian Flatbread)&quot;].nutritional_info">
-            <td style= "font-size: 14px"> {{ key }} </td>
-            <td style= "font-size: 14px"> {{ value }} </td>
+            <td style= "font-size: 14px"> {[{ key }]} </td>
+            <td style= "font-size: 14px"> {[{ value }]} </td>
           </tr>
         </table>
 

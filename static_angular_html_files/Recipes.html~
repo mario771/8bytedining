@@ -8,7 +8,7 @@
   </head>
   <body ng-app="myApp">
 
-      <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
 
     <div ng-controller = "RecipeController">
 

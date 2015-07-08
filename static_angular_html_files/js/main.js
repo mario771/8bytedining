@@ -1,5 +1,10 @@
 var app = angular.module('myApp', []);
 
+app.config(function($interpolateProvider) {
+	$interpolateProvider.startSymbol('{[{');
+	$interpolateProvider.endSymbol('}]}');
+});
+
 app.controller('RecipeController', function($scope, $http) {
 	//needs renaming!
 	$http.get('data/data.json').then(function(res) {
@@ -14,8 +19,8 @@ app.controller('CuisineController', function($scope, $http) {
 	$http.get('data/cuisines_.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
-	$http.get('data/Cuisine_tables.json').then(function(ces) {
-		$scope.cmodels = ces.data;
+	$http.get('data/Cuisine_tables.json').then(function(res) {
+		$scope.cmodels = res.data;
 	});
 });
 
@@ -23,7 +28,7 @@ app.controller('IngredientController', function($scope, $http) {
 	$http.get('data/Ingredients_.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
-	$http.get('data/recipemodels_placeholder.json').then(function(res) {
+	$http.get('data/Ingredients_table.json').then(function(res) {
 		$scope.imodels = res.data;
 	});
 });
