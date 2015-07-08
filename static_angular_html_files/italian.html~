@@ -17,9 +17,9 @@
       Recipe will be explicitly assigned for these static pages.
       -->
 
-      <title> {{ cuisines["American"].name }} Cuisine</title>
+      <title> {{ cuisines["Italian"].name }} Cuisine</title>
 
-      <h1> {{ cuisines["American"].name }} Cuisine</h1>
+      <h1> {{ cuisines["Italian"].name }} Cuisine</h1>
 
       <table border = 5px>
         <thead>
@@ -30,8 +30,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="recipe in cuisines[&quot;American&quot;].recipies">
-            <td style = "font-size: 14px"> {{ recipe }} </td>
+          <tr ng-repeat="recipe in cuisines[&quot;Italian&quot;].recipies">
+            <td style = "font-size: 14px">
+              <a ng-href = "{{ recipe }}.html"> {{ recipe }} </a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -47,8 +49,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="ingredient in cuisines[&quot;American&quot;].ingredients">
-            <td style = "font-size: 14px"> {{ ingredient }} </td>
+          <tr ng-repeat="ingredient in cuisines[&quot;Italian&quot;].ingredients">
+            <td style = "font-size: 14px">
+              <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
+            </td>
           </tr>
         </tbody>
       </table>

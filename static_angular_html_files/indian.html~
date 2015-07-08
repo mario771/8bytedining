@@ -31,7 +31,9 @@
         </thead>
         <tbody>
           <tr ng-repeat="recipe in cuisines[&quot;Indian&quot;].recipies">
-            <td style = "font-size: 14px"> {{ recipe }} </td>
+            <td style = "font-size: 14px">
+              <a ng-href = "{{ recipe }}.html"> {{ recipe }} </a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -48,7 +50,9 @@
         </thead>
         <tbody>
           <tr ng-repeat="ingredient in cuisines[&quot;Indian&quot;].ingredients">
-            <td style = "font-size: 14px"> {{ ingredient }} </td>
+            <td style = "font-size: 14px">
+              <a ng-href = "{{ ingredient }}.html"> {{ ingredient }} </a>
+            </td>
           </tr>
         </tbody>
       </table>
