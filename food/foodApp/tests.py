@@ -53,7 +53,7 @@ class ModelTestCase(TestCase):
 
             
     def test_cuisine_model1(self):
-        Cuisine.objects.create(name="French", id="french", url="https://api.pearson.com/kitchen-manager/v1/cuisines/french", recipes="", ingredients="", recipe_count=158) 
+        Cuisine.objects.create(name="French", cuisine_id="french", url="https://api.pearson.com/kitchen-manager/v1/cuisines/french", recipes="", ingredients="", recipe_count=158) 
 
         self.assertEqual(cuisine_get.name,"French")
         self.assertEqual(cuisine_get.cuisine_id,"french")
@@ -64,7 +64,7 @@ class ModelTestCase(TestCase):
 
 
     def test_cuisine_model2(self):
-        Cuisine.objects.create(name="Italian", id="italian", url="https://api.pearson.com/kitchen-manager/v1/cuisines/italian", recipes="", ingredients="", recipe_count=17) 
+        Cuisine.objects.create(name="Italian", cuisine_id="italian", url="https://api.pearson.com/kitchen-manager/v1/cuisines/italian", recipes="", ingredients="", recipe_count=17) 
         self.assertEqual(cuisine_get.name,"Italian")
         self.assertEqual(cuisine_get.cuisine_id,"italian")
         self.assertEqual(cuisine_get.url,"https://api.pearson.com/kitchen-manager/v1/cuisines/italian")
@@ -73,7 +73,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(cuisine_get.recipe_count,17 )
 
     def test_cuisine_model3(self):
-        Cuisine.objects.create(name="Mexican", id="mexican", url="https://api.pearson.com/kitchen-manager/v1/cuisines/mexican", recipes="", ingredients="", recipe_count=16) 
+        Cuisine.objects.create(name="Mexican", cuisine_id="mexican", url="https://api.pearson.com/kitchen-manager/v1/cuisines/mexican", recipes="", ingredients="", recipe_count=16) 
         self.assertEqual(cuisine_get.name,"Mexican")
         self.assertEqual(cuisine_get.cuisine_id,"mexican")
         self.assertEqual(cuisine_get.url,"https://api.pearson.com/kitchen-manager/v1/cuisines/mexican")
@@ -82,7 +82,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(cuisine_get.recipe_count,16 )
 
     def test_cuisine_model4(self):
-        Cuisine.objects.create(name="Indian", id="indian", url="https://api.pearson.com/kitchen-manager/v1/cuisines/indian", recipes="", ingredients="", recipe_count=12) 
+        Cuisine.objects.create(name="Indian", cuisine_id="indian", url="https://api.pearson.com/kitchen-manager/v1/cuisines/indian", recipes="", ingredients="", recipe_count=12) 
         self.assertEqual(cuisine_get.name,"Indian")
         self.assertEqual(cuisine_get.cuisine_id,"indian")
         self.assertEqual(cuisine_get.url,"https://api.pearson.com/kitchen-manager/v1/cuisines/indian")
@@ -91,7 +91,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(cuisine_get.recipe_count,12 )
 
     def test_cuisine_model5(self):
-        Cuisine.objects.create(name="American: Southern", id="american-southern", url="https://api.pearson.com/kitchen-manager/v1/cuisines/american-southern", recipes="", ingredients="", recipe_count=9)
+        Cuisine.objects.create(name="American: Southern", cuisine_id="american-southern", url="https://api.pearson.com/kitchen-manager/v1/cuisines/american-southern", recipes="", ingredients="", recipe_count=9)
         self.assertEqual(cuisine_get.name,"American: Southern")
         self.assertEqual(cuisine_get.cuisine_id,"american-southern")
         self.assertEqual(cuisine_get.url,"https://api.pearson.com/kitchen-manager/v1/cuisines/american-southern")
@@ -99,8 +99,24 @@ class ModelTestCase(TestCase):
         self.assertEqual(cuisine_get.ingredients,"")
         self.assertEqual(cuisine_get.recipe_count,9)
 
+    def test_ingredients_model1(self):
+        Ingredient.objects.create(name="salt", recipe_count =268)
+        self.assertEqual(ingredients_get.name,"salt")
+        self.assertEqual(ingredients_get.recipe_count, 268)
+
     def test_ingredients_model2(self):
-    def test_ingredients_model2(self):
-    def test_ingredients_model2(self):
+        Ingredient.objects.create(name="egg yolks", recipe_count =31)
+        self.assertEqual(ingredients_get.name,"egg yolks")
+        self.assertEqual(ingredients_get.recipe_count, 31)
+
+    def test_ingredients_model3(self):
+        Ingredient.objects.create(name="carrot", recipe_count =23)
+        self.assertEqual(ingredients_get.name,"carrot")
+        self.assertEqual(ingredients_get.recipe_count, 23)
+
+    def test_ingredients_model4(self):
+        Ingredient.objects.create(name="fresh thyme", recipe_count =26)
+        self.assertEqual(ingredients_get.name,"fresh thyme")
+        self.assertEqual(ingredients_get.recipe_count, 26)
             
 # Create your tests here.
