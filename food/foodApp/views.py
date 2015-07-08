@@ -18,3 +18,7 @@ def Ingredients (request) :
 def Recipes (request) :
    context = RequestContext(request)
    return render_to_response('RecipeModel.html',context)
+
+def Ingredients (request) :
+   context = RequestContext(request)
+   return render_to_response('Ingredients.html',context)
