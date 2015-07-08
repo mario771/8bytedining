@@ -38,3 +38,9 @@ def American (request) :
 def Italian (request) :
    context = RequestContext(request)
    return render_to_response('Italian.html',context)
+
+def About (request) :
+   context = RequestContext(request)
+   return render_to_response('about.html',context)
+
+                        
