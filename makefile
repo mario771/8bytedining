@@ -29,9 +29,9 @@ config:
 
 test: 
 
-models.html: models.py
-	pydoc3 -w models
-
+#models.html: models.py
+#	pydoc3 -w models
+#
 IDB.log:
 	git log > IDB.log
 
