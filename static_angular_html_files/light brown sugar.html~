@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i90732/icons8/windows-8/Food-Bunch-Ingredients.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+
+    <div ng-controller = "IngredientController">
+
+      <!-- Prompting for now, will internally assign when finished
+      <input type = "text" ng-model = "ingredient" placeholder = "Enter an ingredient" />
+      Commented out for static html creation.
+      Recipe will be explicitly assigned for these static pages.
+      -->
+
+      <title> {{ ingredients["light brown sugar"].name }}</title>
+
+      <h1> {{ ingredients["light brown sugar"].name }} (Ingredient)</h1>
+
+      <h2> <em> Suggested Recipes: </em> </h2>
+        <ul ng-repeat="recipe in ingredients[&quot;light brown sugar&quot;].recipies">
+          <li style="font-size: 14px">
+            <a ng-href = "{{ recipe }}.html"> {{ recipe }} </a>
+          </li>
+        </ul>
+
+      <h2> <em> Used in: </em> </h2>
+        <ul ng-repeat="cuisine in ingredients[&quot;light brown sugar&quot;].cuisines">
+          <li style="font-size: 14px">
+            <a ng-href = "{{ cuisine }}.html"> {{ cuisine }} </a>
+          </li>
+        </ul>
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>

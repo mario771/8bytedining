@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+  <body ng-app="myApp">
+
+    <h4> <a ng-href = "8byte_splash.html"> Back to home </a>
+
+    <div ng-controller = "IngredientController">
+
+      <h3> All Ingredients </h3>
+
+      <div ng-repeat="ingredient in ingredients">
+        <a href = "{[{ ingredient.name }]}.html"> {[{ ingredient.name }]} </a>
+      </div>
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>

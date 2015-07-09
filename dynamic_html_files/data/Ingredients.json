@@ -1,0 +1,10 @@
+{	"Beef Brisket" : {
+		"name" : "Beef Brisket",
+		"recipies" : [
+			"Aunt Ruthie's Pot Roast"
+		],
+		"cuisines" : [
+			"American"
+		]
+	}
+}
