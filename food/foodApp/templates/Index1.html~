@@ -30,13 +30,14 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en" ng-app="MyAPP">
+<html lang="en" ng-app="testApp">
     <head>
         <meta charset="utf-8">
         <title>Angular test</title>
     </head>
     <body ng-controller="MainController">
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="static/foodApp/testApp.js"></script>
+        [[test]]
     </body>
 </html>
