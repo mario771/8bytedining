@@ -19,12 +19,11 @@ app.controller("LocationController", function($scope, $location, $http) {
 			return angular.isObject(result) ? angular.toJson(result) : result;
 		};
 	});
+/*
 
+	$scope.absUrl = $location.absUrl();
 	$scope.url = $location.url();
 
 	$scope.test = "working";
-	
-	//$location.url().then(function(res2) {
-	//	$scope.test = res2;
-	//});
+*/
 });

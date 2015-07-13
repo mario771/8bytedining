@@ -11,7 +11,7 @@ app.controller("TestController", function($scope) {
 
 });
 
-app.controller("LocationController", function($scope, $location, $http) {
+app.controller("LocationController", function($scope, $location) {
 	$scope.$location = {};
 	angular.forEach("protocol host port path search hash".split(" "), function(method){
 		$scope.$location[method] = function(){
@@ -20,7 +20,12 @@ app.controller("LocationController", function($scope, $location, $http) {
 		};
 	});
 
+
+/*
+
+	$scope.absUrl = $location.absUrl();
 	$scope.url = $location.url();
 
 	$scope.test = "working";
+*/
 });
