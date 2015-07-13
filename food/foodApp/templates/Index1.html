@@ -1,4 +1,3 @@
-<!--
 <!doctype html>
 <html>
   <head>
@@ -11,34 +10,7 @@
 
     <div ng-controller = "TestController">
 
-	  <div ng-address-bar></div><br><br>
-	  <div>
-	    $location.protocol() = <span ng-bind="$location.protocol()"></span> <br>
-	    $location.host() = <span ng-bind="$location.host()"></span> <br>
-	    $location.port() = <span ng-bind="$location.port()"></span> <br>
-	    $location.path() = <span ng-bind="$location.path()"></span> <br>
-	    $location.search() = <span ng-bind="$location.search()"></span> <br>
-	    $location.hash() = <span ng-bind="$location.hash()"></span> <br>
-	  </div>
-
-    </div>
-
-    <script src="static/foodApp/testApp.js"></script>
-
-  </body>
-</html>
--->
-
-<!DOCTYPE html>
-<html lang="en" ng-app="testApp">
-    <head>
-        <meta charset="utf-8">
-        <title>Angular test</title>
-    </head>
-    <body ng-controller="TestController">
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-        <script src="static/foodApp/testApp.js"></script>
-        [[url]]
+	[[url]]
 	[[hello]]
 	<p></p>
 	[[ohboy]]
@@ -48,5 +20,12 @@
 	fj: [[fj]]
 	<p></p>
 	test: [[ fj["auntruthiespotroast"] ]]
-    </body>
+	<p></p>
+	<a ng-href="8bytedining.me/Index2"> Test Link </a>
+
+    </div>
+
+    <script src="static/foodApp/testApp.js"></script>
+
+  </body>
 </html>
