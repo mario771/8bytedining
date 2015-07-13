@@ -1,11 +1,22 @@
+/*
 var app = angular.module('testApp', []);
 
-app.config(function($interpolateProvider, $locationProvider) {
+app.config(function($interpolateProvider) {
 	$interpolateProvider.startSymbol('[[');
 	$interpolateProvider.endSymbol(']]');
+});
+*/
+
+angular.module("MyAPP",[],function($locationProvider){
 	$locationProvider.html5Mode(true);
 });
 
+function MainController($location) {
+	var pId = $location.absUrl();
+	console.log(pId);
+}
+
+/*
 app.controller("TestController", function($scope) {
 
 	$scope.test = "hello";
@@ -23,3 +34,4 @@ app.controller("LocationController", function($scope, $location) {
 
 	$scope.test = "working";
 });
+*/
