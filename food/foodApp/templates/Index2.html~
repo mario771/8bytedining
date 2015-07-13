@@ -1,10 +1,20 @@
 <!doctype html>
-<html ng-app="testApp">
+<html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="static/foodApp/testApp.js"></script>
   </head>
-  <body>
+  <body ng-app="testApp">
 
     Hello World
+
+    <div ng-controller = "TestController">
+
+	<a ng-href="http://8bytedining.me/Index1"> Test Link </a>
+
+    </div>
+
+    <script src="static/foodApp/testApp.js"></script>
 
   </body>
 </html>
