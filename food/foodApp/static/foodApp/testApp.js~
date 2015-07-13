@@ -17,8 +17,4 @@ app.controller("TestController", function($scope, $location, $http) {
 	$http.get('/static/foodApp/RecipeData.json').then(function(res) {
 		$scope.recipes = res.data;
 	});
-
-	$http.get('/static/foodApp/Recipe_tables.json').then(function(res) {
-		$scope.jtest = res.data;
-	});
 });
