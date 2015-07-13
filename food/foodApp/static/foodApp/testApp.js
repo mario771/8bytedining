@@ -12,6 +12,7 @@ app.controller("TestController", function($scope) {
 });
 
 app.controller("LocationController", function($scope, $location) {
+/*
 	$scope.$location = {};
 	angular.forEach("protocol host port path search hash".split(" "), function(method){
 		$scope.$location[method] = function(){
@@ -19,13 +20,11 @@ app.controller("LocationController", function($scope, $location) {
 			return angular.isObject(result) ? angular.toJson(result) : result;
 		};
 	});
+*/
 
-
-/*
 
 	$scope.absUrl = $location.absUrl();
-	$scope.url = $location.url();
+	//$scope.url = $location.url();
 
 	$scope.test = "working";
-*/
 });
