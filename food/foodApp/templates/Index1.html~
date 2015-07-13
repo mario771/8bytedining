@@ -38,6 +38,7 @@
     <body ng-controller="MainController">
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
         <script src="static/foodApp/testApp.js"></script>
-        [[test]]
+        [[url]]
+	[[hello]]
     </body>
 </html>

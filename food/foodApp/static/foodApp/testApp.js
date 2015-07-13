@@ -14,6 +14,13 @@ function MainController($scope, $location) {
 	$scope.othertest = "working";
 }
 
+app.controller("TestController", function($scope, $location) {
+	var pId = $location.absUrl();
+	console.log(pId);
+	$scope.url = pId;
+	$scope.hello = "functioning";
+});
+
 /*
 app.controller("TestController", function($scope) {
 
