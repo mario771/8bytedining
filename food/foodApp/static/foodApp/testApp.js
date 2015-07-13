@@ -3,6 +3,7 @@ var app = angular.module('testApp', []);
 app.config(function($interpolateProvider, $locationProvider) {
 	$interpolateProvider.startSymbol('[[');
 	$interpolateProvider.endSymbol(']]');
+	$locationProvider.html5Mode(true);
 });
 
 app.controller("TestController", function($scope) {
