@@ -18,6 +18,7 @@ function MainController($scope, $location) {
 
 app.controller("TestController", function($scope, $location) {
 	$scope.url = $location.absUrl();
+	$scope.ohboy = $location.search('r');
 	$scope.hello = "functioning";
 });
 
