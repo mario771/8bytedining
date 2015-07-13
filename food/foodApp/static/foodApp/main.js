@@ -11,7 +11,7 @@ app.controller('RecipeController', function($scope, $http, $location) {
 	$scope.recipe = $location.search()["r"];
 
 	$http.get('/static/foodApp/Recipe_tables.json').then(function(res) {
-		$scope.recipies = res.data;
+		$scope.recipes = res.data;
 	});
 });
 
