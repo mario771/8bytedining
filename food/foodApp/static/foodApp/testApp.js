@@ -24,7 +24,11 @@ app.controller("LocationController", function($scope, $location) {
 
 
 	$scope.absUrl = $location.absUrl();
-	//$scope.url = $location.url();
+	$scope.url = $location.url();
+	$scope.protocol = $location.protocol();
+	$scope.host = $location.host();
+	$scope.port = $location.port();
+	$scope.path = $location.path();
 
 	$scope.test = "working";
 });
