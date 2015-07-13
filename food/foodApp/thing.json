@@ -1,0 +1,16 @@
+[
+  {
+    "model": "foodApp.thing",
+    "fields": {
+      "name": "thing1",
+      "number": "1"
+    }
+  },
+  {
+    "model": "foodApp.thing",
+    "fields": {
+      "name": "thing2",
+      "number": "2"
+    }
+  }
+]
