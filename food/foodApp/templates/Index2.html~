@@ -10,7 +10,7 @@
 
     <div ng-controller = "TestController">
 
-	<a href="http://8bytedining.me/Index1"> Test Link Back </a>
+	<a href="http://8bytedining.me/Index1/"> Test Link Back </a>
 
     </div>
 
