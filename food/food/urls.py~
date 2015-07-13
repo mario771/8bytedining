@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^American$', views.American, name='American'),
     url(r'^Italian$', views.Italian, name='Italian'),
 
-    url(r'^Index1$', views.Index1, name='Italian'),
-    url(r'^Index2$', views.Index2, name='Italian'),
+    url(r'^Index1$', views.Index1, name='Index1'),
+    url(r'^Index2$', views.Index2, name='Index2'),
     
 ] 

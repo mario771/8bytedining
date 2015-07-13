@@ -50,4 +50,8 @@ def Index1 (request) :
 def Index2 (request) :
    context = RequestContext(request)
    return render_to_response('Index2.html',context)
+
+def recipe_page (request) :
+   context = RequestContext(request)
+   return render_to_response('recipe_page.html',context)
                         

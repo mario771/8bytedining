@@ -24,5 +24,6 @@ urlpatterns = [
 
     url(r'^Index1$', views.Index1, name='Index1'),
     url(r'^Index2$', views.Index2, name='Index2'),
+    url(r'^recipe_page$', views.recipe_page, name='recipe_page'),
     
 ] 
