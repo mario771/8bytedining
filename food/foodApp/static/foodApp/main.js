@@ -10,7 +10,7 @@ app.config(function($interpolateProvider) {
 app.controller('RecipeController', function($scope, $http, $location) {
 	$scope.recipe = $location.search()["r"];
 
-	$http.get('/static/foodApp/Recipe_tables.json').then(function(res) {
+	$http.get('/static/foodApp/RecipeData.json').then(function(res) {
 		$scope.recipes = res.data;
 	});
 });

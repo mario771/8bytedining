@@ -23,7 +23,10 @@
 	<p></p>
 	<a ng-href="http://8bytedining.me/Index2" target="_self"> Test Link </a>
         <p></p>
-        [[recipes]]
+	THE ULTIMATE TEST: [[ recipes[recipe] ]]
+
+	<p></p>
+	[[ jtest ]]
 
     </div>
 
