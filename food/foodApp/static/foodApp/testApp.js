@@ -7,17 +7,17 @@ app.config(function($interpolateProvider) {
 	$interpolateProvider.endSymbol(']]');
 });
 
+/*
 function MainController($scope, $location) {
 	var pId = $location.absUrl();
 	console.log(pId);
 	$scope.test = pId;
 	$scope.othertest = "working";
 }
+*/
 
 app.controller("TestController", function($scope, $location) {
-	var pId = $location.absUrl();
-	console.log(pId);
-	$scope.url = pId;
+	$scope.url = $location.absUrl();
 	$scope.hello = "functioning";
 });
 
