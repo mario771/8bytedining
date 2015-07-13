@@ -21,6 +21,7 @@ app.controller("TestController", function($scope, $location) {
 	$scope.ohboy = $location.search();
 	$scope.recipe = $location.search()["r"];
 	$scope.hello = "functioning";
+	$scope.fj = {"auntruthiespotroast" : "you did it!!"};
 });
 
 /*
