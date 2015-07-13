@@ -14,7 +14,7 @@ app.controller('RecipeController', function($scope, $http, $location) {
 		$scope.recipes = res.data;
 	});
 });
-
+/*
 app.controller('CuisineController', function($scope, $http) {
 	//EMPTY
 	$http.get('/static/foodApp/cuisines_.json').then(function(res) {
@@ -28,3 +28,7 @@ app.controller('IngredientController', function($scope, $http) {
 		$scope.ingredients = res.data;
 	});
 });
+*/
+
+
+
