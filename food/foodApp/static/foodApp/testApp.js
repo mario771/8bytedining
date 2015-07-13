@@ -1,8 +1,12 @@
 var app = angular.module('testApp', []);
 
-app.config(function($interpolateProvider) {
+app.config(function($interpolateProvider, $locationProvider) {
 	$interpolateProvider.startSymbol('[[');
 	$interpolateProvider.endSymbol(']]');
+	$locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	});
 });
 
 app.controller("TestController", function($scope) {
@@ -21,7 +25,6 @@ app.controller("LocationController", function($scope, $location) {
 		};
 	});
 */
-
 
 	$scope.absUrl = $location.absUrl();
 	$scope.url = $location.url();
