@@ -1,10 +1,22 @@
 <!doctype html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="static/foodApp/testApp.js"></script>
   </head>
-  <body>
+  <body ng-app="testApp">
 
     Hello World
+
+    <div class = "main" ng-controller = "TestController">
+      
+      [[test]]
+
+    </div>
+
+
+    <!-- Modules -->
+    <script src="static/foodApp/testApp.js"></script>
 
   </body>
 </html>
