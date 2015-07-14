@@ -98,28 +98,12 @@
 							<div ng-repeat="i in recipes[recipe].ingredients">
 							  <li> [[ i[1] ]] <a ng-href="http://8bytedining.me/ingredients?i=[[ i[2] ]]"> [[ i[0] ]] </a> </li>
 							</div>
-<!--
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
--->
 						</ul>
 					</div>					
 				</div><!-- row -->
 			</div>
-			<h3 style="margin-left:50px"> Yields/Serves: [[ recipes[recipe].quant_data.yields </h2>
-			<h3 style="margin-left:50px"> Cost: $ [[ recipes[recipe].quant_data.price </h2>
+			<h3 style="margin-left:50px"> Yields/Serves: [[ recipes[recipe].quant_data.yields ]] </h2>
+			<h3 style="margin-left:50px"> Cost: $ [[ recipes[recipe].quant_data.price ]] </h2>
 			<br> 
 			<br>
 		</div>
@@ -128,7 +112,7 @@
 			<div class="container">
 				<h1>DIRECTIONS</h1>
 				<hr align = "left">
-				<p>Make the marinade by chopping and mashing the garlic into a paste. In a bowl, combine the garlic paste with the remaining marinade ingredients.Trim the fat from the skirt steak. Cut the steak into two or three pieces if necessary. Add the steaks to the marinade, turning them several times to coat all sides. Cover the steak and mari-nate in the refrigerator for at least 1 hour or overnight. Grill the steak on a hot grill to the desired doneness. Remove the steak and allow it to rest for 10 minutes. Add the oil to a heavy sautee pan, heat the pan until very hot and sautee the bell peppers, onion and garlic just until they begin to soften. Slice the steak against the grain into thin slices. Arrange the steak and the pepper mixture on very hot cast-iron platters and garnish with the cilantro. The platters should be sizzling as they are presented to the table. Serve the fajitas accompanied by warm flour or corn tortillas, fresh salsa, sour cream, and guacamole.</p>
+				<p> [[ recipes[recipe].directions ]] </p>
 			</div><!-- container -->
 		</section>
 
@@ -147,6 +131,12 @@
 						        <div class="modal-body">
 
 				<table border = 5px>
+
+					<tr ng-repeat="n in recipes[recipe].nut_info">
+					  <td style= "font-size: 14px"> [[ i[0] ]] </td>
+					  <td style= "font-size: 14px"> [[ i[1] ]] </td>
+					</tr>
+<!--
 
 					<tr> 
 						<td style= "font-size: 14px"> Calcium </td>
@@ -211,6 +201,7 @@
  						<td style= "font-size: 14px"> Vitamin_C</td>
  						<td style= "font-size: 14px"> 125.93 mg per 100g </td>
 					</tr>
+-->
 		</table>
 
 						        </div>
