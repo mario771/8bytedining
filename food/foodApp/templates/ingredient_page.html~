@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
-    <link rel="shortcut icon" href="/static/foodApp/grid/assets/ico/favicon.png">
 
     <!-- Bootstrap core CSS -->
 
@@ -103,13 +102,13 @@
  				</div>
  				<div class="col-md-4"style="width:33%">
  					<br><br><br><br><br><br>
- 					<a data-toggle="modal" href="#ingredientsModal" class="btn btn-primary btn-lg" margin-left="100px" >View Cuisines</a>
+ 					<a data-toggle="modal" href="#cuisinesModal" class="btn btn-primary btn-lg" margin-left="100px" >View Cuisines</a>
  					<br><br><br><br><br><br>
  				</div>	
 
  				<div class="col-md-4" style="width:33%">
  					<br><br><br><br><br><br>
- 					<a data-toggle="modal" href="#recipeModal" class="btn btn-primary btn-lg" margin-left="100px" >View Nutritional Info</a>
+ 					<a data-toggle="modal" href="#nutritionalModal" class="btn btn-primary btn-lg" margin-left="100px" >View Nutritional Info</a>
  					<br><br><br><br><br><br>
 
  				</div>	 				
@@ -122,13 +121,13 @@
 						      <div class="modal-content">
 						        <div class="modal-header">
 						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Recipes</h4>
+						          <h4 class="modal-title">Recipes which use this ingredient</h4>
 						        </div>
 						        <div class="modal-body">
 
 						<ul>
 						  <div ng-repeat="r in ingredients[ingredient].recipes">
-							<li > <a ng-href="http://8bytedining/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+							<li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
 						  </div>
 						</ul>
 
@@ -142,31 +141,43 @@
 
 
 
-		<div class="modal fade" id="ingredientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="cuisinesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						    <div class="modal-dialog">
 						      <div class="modal-content">
 						        <div class="modal-header">
 						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Ingredients</h4>
+						          <h4 class="modal-title">Cuisines which use this ingredient</h4>
 						        </div>
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="c in ingredients[ingredient].cuisines">
+							<li >  <a ng-href="http://8bytedining.me/cuisines?c=[[ c[1] ]]" target="_self"> [[ c[0] ]] </a> </li>
+						  </div>
 						</ul>
+
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+	 <div class="modal fade" id="nutritionalModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Recipes which use this ingredient</h4>
+						        </div>
+						        <div class="modal-body">
+
+						
+						                <tr ng-repeat="(n,v) in ingredients[ingredient].nut_info">
+								  <td style= "font-size: 14px"> [[ n ]] </td>
+								  <td style= "font-size: 14px"> [[ v ]] </td>
+								</tr>
 
 						        </div>
 						        <div class="modal-footer">
