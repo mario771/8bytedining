@@ -102,7 +102,7 @@
 					</div>					
 				</div><!-- row -->
 			</div>
-			<h3 style="margin-left:50px"> Serves [[ recipes[recipe].quant_data.serves ]], [[ recipes[recipe].quant_data.yields ]] </h2>
+			<h3 style="margin-left:50px"> Serves [[ recipes[recipe].quant_data.Serves ]], [[ recipes[recipe].quant_data.yields ]] </h2>
 			<h3 style="margin-left:50px"> Cost: [[ recipes[recipe].quant_data.price | currency ]] </h2>
 			<br> 
 			<br>
