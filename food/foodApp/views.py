@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.shortcuts import RequestContext
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
+from rest_framework import generics
+
 
 def home(request):
    context = RequestContext(request)
