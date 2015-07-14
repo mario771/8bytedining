@@ -251,7 +251,7 @@
 						<figure>
 							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio01.jpg" alt="">
 							<figcaption>
-								<h5>Recipe Name</h5>
+								<h5> [[ ingredients[(Object.keys[getRandomSpan()])].name ]]</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
