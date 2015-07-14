@@ -102,7 +102,7 @@
 					</div>					
 				</div><!-- row -->
 			</div>
-			<h3 style="margin-left:50px"> Yields/Serves: [[ recipes[recipe].quant_data.yields ]] </h2>
+			<h3 style="margin-left:50px"> [[ recipes[recipe].quant_data.yields ]] </h2>
 			<h3 style="margin-left:50px"> Cost: $ [[ recipes[recipe].quant_data.price ]] </h2>
 			<br> 
 			<br>
@@ -134,6 +134,7 @@
 
 					<tr ng-repeat="n in recipes[recipe].nut_info">
 					  <td style= "font-size: 14px"> [[ i[0] ]] </td>
+					  <td style= "font-size: 14px"> [[ i[1] ]] </td>
 					</tr>
 <!--
 
