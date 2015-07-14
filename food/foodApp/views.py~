@@ -25,9 +25,9 @@ def recipe_page (request) :
    context = RequestContext(request)
    return render_to_response('recipe_page.html',context)
 
-def ingredients_page (request) :
+def ingredient_page (request) :
    context = RequestContext(request)
-   return render_to_response('ingredients_page.html',context)
+   return render_to_response('ingredient_page.html',context)
 
 def cuisine_page (request) :
    context = RequestContext(request)
