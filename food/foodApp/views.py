@@ -9,7 +9,7 @@ def home(request):
    context = RequestContext(request)
    return render_to_response('8byte_splash.html',context)
 
-def About (request) :
+def about (request) :
    context = RequestContext(request)
    return render_to_response('about.html',context)
 

@@ -31,7 +31,7 @@ def cuisine_page (request) :
 
 
 
-<<<<<<< HEAD
+
 
 #def recipes(request): 
 
