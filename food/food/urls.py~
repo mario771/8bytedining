@@ -15,8 +15,6 @@ urlpatterns = [
     url(r'^$', views.home,name='home'),
     url(r'^about$', views.about, name='about'),
 
-    url(r'^Index1$', views.Index1, name='Index1'),
-    url(r'^Index2$', views.Index2, name='Index2'),
     url(r'^recipes$', views.recipe_page, name='recipes'),
     url(r'^ingredients$', views.ingredient_page, name='ingredients'),
     url(r'^cuisines$', views.cuisine_page, name='cuisines'),

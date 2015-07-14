@@ -15,6 +15,10 @@ urlpatterns = [
     url(r'^$', views.home,name='home'),
     url(r'^about$', views.about, name='about'),
 
+    url(r'^recipes/model$', views.model, name='recipes/model'),
+    url(r'^ingredients/model$', views.model, name='ingredients/model'),
+    url(r'^cuisines/model$', views.model, name='cuisines/model'),
+
     url(r'^recipes$', views.recipe_page, name='recipes'),
     url(r'^ingredients$', views.ingredient_page, name='ingredients'),
     url(r'^cuisines$', views.cuisine_page, name='cuisines'),
