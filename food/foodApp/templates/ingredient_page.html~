@@ -173,11 +173,12 @@
 						        </div>
 						        <div class="modal-body">
 
-						
-						                <tr ng-repeat="(n,v) in ingredients[ingredient].nut_info">
-								  <td style= "font-size: 14px"> [[ n ]] </td>
-								  <td style= "font-size: 14px"> [[ v ]] </td>
-								</tr>
+								<table border = 5px>
+									<tr ng-repeat="(n,v) in ingredients[ingredient].nut_info">
+									  <td style= "font-size: 14px"> [[ n ]] </td>
+									  <td style= "font-size: 14px"> [[ v ]] </td>
+									</tr>
+								</table>
 
 						        </div>
 						        <div class="modal-footer">
@@ -198,20 +199,20 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">5</h1>
+						<h1 style="color:white">[[ ingredients[ingredient].quant_data.number_of_recipes ]]</h1>
 						<p>Number of Recipes</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">75</h1>
+						<h1 style="color:white">[[ ingredients[ingredient].quant_data.number_of_cuisines ]]</h1>
 						<p>Number of Cuisines</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">24%</h1>
-						<p>Diversity</p>
+						<h1 style="color:white">[[ ingredients[ingredient].quant_data.calories_per_100g ]]</h1>
+						<p>Calories per 100g</p>
 						<br>
 					</div>
 					
@@ -223,7 +224,7 @@
 
 					<div class="col-lg-3 centered">
 						<h1 style="color:white">Over 9,000!!</h1>
-						<p>Calories per 100g</p>
+						<p>Diversity</p>
 						<br>
 					</div>
 
