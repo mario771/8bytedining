@@ -212,18 +212,18 @@
 
 					<div class="col-lg-3 centered">
 						<h1 style="color:white">[[ ingredients[ingredient].quant_data.calories_per_100g ]]</h1>
-						<p>Calories per 100g</p>
+						<p>Calories</p>
 						<br>
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">96%</h1>
+						<h1 style="color:white">[[ ingredients[ingredient].quant_data.popularity | number: 2 ]]%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">Over 9,000!!</h1>
+						<h1 style="color:white">[[ ingredients[ingredient].quant_data.diveristy | number: 2 ]]%</h1>
 						<p>Diversity</p>
 						<br>
 					</div>
