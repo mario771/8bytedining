@@ -9,9 +9,8 @@ from django.db import models
 class Ingredients (models.Model) :
    ing_id = models.CharField(max_length=500, default="") 
    name = models.CharField(max_length=500, default="")
-   recipe_count = models.IntegerField(default=0)
    quant_data = models.CharField(max_length=500, default="")
-   nut_info = models.CharField(max_length=5000)
+   nut_info = models.CharField(max_length=5000, default="")
   
    def get_absolute_url(self):
         url_name = self.full_name.replace(' ', '_')
@@ -28,10 +27,9 @@ class Cuisines(models.Model) :
    """
    Cuisines contains a name, an id (name), url, and recipe count
    """
-   cuisine = models.CharField(max_length=500)
+   id_cuisine = models.CharField(max_length=500)
    name = models.CharField(max_length=500)
    url = models.CharField(max_length=500)
-   recipe_count = models.IntegerField(default=0)
    quant_data = models.CharField(max_length=5000)
 
    def get_absolute_url(self):
@@ -56,9 +54,9 @@ class Recipes (models.Model) :
    directions = models.CharField(max_length= 5000, default = "")
    cuisine = models.ForeignKey(Cuisines)
    ingredients = models.ManyToManyField("Ingredients", default = "")
-   # How to put ingredients into list?? I think there's models.ManytoMany ?
+   ingredient_amount = models.CharField(max_length= 2000, default = "")
    img = models.CharField(max_length=500)
-   nut_info = models.CharField(max_length=5000)
+   nut_info = models.CharField(max_length= 5000, default = "")
    quant_data = models.CharField(max_length=500)
 
 
