@@ -13,12 +13,13 @@ urlpatterns = [
     
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home,name='home'),
-    url(r'^about$', views.About, name='about'),
+    url(r'^about$', views.about, name='about'),
 
     url(r'^Index1$', views.Index1, name='Index1'),
     url(r'^Index2$', views.Index2, name='Index2'),
     url(r'^recipe_page$', views.recipe_page, name='recipe_page'),
     url(r'^cuisine_page$', views.cuisine_page, name='cuisine_page'),
+    url(r'^ingredients_page$', views.ingredients_page, name='ingredients_page'),
     
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
