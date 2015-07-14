@@ -174,9 +174,9 @@
 						        <div class="modal-body">
 
 								<table border = 5px>
-									<tr ng-repeat="(n,v) in ingredients[ingredient].nut_info">
-									  <td style= "font-size: 14px"> [[ n ]] </td>
-									  <td style= "font-size: 14px"> [[ v ]] </td>
+									<tr ng-repeat="n in ingredients[ingredient].nut_info">
+									  <td style= "font-size: 14px"> [[ n[0] ]] </td>
+									  <td style= "font-size: 14px"> [[ n[1] ]] </td>
 									</tr>
 								</table>
 
