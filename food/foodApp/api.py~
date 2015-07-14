@@ -1,7 +1,7 @@
 from .models import Recipes, Ingredients, Cuisines 
 from .serializers import RecipesSerializer, IngredientsSerializer, CuisineSerializers
 
-from django.http import Http404
+from django.http Http404
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
