@@ -102,6 +102,15 @@ bgrun:
 openport:
 	sudo ufw allow 8000
 	python manage.py runserver 0.0.0.0:8000
+migrate:
+	./manage.py flush
+	./manage.py makemigrations foodApp
+	./manage.py migrate
+	ls foodApp/fixtures
+load:
+	./manage.py loaddata ingredients_list_models.json
+	./manage.py loaddata cuisine_models.json 
+	./manage.py loaddata Recipe_addedID_models_data.json
 
 ip:
 	echo ${IP}
