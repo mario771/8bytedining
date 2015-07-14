@@ -115,6 +115,10 @@
     <!-- jQuery -->
     <script src="/static/foodApp/js/jquery.js"></script>
 
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="/static/foodApp/grid/assets/js/jquery-func.js"></script>
+	<script type="text/javascript" src="js/navsquare_jquery.js"></script>
+
 	  <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
