@@ -18,8 +18,7 @@ app.controller('RecipeController', function($scope, $http, $location) {
 app.controller('CuisineController', function($scope, $http, $location) {
 	$scope.cuisine = $location.search()["c"];
 
-	//EMPTY
-	$http.get('/static/foodApp/CuisineData.json').then(function(res) {
+	$http.get('/static/foodApp/Cusines_data.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
 });
