@@ -4,17 +4,17 @@ from models import Recipes, Ingredients, Cuisines
 class RecipesSerializer(serializers.ModelSerializer) : 
     class Meta:
         model = Recipes 
-        field = (id,img,name,nut_info,directions,quant_data,ingrediennts,cuisine,recipe_id)
+        field = (id,name,recipe_id,directions, cuisine, ingredients,img,nut_info,quant_dat)
 
 class IngredientsSerializer(serializers.ModelSerializer) : 
     class Meta: 
         model = Ingredients
-        field = (id,ingredient_id,recipe_count,quant_data,name,nut_info)
+        field = (id,ing_id,name,recipe_count,quant_data,nut_info)
 
 class CuisinesSerializer(serializers.ModelSerializer) :
     class Meta:
         model = Cuisines
-        field = (id,name,cuisine_id,url,recipe_count,quant_data)
+        field = (id,cuisine,name,url,recipe_count,quant_data)
 
 
  
