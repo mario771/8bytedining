@@ -13,9 +13,17 @@ def about (request) :
    context = RequestContext(request)
    return render_to_response('about.html',context)
 
-def model (request) :
+def recipe_model (request) :
   context = RequestContext(request)
-  return render_to_response('model.html',context)
+  return render_to_response('recipe_model.html',context)
+
+def ingredient_model (request) :
+  context = RequestContext(request)
+  return render_to_response('ingredient_model.html',context)
+
+def cuisine_model (request) :
+  context = RequestContext(request)
+  return render_to_response('cuisine_model.html',context)
 
 def recipe_page (request) :
    context = RequestContext(request)

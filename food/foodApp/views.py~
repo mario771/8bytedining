@@ -13,6 +13,10 @@ def about (request) :
    context = RequestContext(request)
    return render_to_response('about.html',context)
 
+def model (request) :
+  context = RequestContext(request)
+  return render_to_response('model.html',context)
+
 def recipe_page (request) :
    context = RequestContext(request)
    return render_to_response('recipe_page.html',context)
