@@ -7,8 +7,6 @@
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
     <link rel="shortcut icon" href="/static/foodApp/grid/assets/ico/favicon.png">
 
-    <title> Ingredients </title>
-
     <!-- Bootstrap core CSS -->
 
     <link href="/static/foodApp/grid/assets/css/bootstrap.css" rel="stylesheet">
@@ -44,9 +42,21 @@
       <script src="/static/foodApp/grid/assets/js/html5shiv.js"></script>
       <script src="/static/foodApp/grid/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Tab image -->
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i90732/icons8/windows-8/Food-Bunch-Ingredients.icoo">
+
+    <!-- AngularJS source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="static/foodApp/main.js"></script>
   </head>
 
-  <body>
+  <body ng-app="myApp">
+  <div ng-controller="IngredientController">
+
+    [[ ingredients[ingredient].name ]]
+
+    <title ng-controller="IngredientController"> [[ ingredients[ingredient].name ]] </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -84,7 +94,7 @@
 				<br>
 			</div><!-- /row -->
 	
-	<div id="service" style="background-image: url(img/fruitbanner.jpg)" >
+	<div id="service" style="background-image: url(/static/foodApp/img/fruitbanner.jpg)" >
 	 	<div class="container">
  			<div class="row centered">
  				<div class="col-md-4" style="width:33%" >
@@ -309,5 +319,9 @@
     });
    
     </script>
+
+    <!-- AngularJS source -->
+    <script src="static/foodApp/main.js"></script>
+  </div>
   </body>
 </html>
