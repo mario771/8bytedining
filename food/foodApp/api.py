@@ -1,5 +1,5 @@
 from .models import Recipes, Ingredients, Cuisines 
-from .serializers import RecipesSerializer, IngredientsSerializer, CuisineSerializers
+from .serializers import RecipesSerializer, IngredientsSerializer, CuisinesSerializers
 
 from django.http import Http404
 
