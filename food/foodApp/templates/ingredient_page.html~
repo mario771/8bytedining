@@ -85,7 +85,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">Red Bell Pepper</h1>
+				<h1 class="centered">[[ ingredients[ingredient].name ]]</h1>
 				<hr>
 				<br>
 				<br>
