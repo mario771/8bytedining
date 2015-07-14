@@ -17,18 +17,16 @@ app.controller('RecipeController', function($scope, $http, $location) {
 
 app.controller('CuisineController', function($scope, $http) {
 	//EMPTY
-	$http.get('/static/foodApp/cuisines_.json').then(function(res) {
+	$http.get('/static/foodApp/#.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
 });
-/*
+
 app.controller('IngredientController', function($scope, $http) {
-	//EMPTY
-	$http.get('/static/foodApp/Ingredients.json').then(function(res) {
+	$http.get('/static/foodApp/IngredientsData.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
 });
-*/
 
 
 

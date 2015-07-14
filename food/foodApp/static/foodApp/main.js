@@ -14,21 +14,23 @@ app.controller('RecipeController', function($scope, $http, $location) {
 		$scope.recipes = res.data;
 	});
 });
-/*
-app.controller('CuisineController', function($scope, $http) {
+
+app.controller('CuisineController', function($scope, $http, $location) {
+	$scope.cuisine = $location.search()["c"];
+
 	//EMPTY
-	$http.get('/static/foodApp/cuisines_.json').then(function(res) {
+	$http.get('/static/foodApp/#.json').then(function(res) {
 		$scope.cuisines = res.data;
 	});
 });
 
-app.controller('IngredientController', function($scope, $http) {
-	//EMPTY
-	$http.get('/static/foodApp/Ingredients.json').then(function(res) {
+app.controller('IngredientController', function($scope, $http, $location) {
+	$scope.ingredient = $location.search()["i"];
+
+	$http.get('/static/foodApp/IngredientsData.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
 });
-*/
 
 
 
