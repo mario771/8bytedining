@@ -95,6 +95,10 @@
 					<div class="col-lg-4">
 						<h2>Ingredients List</h2>
 						<ul>
+							<div ng-repeat="i in recipes[recipe].ingredients">
+							  <li> [[ i[1] ]] [[ i[0] ]] </li>
+							</div>
+<!--
 							<li > 4 garlic cloves </li>
 							<li > 1 1/2 tsp salt</li>
 							<li > 1 1/2 tsp whole black pepper </li>
@@ -109,6 +113,7 @@
 							<li > 1 onion </li>
 							<li > 2 garlic cloves </li>
 							<li > 6 sprigs fresh cilantro</li>
+-->
 						</ul>
 					</div>					
 				</div><!-- row -->

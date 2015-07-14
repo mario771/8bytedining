@@ -80,7 +80,7 @@
 				<br>
 				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
 				<hr>
-				<h2 class="centered"> <a href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
+				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -96,7 +96,7 @@
 						<h2>Ingredients List</h2>
 						<ul>
 							<div ng-repeat="i in recipes[recipe].ingredients">
-							  <li> [[ i[1] ]] [[ i[2] ]] </li>
+							  <li> [[ i[1] ]] <a ng-href="http://8bytedining.me/ingredients?i=[[ i[2] ]]"> [[ i[0] ]] </a> </li>
 							</div>
 <!--
 							<li > 4 garlic cloves </li>
