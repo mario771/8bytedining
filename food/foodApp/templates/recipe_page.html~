@@ -60,16 +60,16 @@
                 <a href="https://8bytedining.me" >Home </a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); > Recipes</a>
+                <a href="https://8bytedining.me/recipes/model" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); > Ingredients</a>
+                <a href="https://8bytedining.me/ingredients/model" onclick = $("#menu-close").click(); > Ingredients</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Cuisines</a>
+                <a href="https://8bytedining.me/cuisines/model" onclick = $("#menu-close").click(); >Cuisines</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="https://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>
