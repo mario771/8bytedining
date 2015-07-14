@@ -28,7 +28,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
     <script src="/static/foodApp/grid/assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/foodApp/grid/assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/modernizr.custom.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,11 +46,11 @@
   </head>
 
   <body ng-app="myApp">
-  <div ng-controller="RecipeController">
+    <div ng-controller="RecipeController">
 
-    Test: [[ recipes[recipe].name ]]
+      Test: [[ recipes[recipe].name ]]
 
-  </div>
+    </div>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
