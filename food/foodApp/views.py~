@@ -8,7 +8,7 @@ from rest_framework import generics
 def home(request):
    context = RequestContext(request)
    return render_to_response('8byte_splash.html',context)
-
+"""
 def CuisinesModel (request) :
    context = RequestContext(request)
    return render_to_response('CuisineModel.html',context)
@@ -40,7 +40,7 @@ def American (request) :
 def Italian (request) :
    context = RequestContext(request)
    return render_to_response('Italian.html',context)
-
+"""
 def About (request) :
    context = RequestContext(request)
    return render_to_response('about.html',context)
@@ -56,6 +56,12 @@ def Index2 (request) :
 def recipe_page (request) :
    context = RequestContext(request)
    return render_to_response('recipe_page.html',context)
+
+def cuisine_page (request) :
+   context = RequestContext(request)
+   return render_to_response('cuisine_page.html',context)
+
+
 
 <<<<<<< HEAD
 """
