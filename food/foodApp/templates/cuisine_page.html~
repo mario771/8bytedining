@@ -144,7 +144,7 @@
 
 						<ul>
 						  <div ng-repeat="i in cuisines[cuisine].ingredients">
-						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ i[1] ]]" target="_self"> [[ i[0] ]] </a> </li>
 						  </div>
 						</ul>
 
@@ -167,7 +167,7 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_recipies ]]</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_recipes ]]</h1>
 						<p>Number of Recipes</p>
 						<br>
 					</div>
@@ -179,7 +179,7 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.average_salt_content ]]%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.avg_salt ]]%</h1>
 						<p>Average Salt Content</p>
 						<br>
 					</div>
@@ -191,7 +191,7 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diversity ]]%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diveristy ]]%</h1>
 						<p>Diversity</p>
 						<br>
 					</div>
