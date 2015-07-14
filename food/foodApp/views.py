@@ -56,4 +56,18 @@ def Index2 (request) :
 def recipe_page (request) :
    context = RequestContext(request)
    return render_to_response('recipe_page.html',context)
+
+"""
+def recipes(request): 
+
+   #Implement try except block later  
+
+   context = RequestContext(request)
+   recipes = Recipes.objects.all.order_by('name')
+"""
+
+
+
+
+
                         
