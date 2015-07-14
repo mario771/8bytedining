@@ -32,22 +32,15 @@ def cuisine_page (request) :
 
 
 <<<<<<< HEAD
-"""
-def recipes(request): 
+
+#def recipes(request): 
 
    #Implement try except block later  
 
-   context = RequestContext(request)
-   recipes = Recipes.objects.all.order_by('name')
-"""
+ #  context = RequestContext(request)
+ #  recipes = Recipes.objects.all.order_by('name')
 
 
 
 
 
-=======
-def cuisine_page (request) :
-   context = RequestContext(request)
-   return render_to_response('cuisine_page.html',context)
->>>>>>> 8094ac19ed8fa4e37cee2f01b64ca9d06e1dee54
-                        
