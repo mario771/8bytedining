@@ -48,8 +48,6 @@
 
     <title ng-controller="RecipeController"> [[ recipes[recipe].name ]] </title>
 
-      Test: [[ recipes[recipe].name ]]
-
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -80,9 +78,9 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">BEEF FAJITAS</h1>
+				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
 				<hr>
-				<h2 class="centered"> <a href="https://youtube.com">Mexican Cuisine</a> </h2>
+				<h2 class="centered"> <a href="https://youtube.com">[[ recipes[recipe].cuisine ]]</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -92,7 +90,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 centered">
-						<img class="img-responsive" width = "350px" src="https://api.pearson.com/kitchen-manager/v1/images/full/beef_fajitas.jpg" align="left">
+						<img class="img-responsive" width = "350px" src="[[ recipes[recipe].img ]]" align="left">
 					</div>
 					<div class="col-lg-4">
 						<h2>Ingredients List</h2>
