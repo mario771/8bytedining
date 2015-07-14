@@ -84,7 +84,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">[[ cuisines[cuisine].name ]]</h1>
+				<h1 class="centered">[[ cuisines[cuisine].name ]] Cuisine</h1>
 				<hr>
 				<br>
 				<br>
@@ -185,13 +185,13 @@
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.popularity ]]%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.popularity | number: 2 ]]%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diveristy ]]%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diveristy | number: 2 ]]%</h1>
 						<p>Diversity</p>
 						<br>
 					</div>
