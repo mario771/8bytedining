@@ -57,19 +57,19 @@
                 <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me" target="self">Home </a>
+                <a ng-href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/recipes/model" target="self" onclick = $("#menu-close").click(); > Recipes</a>
+                <a ng-href="http://8bytedining.me/recipes/model" target="_self" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
-                <a href="http://8bytedining.me/ingredients/model" onclick = $("#menu-close").click(); > Ingredients</a>
+                <a ng-href="http://8bytedining.me/ingredients/model" target="_self" onclick = $("#menu-close").click(); > Ingredients</a>
             </li>
             <li>
-                <a href="http://8bytedining.me/cuisines/model" onclick = $("#menu-close").click(); >Cuisines</a>
+                <a ng-href="http://8bytedining.me/cuisines/model" target="_self" onclick = $("#menu-close").click(); >Cuisines</a>
             </li>
             <li>
-                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+                <a ng-href="http://8bytedining.me/about" target="_self" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>
@@ -80,7 +80,7 @@
 				<br>
 				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
 				<hr>
-				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
+				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]" target="_self">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -96,7 +96,7 @@
 						<h2>Ingredients List</h2>
 						<ul>
 							<div ng-repeat="i in recipes[recipe].ingredients">
-							  <li> [[ i[1] ]] <a ng-href="http://8bytedining.me/ingredients?i=[[ i[2] ]]"> [[ i[0] ]] </a> </li>
+							  <li> [[ i[1] ]] <a ng-href="http://8bytedining.me/ingredients?i=[[ i[2] ]]" target="_self"> [[ i[0] ]] </a> </li>
 							</div>
 						</ul>
 					</div>					
