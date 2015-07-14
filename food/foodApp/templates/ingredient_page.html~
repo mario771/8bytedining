@@ -44,7 +44,7 @@
     <![endif]-->
 
     <!-- Tab image -->
-    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i90732/icons8/windows-8/Food-Bunch-Ingredients.icoo">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i90732/icons8/windows-8/Food-Bunch-Ingredients.ico">
 
     <!-- AngularJS source -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
@@ -53,8 +53,6 @@
 
   <body ng-app="myApp">
   <div ng-controller="IngredientController">
-
-    [[ ingredients[ingredient].name ]]
 
     <title ng-controller="IngredientController"> [[ ingredients[ingredient].name ]] </title>
 
