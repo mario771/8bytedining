@@ -30,10 +30,6 @@ app.controller('IngredientController', function($scope, $http, $location) {
 	$http.get('/static/foodApp/IngredientsData.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
-
-	$scope.getRandomSpan = function() {
-		return Math.floor((Math.random()*(Object.keys(ingredients).lenth)+1);
-	}
 });
 
 

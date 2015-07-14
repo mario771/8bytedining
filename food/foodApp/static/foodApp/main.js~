@@ -13,10 +13,6 @@ app.controller('RecipeController', function($scope, $http, $location) {
 	$http.get('/static/foodApp/RecipeData.json').then(function(res) {
 		$scope.recipes = res.data;
 	});
-
-	$scope.passIn = function(input) {
-		$scope.example = input;
-	}
 });
 
 app.controller('CuisineController', function($scope, $http, $location) {
