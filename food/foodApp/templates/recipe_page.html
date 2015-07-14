@@ -7,8 +7,6 @@
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
     <link rel="shortcut icon" href="/static/foodApp/grid/assets/ico/favicon.png">
 
-    <title ng-controller="RecipeController"> [[ recipes[recipe].name ]] </title>
-
     <!-- Bootstrap core CSS -->
     <link href="/static/foodApp/grid/assets/css/bootstrap.css" rel="stylesheet">
 
@@ -46,11 +44,11 @@
   </head>
 
   <body ng-app="myApp">
-    <div ng-controller="RecipeController">
+  <div ng-controller="RecipeController">
+
+    <title ng-controller="RecipeController"> [[ recipes[recipe].name ]] </title>
 
       Test: [[ recipes[recipe].name ]]
-
-    </div>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -255,6 +253,6 @@
 
     <!-- AngularJS source -->
     <script src="static/foodApp/main.js"></script>
-  <!--</div>-->
+  </div>
   </body>
 </html>
