@@ -57,10 +57,10 @@
                 <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
             </li>
             <li>
-                <a href="http://8bytedining.me" >Home </a>
+                <a ng-href="http://8bytedining.me" target="self">Home </a>
             </li>
             <li>
-                <a href="http://8bytedining.me/recipes/model" onclick = $("#menu-close").click(); > Recipes</a>
+                <a ng-href="http://8bytedining.me/recipes/model" target="self" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
                 <a href="http://8bytedining.me/ingredients/model" onclick = $("#menu-close").click(); > Ingredients</a>
