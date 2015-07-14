@@ -84,7 +84,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">Mexican Cuisine</h1>
+				<h1 class="centered">[[ cuisines[cuisine].name ]]</h1>
 				<hr>
 				<br>
 				<br>
@@ -118,20 +118,9 @@
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="r in cuisines[cuisine].recipes">
+						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+						  </div>
 						</ul>
 
 						        </div>
@@ -154,20 +143,9 @@
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="i in cuisines[cuisine].ingredients">
+						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+						  </div>
 						</ul>
 
 						        </div>
@@ -189,32 +167,32 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">5</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_recipies ]]</h1>
 						<p>Number of Recipes</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">75</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_ingredients ]]</h1>
 						<p>Number of Ingredients</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">24%</h1>
-						<p>Diversity</p>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.average_salt_content ]]%</h1>
+						<p>Average Salt Content</p>
 						<br>
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">96%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.popularity ]]%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">100000%</h1>
-						<p>Average Salt Content</p>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diversity ]]%</h1>
+						<p>Diversity</p>
 						<br>
 					</div>
 

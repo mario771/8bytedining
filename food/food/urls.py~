@@ -17,9 +17,9 @@ urlpatterns = [
 
     url(r'^Index1$', views.Index1, name='Index1'),
     url(r'^Index2$', views.Index2, name='Index2'),
-    url(r'^recipe_page$', views.recipe_page, name='recipe_page'),
-    url(r'^ingredient_page$', views.ingredient_page, name='ingredient_page'),
-    url(r'^cuisine_page$', views.cuisine_page, name='cuisine_page'),
+    url(r'^recipes$', views.recipe_page, name='recipes'),
+    url(r'^ingredients$', views.ingredient_page, name='ingredients'),
+    url(r'^cuisines$', views.cuisine_page, name='cuisines'),
     
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
