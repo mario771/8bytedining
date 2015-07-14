@@ -49,10 +49,10 @@
                                 <a ng-href="http://8bytedining.me/recipes/model" target="_self"  class="btn btn-default btn-lg"> <span class="network-name">Recipes</span></a>
                             </li>
                             <li>
-                                <a ng-href="http://8bytedining.me/ingredients/model" target="_self"  class="btn btn-default btn-lg"> <span class="network-name">Ingredients</span></a>
+                                <a ng-href="http://8bytedining.me/cuisines/model" target="_self"  class="btn btn-default btn-lg"></i> <span class="network-name">Cuisines</span></a>
                             </li>
                             <li>
-                                <a ng-href="http://8bytedining.me/cuisines/model" target="_self"  class="btn btn-default btn-lg"></i> <span class="network-name">Cuisines</span></a>
+                                <a ng-href="http://8bytedining.me/ingredients/model" target="_self"  class="btn btn-default btn-lg"> <span class="network-name">Ingredients</span></a>
                             </li>
                         </ul>
                     </div>
