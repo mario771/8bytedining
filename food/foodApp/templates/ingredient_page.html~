@@ -127,20 +127,9 @@
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="r in ingredients[ingredient].recipes">
+							<li > <a ng-href="http://8bytedining/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+						  </div>
 						</ul>
 
 						        </div>
