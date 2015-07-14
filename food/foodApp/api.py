@@ -15,7 +15,7 @@ class RecipeList(APIView):
 
 class RecipeDetail(APIView): 
   
-   def get_object(self,pk)
+   def get_object(self,pk):
       try:
          return Recipes.objects.get(pk=pk)
       except Recipes.DoesNotExist :  
