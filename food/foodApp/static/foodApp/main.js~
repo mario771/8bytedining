@@ -13,6 +13,10 @@ app.controller('RecipeController', function($scope, $http, $location) {
 	$http.get('/static/foodApp/RecipeData.json').then(function(res) {
 		$scope.recipes = res.data;
 	});
+
+	$scope.passIn = function(input) {
+		$scope.example = input;
+	}
 });
 
 app.controller('CuisineController', function($scope, $http, $location) {
@@ -30,6 +34,10 @@ app.controller('IngredientController', function($scope, $http, $location) {
 	$http.get('/static/foodApp/IngredientsData.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
+
+	$scope.getRandomSpan = function() {
+		return Math.floor((Math.random()*(Object.keys(ingredients).lenth)+1);
+	}
 });
 
 
