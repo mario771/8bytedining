@@ -41,14 +41,18 @@
     <![endif]-->
 
     <!-- Tab image -->
-    <link rel="shortcut icon" href="">
+    <!-- TODO: find image
+    <link rel="shortcut icon" href=""> -->
 
     <!-- AngularJS source -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="static/foodApp/main.js"></script>
   </head>
 
-  <body>
+  <body ng-app="myApp">
+  <div ng-controller="CuisineController">
+
+    <title ng-controller="CuisineController"> [[ cuisines[cuisine].name ]] </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>

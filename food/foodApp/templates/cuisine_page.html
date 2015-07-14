@@ -49,7 +49,10 @@
     <script src="static/foodApp/main.js"></script>
   </head>
 
-  <body>
+  <body ng-app="myApp">
+  <div ng-controller="CuisineController">
+
+    <title ng-controller="CuisineController"> [[ cuisines[cuisine].name ]] </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
