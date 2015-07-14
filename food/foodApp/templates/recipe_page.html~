@@ -80,7 +80,7 @@
 				<br>
 				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
 				<hr>
-				<h2 class="centered"> <a href="https://youtube.com">[[ recipes[recipe].cuisine[0] ]]</a> </h2>
+				<h2 class="centered"> <a href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -113,8 +113,8 @@
 					</div>					
 				</div><!-- row -->
 			</div>
-			<h3 style="margin-left:50px"> Yields/Serves: 6 </h2>
-			<h3 style="margin-left:50px"> Cost: $ 100</h2>
+			<h3 style="margin-left:50px"> Yields/Serves: [[ recipes[recipe].quant_data.yields </h2>
+			<h3 style="margin-left:50px"> Cost: $ [[ recipes[recipe].quant_data.price </h2>
 			<br> 
 			<br>
 		</div>
