@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
-    <link rel="shortcut icon" href="/static/foodApp/grid/assets/ico/favicon.png">
-
-    <title> Cuisine </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -42,6 +39,13 @@
       <script src="/static/foodApp/grid/assets/js/html5shiv.js"></script>
       <script src="/static/foodApp/grid/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Tab image -->
+    <link rel="shortcut icon" href="">
+
+    <!-- AngularJS source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="static/foodApp/main.js"></script>
   </head>
 
   <body>
