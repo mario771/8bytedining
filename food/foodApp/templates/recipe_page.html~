@@ -80,7 +80,7 @@
 				<br>
 				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
 				<hr>
-				<h2 class="centered"> <a href="https://youtube.com">[[ recipes[recipe].cuisine ]]</a> </h2>
+				<h2 class="centered"> <a href="https://youtube.com">[[ recipes[recipe].cuisine[0] ]]</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -90,7 +90,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 centered">
-						<img class="img-responsive" width = "350px" src="https://api.pearson.com/kitchen-manager/v1/images/full/beef_fajitas.jpg" align="left">
+						<img class="img-responsive" width = "350px" src="[[ recipes[recipe].img ]]" align="left">
 					</div>
 					<div class="col-lg-4">
 						<h2>Ingredients List</h2>
