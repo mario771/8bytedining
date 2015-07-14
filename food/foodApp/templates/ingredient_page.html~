@@ -249,7 +249,7 @@
 				<div class="col-md-4 " style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio01.jpg" alt="">
+							<img class="img-responsive" src="" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
@@ -262,7 +262,7 @@
 				<div class="col-md-4"style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio02.jpg" alt="">
+							<img class="img-responsive" src="" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
@@ -275,7 +275,7 @@
 				<div class="col-md-4"style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio03.jpg" alt="">
+							<img class="img-responsive" src="" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"> <a href="#">Link to Recipe Page</a></a>
