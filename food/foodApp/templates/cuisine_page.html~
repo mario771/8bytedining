@@ -179,7 +179,7 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.avg_salt ]]%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.avg_salt ]]</h1>
 						<p>Average Salt Content</p>
 						<br>
 					</div>
