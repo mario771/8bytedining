@@ -286,5 +286,8 @@
     });
    
     </script>
+
+    <!-- AngularJS source -->
+    <script src="static/foodApp/main.js"></script>
   </body>
 </html>
