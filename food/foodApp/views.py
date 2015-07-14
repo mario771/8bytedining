@@ -57,6 +57,7 @@ def recipe_page (request) :
    context = RequestContext(request)
    return render_to_response('recipe_page.html',context)
 
+<<<<<<< HEAD
 """
 def recipes(request): 
 
@@ -70,4 +71,9 @@ def recipes(request):
 
 
 
+=======
+def cuisine_page (request) :
+   context = RequestContext(request)
+   return render_to_response('cuisine_page.html',context)
+>>>>>>> 8094ac19ed8fa4e37cee2f01b64ca9d06e1dee54
                         

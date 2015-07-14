@@ -21,10 +21,14 @@ app.controller('CuisineController', function($scope, $http) {
 		$scope.cuisines = res.data;
 	});
 });
-
+/*
 app.controller('IngredientController', function($scope, $http) {
 	//EMPTY
 	$http.get('/static/foodApp/Ingredients.json').then(function(res) {
 		$scope.ingredients = res.data;
 	});
 });
+*/
+
+
+
