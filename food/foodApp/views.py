@@ -108,7 +108,7 @@ def cuisines(request) :
        context_dict[cuisine.id_cusine] = cuisine_dict
 
    
-   return render_to_response('cuisine_page.html',{'d':context_dict}, context)
+   return render_to_response('cuisine_model.html',{'d':context_dict}, context)
 
 
      
