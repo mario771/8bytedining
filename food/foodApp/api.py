@@ -9,7 +9,7 @@ from rest_framework.response import Response
 class RecipeList(APIView): 
 
    def get(self,request,format=None):
-      recipes = Recipes.objects.filter(active=True)
+      recipes = Recipes.objects.filter()
       serialized_recipes = RecipesSerializer(recipes,many=True)
       return Response(serialized_recipes.data)
 

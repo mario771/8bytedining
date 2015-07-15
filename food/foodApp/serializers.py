@@ -13,7 +13,7 @@ class RecipesSerializer(serializers.ModelSerializer) :
            'ingredients',
            'img',
            'nut_info',
-           'quant_dat'
+           'quant_data'
             )
 
 class IngredientsSerializer(serializers.ModelSerializer) : 
