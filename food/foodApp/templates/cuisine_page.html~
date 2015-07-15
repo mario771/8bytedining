@@ -41,14 +41,18 @@
     <![endif]-->
 
     <!-- Tab image -->
-    <link rel="shortcut icon" href="">
+    <!-- TODO: find image
+    <link rel="shortcut icon" href=""> -->
 
     <!-- AngularJS source -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="static/foodApp/main.js"></script>
   </head>
 
-  <body>
+  <body ng-app="myApp">
+  <div ng-controller="CuisineController">
+
+    <title ng-controller="CuisineController"> [[ cuisines[cuisine].name ]] </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -80,7 +84,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">Mexican Cuisine</h1>
+				<h1 class="centered">[[ cuisines[cuisine].name ]] Cuisine</h1>
 				<hr>
 				<br>
 				<br>
@@ -114,20 +118,9 @@
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="r in cuisines[cuisine].recipes">
+						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
+						  </div>
 						</ul>
 
 						        </div>
@@ -150,20 +143,9 @@
 						        <div class="modal-body">
 
 						<ul>
-							<li > 4 garlic cloves </li>
-							<li > 1 1/2 tsp salt</li>
-							<li > 1 1/2 tsp whole black pepper </li>
-							<li > 1 1/2 tsp ground cumin </li>
-							<li > 1 1/2 tsp onion powder </li>
-							<li > 1 1/2 tsp chili powder </li>
-							<li > 2 lb beef skirt steak </li>
-							<li > 2 tbl vegetable oil</li>
-							<li > 1 red bell pepper </li>
-							<li > 1 yellow bell pepper</li>
-							<li > 1 green bell pepper </li>
-							<li > 1 onion </li>
-							<li > 2 garlic cloves </li>
-							<li > 6 sprigs fresh cilantro</li>
+						  <div ng-repeat="i in cuisines[cuisine].ingredients">
+						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ i[1] ]]" target="_self"> [[ i[0] ]] </a> </li>
+						  </div>
 						</ul>
 
 						        </div>
@@ -185,32 +167,32 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">5</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_recipes ]]</h1>
 						<p>Number of Recipes</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">75</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_ingredients ]]</h1>
 						<p>Number of Ingredients</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">24%</h1>
-						<p>Diversity</p>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.avg_salt ]]</h1>
+						<p>Average Salt Content</p>
 						<br>
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">96%</h1>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.popularity | number: 2 ]]%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">100000%</h1>
-						<p>Average Salt Content</p>
+						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diveristy | number: 2 ]]%</h1>
+						<p>Diversity</p>
 						<br>
 					</div>
 
@@ -237,7 +219,7 @@
 				<div class="col-md-4 " style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio01.jpg" alt="">
+							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
@@ -250,7 +232,7 @@
 				<div class="col-md-4"style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio02.jpg" alt="">
+							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
@@ -263,7 +245,7 @@
 				<div class="col-md-4"style="width:33%">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/static/foodApp/grid/assets/img/portfolio/folio03.jpg" alt="">
+							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
 							<figcaption>
 								<h5>Recipe Name</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"> <a href="#">Link to Recipe Page</a></a>
@@ -304,5 +286,8 @@
     });
    
     </script>
+
+    <!-- AngularJS source -->
+    <script src="static/foodApp/main.js"></script>
   </body>
 </html>

@@ -13,20 +13,6 @@ def about (request) :
    context = RequestContext(request)
    return render_to_response('about.html',context)
 
-"""
-def recipe_page (request) :
-   context = RequestContext(request)
-   return render_to_response('recipe_page.html',context)
-
-def ingredient_page (request) :
-   context = RequestContext(request)
-   return render_to_response('ingredient_page.html',context)
-
-def cuisine_page (request) :
-   context = RequestContext(request)
-   return render_to_response('cuisine_page.html',context)
-"""
-
 def recipes(request) : 
    context = RequestContext(request)
    recipes = Recipes.objects.all()
@@ -41,10 +27,9 @@ def recipes(request) :
      
    return render_to_response('recipes.html', context_dict, context)
 
-
    
 def recipe(request, r_name):
-# nut_info, quant_data
+
    context = RequestContext(request)
    recipe = Recipes.objects.get(recipe_id=r_name)
    recipe_dict = {}
@@ -73,13 +58,19 @@ def ingredients(request) :
      'wow_urls' : z
      }
    
-def ingredient(request, r_name):
+def ingredient(request, i_name):
+
    context = RequestContext(request)
-   ingredient = Country.objects.get(ingredient_id=r_name)
+   ingredient = Ingredients.objects.get(ing_id=i_name)
+   
+   ingredient_dict = {}
+   ingredient_dict['ing_id'] =  ingredient.ing_id
+   ingredient_dict['name'] = ingredient.name
+   ingredient_dict['quant_data'] = eval(ingredient.quant_data)
+   ingredient_dict['nut_info'] = eval(ingredient.nut_info)
 
- #  return render_to_response('ingredients.html', context_dict, context)
-   return render_to_response('ingredients.html', context_dict, context)
-
+   return render_to_response('ingredient_page.html',{'d':ingredient_dict}, context)
+   
 
 def cuisines(request) : 
    context = RequestContext(request)
@@ -93,10 +84,19 @@ def cuisines(request) :
      'title': 'Cuisines',
      'wow_urls' : z
      }
+
+   
    
 def cuisine(request, c_name):
-   context = RequestContext(request)
-   cuisine = Country.objects.get(cuisine_id=c_name)
 
- #  return render_to_response('cuisines.html', context_dict, context)
-   return render_to_response('cuisines.html', context_dict, context)
+   context = RequestContext(request)
+   cuisine = Cuisines.objects.get(id_cuisine=c_name)
+  
+   cuisine_dict = {}
+   cuisine_dict['id_cuisine'] = cuisine.id_cuisine
+   cuisine_dict['name'] = cuisine.name
+   cuisine_dict['url'] = cuisine.url
+   cuisine_dict['quant_data'] = eval(cuisine.quant_data)
+
+
+   return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
