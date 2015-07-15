@@ -96,7 +96,7 @@
 						<h2>Ingredients List</h2>
 						<ul>
 						  {% for key, value in d.ingredients %}
-						      <li> {{ key }} {{ value.1 }} <a href="http://8bytedining.me/ingredients/{{ value.2 }}"> {{ value.0 }} </a>
+						      <li> {{ key }} {{ value }} - {{ value.1 }} <a href="http://8bytedining.me/ingredients/{{ value.2 }}"> {{ value.0 }} </a>
                                                       </li>
 						  {% endfor %}
 						</ul>
