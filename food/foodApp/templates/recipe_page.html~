@@ -46,7 +46,7 @@
   <body ng-app="myApp">
   <div ng-controller="RecipeController">
 
-    <title ng-controller="RecipeController"> [[ recipes[recipe].name ]] </title>
+    <title ng-controller="RecipeController"> {{ d.name }} </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -60,13 +60,13 @@
                 <a ng-href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/recipes/model" target="_self" onclick = $("#menu-close").click(); > Recipes</a>
+                <a ng-href="http://8bytedining.me/recipes" target="_self" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/ingredients/model" target="_self" onclick = $("#menu-close").click(); > Ingredients</a>
+                <a ng-href="http://8bytedining.me/ingredients" target="_self" onclick = $("#menu-close").click(); > Ingredients</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/cuisines/model" target="_self" onclick = $("#menu-close").click(); >Cuisines</a>
+                <a ng-href="http://8bytedining.me/cuisines" target="_self" onclick = $("#menu-close").click(); >Cuisines</a>
             </li>
             <li>
                 <a ng-href="http://8bytedining.me/about" target="_self" onclick = $("#menu-close").click(); >About</a>
@@ -79,9 +79,8 @@
 			<div class="row">
 				<br>
 				<h1 class="centered">{{ d.name }}</h1>
-				<!--<h1 class="centered">[[ recipes[recipe].name ]]</h1>-->
 				<hr>
-				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]" target="_self">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
+				<h2 class="centered"> <a href="http://8bytedining.me/cuisines/{{ d.cuisine[1] }}" target="_self">{{ d.cuisine[0] }} Cuisine</a> </h2>
 				<br>
 				<br>
 			</div><!-- /row -->
