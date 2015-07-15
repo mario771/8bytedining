@@ -62,7 +62,7 @@ def ingredients(request) :
   
    for ingredient in ingredients :
       ingredient_dict = {}
-      ingredient_dict['ing_id'] =  ingredient.ing_id
+      ingredient_dict['id'] =  ingredient.ing_id
       ingredient_dict['name'] = ingredient.name
       ingredient_dict['quant_data'] = eval(ingredient.quant_data)
       ingredient_dict['nut_info'] = eval(ingredient.nut_info)
@@ -81,7 +81,7 @@ def ingredient(request, i_name):
    ingredient = Ingredients.objects.get(ing_id=i_name)
    
    ingredient_dict = {}
-   ingredient_dict['ing_id'] =  ingredient.ing_id
+   ingredient_dict['id'] =  ingredient.ing_id
    ingredient_dict['name'] = ingredient.name
    ingredient_dict['quant_data'] = eval(ingredient.quant_data)
    ingredient_dict['nut_info'] = eval(ingredient.nut_info)
@@ -98,7 +98,7 @@ def cuisines(request) :
 
    for cuisine in cuisines: 
        cuisine_dict = {}
-       cuisine_dict['id_cuisine'] = cuisine.id_cusine
+       cuisine_dict['id'] = cuisine.id_cusine
        cuisine_dict['name'] = cuisine.name
        cuisine_dict['url'] = cuisine.url
        cuisine_dict['quant_data'] = eval(cuisine.quant_data)
@@ -118,7 +118,7 @@ def cuisine(request, c_name):
    cuisine = Cuisines.objects.get(id_cusine=c_name)
   
    cuisine_dict = {}
-   cuisine_dict['id_cuisine'] = cuisine.id_cusine
+   cuisine_dict['id'] = cuisine.id_cusine
    cuisine_dict['name'] = cuisine.name
    cuisine_dict['url'] = cuisine.url
    cuisine_dict['quant_data'] = eval(cuisine.quant_data)
