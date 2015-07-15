@@ -72,9 +72,9 @@
         <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 25px; margin-right: 25px ; margin-bottom: 100px">
           <tr>
             <th style="color:black; text-align:center">Name</th>
-            <th style="color:black; text-align:center">Recipe Count</th>
+            <th style="color:black; text-align:center">Number of Recipes </th>
             <th style="color:black; text-align:center">Popularity - ranking versus other cuisines in terms of number of recipes</th>
-            <th style="color:black; text-align:center">Ingredient Count</th>
+            <th style="color:black; text-align:center">Number of Ingredients</th>
             <th style="color:black; text-align:center">Diversity - ranking versus other cuisines in terms of number of ingredients</th>
             <th style="color:black; text-align:center">Average Salt</th>
           </tr>
