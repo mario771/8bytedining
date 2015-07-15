@@ -95,8 +95,8 @@
 					<div class="col-lg-4">
 						<h2>Ingredients List</h2>
 						<ul>
-						  {% for i in d.ingredients %}
-						      <li> {{ i }} <a href="http://8bytedining.me/ingredients/{{ i }}"> {{ i }} </a>
+						  {% for i in d.ingredients.items %}
+						      <li> {{ i[1] }} <a href="http://8bytedining.me/ingredients/{{ i[2] }}"> {{ i[0] }} </a>
                                                       </li>
 						  {% endfor %}
 						</ul>
