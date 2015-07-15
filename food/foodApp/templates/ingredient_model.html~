@@ -3,6 +3,7 @@
   <head>
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
      <link href="grid/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
 
           <!-- cuisine --><link href="cuisines/assets/css/bootstrap.css" rel="stylesheet">
           <!-- quant_data <link href="assets/css/bootstrap.css" rel="stylesheet">-->
@@ -69,7 +70,7 @@
 
       <title> Ingredient Model </title>
 
-      <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: auto; margin-right: auto; margin-bottom: 100px;">
+      <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: auto; margin-right: auto; margin-bottom: 100px; text-align: center">
 
           <tr>
             <th style="color:black; text-align:center">Name</th>
@@ -80,7 +81,7 @@
             <th style="color:black; text-align:center">Calories (kcal per 100g)</th>
 	  {% for i,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ i.id }}"> {{ i.name }} </a> </td>
+            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ v.id }}"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
