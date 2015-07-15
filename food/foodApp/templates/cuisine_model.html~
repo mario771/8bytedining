@@ -73,19 +73,19 @@
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Recipe Count</th>
-            <th style="color:black; text-align:center">Popularity - ranking versus other cuisines in terms of number of recipes</th>
+            <th style="color:black; text-align:center">Popularity (occurance in recipes)</th>
             <th style="color:black; text-align:center">Ingredient Count</th>
-            <th style="color:black; text-align:center">Diversity - ranking versus other cuisines in terms of number of ingredients</th>
+            <th style="color:black; text-align:center">Diversity (ocurance in ingredients)</th>
             <th style="color:black; text-align:center">Average Salt (g per 100g)</th>
           </tr>
 	  {% for c,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a href="http://8bytedining.me/cuisines/{{ v.id }}"> {{ v.name }} </a> </td>
+            <td style= "font-size: 14px"> <a href="http://8bytedining.me/cuisines/{{ v.id_cusine }}"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.popularity|floatformat:"-2" }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.avg_salt }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.avg_salt|floatformat:"-2" }} </td>
           </tr>
 	  {% endfor %}
         </table>

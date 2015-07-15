@@ -80,10 +80,10 @@
             <th style="color:black; text-align:center">Calories (kcal per 100g)</th>
 	  {% for i,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a href="http://8bytedining.me/cuisines/{{ v.id }}"> {{ v.name }} </a> </td>
+            <td style= "font-size: 14px"> <a href="http://8bytedining.me/ingredients/{{ v.id }}"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.popularity|floatformat:"-2" }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_cuisines }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.diveristy|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.calories_per_100g }} </td>
           </tr>
