@@ -1,6 +1,6 @@
 <!doctype html>
-<html ng-app="myApp">
-  <head ng-app="myApp">
+<html>
+  <head>
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
      <link href="grid/assets/css/bootstrap.css" rel="stylesheet">
 
@@ -25,15 +25,12 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="js/main.js"></script>
-
                   <script src="grid/assets/js/jquery.min.js"></script>
                   <script type="text/javascript" src="grid/assets/js/modernizr.custom.js"></script>
 
   </head>
 
-  <body ng-app="myApp" style="background-image:url(http://images.123hdwallpapers.com/20150706/wheat-field-golden-nature-1920x1200.jpg)">
+  <body style="background-image:url(http://images.123hdwallpapers.com/20150706/wheat-field-golden-nature-1920x1200.jpg)">
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -70,8 +67,6 @@
         <br>
       </div><!-- /row -->
 
-    <div ng-controller = "IngredientController">
-
       <title> Ingredient Model </title>
 
       <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: auto; margin-right: auto; margin-bottom: 100px;">
@@ -79,24 +74,21 @@
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Recipe Count</th>
-            <th style="color:black; text-align:center">Cuisine</th>
-            <th style="color:black; text-align:center">Recipes</th>
-
+            <th style="color:black; text-align:center">Popularity - ranking versus other ingredients in terms of number of recipes that use this ingredient</th>
+            <th style="color:black; text-align:center">Cuisine Count</th>
+            <th style="color:black; text-align:center">Diversity - ranking versus other ingredients in terms of number of cuisines that use this ingredient</th>
+            <th style="color:black; text-align:center">Calories</th>
+	  {% for c,v in d.items %}
+	  <tr>
+            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ c.name }}.html"> {{ c.name }} </a> </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.popularity|floatformat:"-2" }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.calories_per_100g }} </td>
           </tr>
-          <tr ng-repeat="(ingredient, attrs) in imodels">
-            <td style= "font-size: 14px"> <a ng-href="{[{ ingredient }]}.html"> {[{ ingredient }]} </a> </td>
-            <td style= "font-size: 14px; color:black"> {[{ attrs["recipe_count"] }]} </td>
-            <td style= "font-size: 14px; color:black"> {[{ attrs["cuisine"] }]} </td>
-            <td style= "font-size: 14px; color:black"> {[{ attrs["recipes"] }]} </td>
-            </div>
-          </tr>
+	  {% endfor %}
         </table>
-
-    </div>
-
-    <!-- Modules -->
-    <script src="js/main.js"></script>
-    <script src="js/sorttable.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -125,9 +117,6 @@
     });
    
     </script>
-
-    <!-- Controllers -->
-    <!-- default -->
 
   </body>
 </html>
