@@ -69,6 +69,8 @@ def ingredient(request, i_name):
    ingredient_dict['name'] = ingredient.name
    ingredient_dict['quant_data'] = eval(ingredient.quant_data)
    ingredient_dict['nut_info'] = eval(ingredient.nut_info)
+   ingredient_dict["recipes"] = eval(ingredient.all_recipes)
+   ingredient_dict["cuisines"] = eval(ingredient.all_cuisines)
 
    return render_to_response('ingredient_page.html',{'d':ingredient_dict}, context)
    
