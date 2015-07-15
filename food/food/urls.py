@@ -22,16 +22,14 @@ urlpatterns = [
     url(r'^recipes/model/$', views.recipes, name='recipes'),
     
     #Ingredients 
-    url(r'^ingredients/(?P<r_name>\w+)/$', views.ingredient, name='ingredient'),
+    url(r'^ingredients/(?P<i_name>[-\w]+)/$', views.ingredient, name='ingredient'),
     url(r'^ingredients/model/$', views.ingredients, name='ingredients'),
    
     #Cuisine 
-    url(r'^cuisines/(?P<r_name>\w+)/$', views.cuisine, name='cuisine'),
+    url(r'^cuisines/(?P<c_name>[-\w]+)/$', views.cuisine, name='cuisine'),
     url(r'^cuisines/model/$', views.cuisines, name='cuisines'),
     
     
-   
-
     #API URLs
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
