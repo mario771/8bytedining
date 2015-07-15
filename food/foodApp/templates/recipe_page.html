@@ -37,14 +37,9 @@
     <!-- Tab image -->
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
 
-    <!-- AngularJS source -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="static/foodApp/main.js"></script>
-
   </head>
 
-  <body ng-app="myApp">
-  <div ng-controller="RecipeController">
+  <body>
 
     <title ng-controller="RecipeController"> {{ d.name }} </title>
 
@@ -57,19 +52,19 @@
                 <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me" target="_self">Home </a>
+                <a href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/recipes" target="_self" onclick = $("#menu-close").click(); > Recipes</a>
+                <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/ingredients" target="_self" onclick = $("#menu-close").click(); > Ingredients</a>
+                <a href="http://8bytedining.me/ingredients" onclick = $("#menu-close").click(); > Ingredients</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/cuisines" target="_self" onclick = $("#menu-close").click(); >Cuisines</a>
+                <a href="http://8bytedining.me/cuisines" onclick = $("#menu-close").click(); >Cuisines</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/about" target="_self" onclick = $("#menu-close").click(); >About</a>
+                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>
@@ -181,9 +176,5 @@
     });
    
     </script>
-
-    <!-- AngularJS source -->
-    <script src="static/foodApp/main.js"></script>
-  </div>
   </body>
 </html>

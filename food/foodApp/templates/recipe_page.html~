@@ -37,14 +37,9 @@
     <!-- Tab image -->
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
 
-    <!-- AngularJS source -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="static/foodApp/main.js"></script>
-
   </head>
 
-  <body ng-app="myApp">
-  <div ng-controller="RecipeController">
+  <body>
 
     <title ng-controller="RecipeController"> {{ d.name }} </title>
 
@@ -134,7 +129,7 @@
 						        <div class="modal-body">
 
 				<table border = 5px>
-				  {% for n,v in d.nut_info %}
+				  {% for n,v in d.nut_info.items %}
 					<tr>
 					  <td style= "font-size: 14px"> {{ n }} </td>
 					  <td style= "font-size: 14px"> {{ v }} </td>
@@ -181,9 +176,5 @@
     });
    
     </script>
-
-    <!-- AngularJS source -->
-    <script src="static/foodApp/main.js"></script>
-  </div>
   </body>
 </html>
