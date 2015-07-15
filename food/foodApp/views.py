@@ -36,12 +36,12 @@ def recipe(request, r_name):
    recipe_dict['name'] = recipe.name
    recipe_dict['id'] = recipe.recipe_id
    
-   recipe_dict['cuisine'] = recipe.cuisine
+   recipe_dict['cuisine'] = eval(recipe.cuisine_ori)
    recipe_dict['img'] = recipe.img
    recipe_dict['quant_data'] = eval(recipe.quant_data)
    recipe_dict['directions'] = recipe.directions
    recipe_dict['ingredients'] = eval(recipe.ingredient_amount)
-
+ 
  #  return render_to_response('recipes.html', context_dict, context)
    return render_to_response('recipe_page.html', {'d': recipe_dict}, context)
 
@@ -85,7 +85,7 @@ def cuisines(request) :
      'wow_urls' : z
      }
 
-   
+    
    
 def cuisine(request, c_name):
 
