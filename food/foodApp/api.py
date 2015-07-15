@@ -21,7 +21,7 @@ class RecipeDetail(APIView):
       except Recipes.DoesNotExist :  
          raise Http404
 
-   def get(self):
+   def get(self,request,pk,format=None):
 
       recipe = self.get_object(self,pk)
       serialized_recipe = RecipesSerializer(recipe)
