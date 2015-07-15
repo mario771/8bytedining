@@ -51,21 +51,29 @@ def recipe(request, r_name):
    recipe_dict['directions'] = recipe.directions
    recipe_dict['ingredients'] = eval(recipe.ingredient_amount)
    recipe_dict['nut_info'] = eval(recipe.nut_info) 
- #  return render_to_response('recipes.html', context_dict, context)
+ 
    return render_to_response('recipe_page.html', {'d': recipe_dict}, context)
 
 def ingredients(request) : 
    context = RequestContext(request)
    ingredients = Ingredients.objects.all()
    
-   rlist = [r.ingredient_id for r in ingredients ]
-   z = zip(ingredients,rlist)
+   context_dict = {}
+  
+   for ingredient in ingredients :
+      ingredient_dict = {}
+      ingredient_dict['ing_id'] =  ingredient.ing_id
+      ingredient_dict['name'] = ingredient.name
+      ingredient_dict['quant_data'] = eval(ingredient.quant_data)
+      ingredient_dict['nut_info'] = eval(ingredient.nut_info)
+      ingredient_dict['recipes'] = eval(ingredient.all_recipes)
+      ingredient_dict['cuisines'] = eval(ingredient.all_cuisines)
+ 
+      context_dict[ingredient.ing_id] = ingredient_dict
+ 
+   return render_to_response('ingredient_model.html',{'d': context_dict}, context)
 
-  # ingredients = Ingredients.objects.raw('SELECT * FROM "foodApp_ingredients"')
-   context_dict = {
-     'title': 'Ingredients',
-     'wow_urls' : z
-     }
+  
    
 def ingredient(request, i_name):
 
@@ -96,8 +104,7 @@ def cuisines(request) :
      'wow_urls' : z
      }
 
-    
-   
+     
 def cuisine(request, c_name):
 
    context = RequestContext(request)
