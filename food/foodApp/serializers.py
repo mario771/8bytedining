@@ -33,8 +33,8 @@ class CuisinesSerializer(serializers.ModelSerializer) :
         fields = (
             'id',
             'id_cusine',
-            'name
-             ,url',
+            'name',
+             url',
             'ingr',
             'quant_data'
             )
