@@ -47,7 +47,7 @@
 
   <body>
 
-    <title > {{ d.name ]}} </title>
+    <title > {{ d.name }} </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -79,7 +79,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">[[ cuisines[cuisine].name ]] Cuisine</h1>
+				<h1 class="centered">{{ d.name }} Cuisine</h1>
 				<hr>
 				<br>
 				<br>
@@ -113,9 +113,9 @@
 						        <div class="modal-body">
 
 						<ul>
-						  <div ng-repeat="r in cuisines[cuisine].recipes">
-						    <li > <a ng-href="http://8bytedining.me/recipes?r=[[ r[1] ]]" target="_self"> [[ r[0] ]] </a> </li>
-						  </div>
+						  {% for n,r in d.recipes %}
+						    <li > <a href="http://8bytedining.me/recipes/{{ r.1 }}"> {{ r.0 }} </a> </li>
+						  {% endfor %}
 						</ul>
 
 						        </div>
@@ -138,9 +138,9 @@
 						        <div class="modal-body">
 
 						<ul>
-						  <div ng-repeat="i in cuisines[cuisine].ingredients">
-						    <li > <a ng-href="http://8bytedining.me/ingredients?i=[[ i[1] ]]" target="_self"> [[ i[0] ]] </a> </li>
-						  </div>
+						  {% for n,i in d.ingredients %}
+						    <li > <a href="http://8bytedining.me/ingredients/{{ i.1 }}"> {{ i.0 }} </a> </li>
+						  {% endfor %}
 						</ul>
 
 						        </div>
@@ -162,31 +162,31 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_recipes ]]</h1>
+						<h1 style="color:white">{{ d.quant_data.number_of_recipes }}</h1>
 						<p>Number of Recipes</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.number_of_ingredients ]]</h1>
+						<h1 style="color:white">{{ d.quant_data.number_of_ingredients }}</h1>
 						<p>Number of Ingredients</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.avg_salt ]]</h1>
+						<h1 style="color:white">{{ d.quant_data.avg_salt }}</h1>
 						<p>Average Salt Content</p>
 						<br>
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.popularity | number: 2 ]]%</h1>
+						<h1 style="color:white">{{ d.quant_data.popularity | floatformat: "2" }}%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">[[ cuisines[cuisine].quant_data.diveristy | number: 2 ]]%</h1>
+						<h1 style="color:white">{{ d.quant_data.diveristy | floatformat: "2" }}%</h1>
 						<p>Diversity</p>
 						<br>
 					</div>
