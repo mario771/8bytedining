@@ -1,0 +1,58 @@
+[
+{
+"fields":
+   {
+   "model": "foodApp.nut_info"
+   "fields": 
+      {"calories from fat": "3.6 kcal per 100g ",
+       "iron": "1.47 mg per 100g ",
+       "protein": "5.42 g per 100g ",
+       "calories": "81.0 kcal per 100g ",
+       "vitamin c": "40.0 mg per 100g ",
+       "vitamin a": "765.0 IU per 100g ",
+       "sodium": "5.0 mg per 100g ",
+       "fat": "0.4 g per 100g ",
+       "calcium": "25.0 mg per 100g ",
+       "cholesterol": "0.0 mg per 100g ",
+       "trans fat": "0.0 g per 100g ",
+       "saturated fat": "0.071 g per 100g ",
+       "carbohydrates": "14.45 g per 100g "},
+    "quant_data": 
+       "{"diveristy": 3.0303030303030303,
+       "calories_per_100g": "81.0 kcal per 100g ",
+       "popularity": 0.2,
+       "number_of_cuisines": 1,
+       "number_of_recipes": 1}",
+    "name": "green peas",
+    "ing_id": "peas-green"
+    },
+ "model": "foodApp.Ingredients",
+ "pk": "peas-green"},
+{
+"fields":
+   {"nut_info": 
+      "{"calories from fat": "1.71 kcal per 100g ",
+       "iron": "0.21 mg per 100g ",
+       "protein": "0.84 g per 100g ",
+       "calories": "34.0 kcal per 100g ",
+       "vitamin c": "36.7 mg per 100g ",
+       "vitamin a": "3382.0 IU per 100g ",
+       "sodium": "16.0 mg per 100g ",
+       "fat": "0.19 g per 100g ",
+       "calcium": "9.0 mg per 100g ",
+       "cholesterol": "0.0 mg per 100g ",
+       "trans fat": "0.0 g per 100g ",
+       "saturated fat": "0.051 g per 100g ",
+       "carbohydrates": "8.16 g per 100g "}",
+    "quant_data": "{
+       "diveristy": 3.0303030303030303,
+       "calories_per_100g": "34.0 kcal per 100g ",
+       "popularity": 0.2,
+       "number_of_cuisines": 1,
+       "number_of_recipes": 1}",
+    "name": "cantaloupe melon",
+    "ing_id": "melon-cantaloupe"
+ },
+ "model": "foodApp.Ingredients",
+ "pk": "melon-cantaloupe"}
+]

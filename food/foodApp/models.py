@@ -33,11 +33,11 @@ class Cuisines(models.Model) :
    quant_data = models.CharField(max_length=5000)
 
    def get_absolute_url(self):
-        url_name = self.full_name.replace(' ', '_')
-        return "/cuisine/%s/" % url_name
+        #url_name = self.full_name.replace(' ', '_')
+        return "/cuisine/%s/" % id_cuisine
 
    def __str__ (self):
-        return self.full_name
+        return self.id_cuisine
 #-------------
 #Recipe Model
 #-------------
@@ -61,8 +61,8 @@ class Recipes (models.Model) :
 
 
    def get_absolute_url(self):
-        url_name = self.full_name.replace(' ', '_')
-        return "/Recipes/%s/" % url_name
+        #url_name = self.name.replace(' ', '_')
+        return "/Recipes/%s/" % recipe_id
 
    def __str__ (self):
-        return self.full_name
+        return self.recipe_id

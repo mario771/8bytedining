@@ -14,13 +14,25 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home,name='home'),
     url(r'^about$', views.about, name='about'),
-
-    url(r'^Index1$', views.Index1, name='Index1'),
-    url(r'^Index2$', views.Index2, name='Index2'),
-    url(r'^recipes$', views.recipe_page, name='recipes'),
-    url(r'^ingredients$', views.ingredient_page, name='ingredients'),
-    url(r'^cuisines$', views.cuisine_page, name='cuisines'),
+    #recipes/model is going to be the model page
     
+
+    #Recipe
+    url(r'^recipes/(?P<r_name>[-\w]+)/$', views.recipe, name='recipe'),
+    url(r'^recipes/model/$', views.recipes, name='recipes'),
+    
+    #Ingredients 
+    url(r'^ingredients/(?P<r_name>\w+)/$', views.ingredient, name='ingredient'),
+    url(r'^ingredients/model/$', views.ingredients, name='ingredients'),
+   
+    #Cuisine 
+    url(r'^cuisines/(?P<r_name>\w+)/$', views.cuisine, name='cuisine'),
+    url(r'^cuisines/model/$', views.cuisines, name='cuisines'),
+    
+    
+   
+
+    #API URLs
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
     url(r'^api/recipes/(?P<pk>[0-9]+)/$', api.RecipeDetail.as_view()),

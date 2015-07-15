@@ -112,5 +112,7 @@ load:
 	./manage.py loaddata cuisine_models.json 
 	./manage.py loaddata Recipe_addedID_models_data.json
 
+reload: migrate load
+
 ip:
 	echo ${IP}
