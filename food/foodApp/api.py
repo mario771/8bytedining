@@ -17,13 +17,13 @@ class RecipeDetail(APIView):
   
    def get_object(self,pk):
       try:
-         return Recipes.objects.get(id=pk)
+         return Recipes.objects.get(pk=pk)
       except Recipes.DoesNotExist :  
          raise Http404
 
    def get(self,request,pk,format=None):
 
-      recipe = self.get_object(self,pk)
+      recipe = self.get_object(pk)
       serialized_recipe = RecipesSerializer(recipe)
       return Response(serialized_recipe.data)
 

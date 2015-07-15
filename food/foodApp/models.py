@@ -11,8 +11,8 @@ class Ingredients (models.Model) :
    name = models.CharField(max_length=500, default="")
    quant_data = models.CharField(max_length=500, default="")
    nut_info = models.CharField(max_length=5000, default="")
-   all_cuisines = models.TextField()
-   all_recipes = models.TextField()  
+   all_cuisines = models.TextField(default="")
+   all_recipes = models.TextField(default="")  
    def get_absolute_url(self):
         url_name = self.full_name.replace(' ', '_')
         return "/ingredients/%s/" % url_name
