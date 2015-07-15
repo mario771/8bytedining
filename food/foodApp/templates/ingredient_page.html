@@ -121,8 +121,8 @@
 						        <div class="modal-body">
 
 						<ul>
-						  {% for n,i in d.cuisines.items %}
-						    <li > <a href="http://8bytedining.me/ingredients/{{ i.1 }}"> {{ i.0 }} </a> </li>
+						  {% for n,r in d.recipes.items %}
+						    <li > <a href="http://8bytedining.me/ingredients/{{ r.1 }}"> {{ r.0 }} </a> </li>
 						  {% endfor %}
 						</ul>
 
@@ -208,7 +208,7 @@
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">{{ d.quant_data.calories_per_100g }}</h1>
+						<h1 style="color:white">{{ d.quant_data.calories_per_100g|floatformat:"-2" }}</h1>
 						<p>Calories (kcal per 100g)</p>
 						<br>
 					</div>
