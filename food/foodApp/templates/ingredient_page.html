@@ -146,9 +146,9 @@
 						        <div class="modal-body">
 
 						<ul>
-						  <div ng-repeat="c in ingredients[ingredient].cuisines">
-							<li >  <a ng-href="http://8bytedining.me/cuisines?c=[[ c[1] ]]" target="_self"> [[ c[0] ]] </a> </li>
-						  </div>
+						  {% for n,c in d.cuisines.items %}
+						    <li > <a href="http://8bytedining.me/cuisines/{{ c.1 }}"> {{ c.0 }} </a> </li>
+						  {% endfor %}
 						</ul>
 
 						        </div>

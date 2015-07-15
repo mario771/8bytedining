@@ -80,7 +80,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">[[ ingredients[ingredient].name ]]</h1>
+				<h1 class="centered">{{ d.name }}</h1>
 				<hr>
 				<br>
 				<br>
@@ -146,9 +146,9 @@
 						        <div class="modal-body">
 
 						<ul>
-						  <div ng-repeat="c in ingredients[ingredient].cuisines">
-							<li >  <a ng-href="http://8bytedining.me/cuisines?c=[[ c[1] ]]" target="_self"> [[ c[0] ]] </a> </li>
-						  </div>
+						  {% for n,c in d.cuisines %}
+						    <li > <a href="http://8bytedining.me/cuisines/{{ c.1 }}"> {{ c.0 }} </a> </li>
+						  {% endfor %}
 						</ul>
 
 						        </div>
