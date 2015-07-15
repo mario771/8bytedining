@@ -43,15 +43,12 @@
     <!-- Tab image -->
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i90732/icons8/windows-8/Food-Bunch-Ingredients.ico">
 
-    <!-- AngularJS source -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="static/foodApp/main.js"></script>
   </head>
 
-  <body ng-app="myApp">
-  <div ng-controller="IngredientController">
+  <body>
+  <div>
 
-    <title ng-controller="IngredientController"> [[ ingredients[ingredient].name ]] </title>
+    <title> {{ d.name }} </title>
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -62,19 +59,19 @@
                 <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me" target="_self">Home </a>
+                <a href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/recipes/model" target="_self" onclick = $("#menu-close").click(); > Recipes</a>
+                <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/ingredients/model" target="_self" onclick = $("#menu-close").click(); > Ingredients</a>
+                <a href="http://8bytedining.me/ingredients" onclick = $("#menu-close").click(); > Ingredients</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/cuisines/model" target="_self" onclick = $("#menu-close").click(); >Cuisines</a>
+                <a href="http://8bytedining.me/cuisines" onclick = $("#menu-close").click(); >Cuisines</a>
             </li>
             <li>
-                <a ng-href="http://8bytedining.me/about" target="_self" onclick = $("#menu-close").click(); >About</a>
+                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>

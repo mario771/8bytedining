@@ -180,13 +180,13 @@
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
-						<h1 style="color:white">{{ d.quant_data.popularity | floatformat: "2" }}%</h1>
+						<h1 style="color:white">{{ d.quant_data.popularity | floatformat: 2 }}%</h1>
 						<p>Popularity</p>
 						<br>
 					</div>
 
 					<div class="col-lg-3 centered">
-						<h1 style="color:white">{{ d.quant_data.diveristy | floatformat: "2" }}%</h1>
+						<h1 style="color:white">{{ d.quant_data.diveristy | floatformat: 2 }}%</h1>
 						<p>Diversity</p>
 						<br>
 					</div>
