@@ -69,9 +69,6 @@
 
 
       <title> Recipe Model </title>
-{{ d }}
-<p></p>
-{{ d.items }}
       
         <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 25px; margin-right: 25px; margin-bottom: 100px">
           <tr>
@@ -79,14 +76,14 @@
             <th style="color:black; text-align:center">Price </th>
             <th style="color:black; text-align:center">Serves</th>
             <th style="color:black; text-align:center">Ingredient Count</th>
-            <th style="color:black; text-align:center">Total Fat</th>
-            <th style="color:black; text-align:center">Calories</th>
+            <th style="color:black; text-align:center">Total Fat (g per 100g)</th>
+            <th style="color:black; text-align:center">Calories (kcal per 100g)</th>
           </tr>
 	  {% for r,v in d.items %}
 	  <tr>
             <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/recipes/{{ v.name }}.html"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.price }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.serves }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.Serves }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.total_fat }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.calories_per_100g }} </td>
