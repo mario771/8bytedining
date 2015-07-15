@@ -96,7 +96,7 @@ def cuisines(request) :
    cuisines = Cuisines.objects.all()
    context_dict = {}   
 
-    for cuisine in cuisines: 
+   for cuisine in cuisines: 
        cuisine_dict = {}
        cuisine_dict['id_cuisine'] = cuisine.id_cusine
        cuisine_dict['name'] = cuisine.name
