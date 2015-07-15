@@ -2,31 +2,31 @@
 <html>
   <head>
     <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
-     <link href="grid/assets/css/bootstrap.css" rel="stylesheet">
+     <link href="/static/foodApp/grid/assets/css/bootstrap.css" rel="stylesheet">
 
-          <!-- cuisine --><link href="cuisines/assets/css/bootstrap.css" rel="stylesheet">
+          <!-- cuisine --><link href="/static/foodApp/cuisines/assets/css/bootstrap.css" rel="stylesheet">
           <!-- quant_data <link href="assets/css/bootstrap.css" rel="stylesheet">-->
-          <!--quant_data --> <link href="quant_data/assets/css/main.css" rel="stylesheet">
+          <!--quant_data --> <link href="/static/foodApp/quant_data/assets/css/main.css" rel="stylesheet">
         
             
 
     <!-- Custom styles for this template -->
-    <link href="grid/assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="grid/assets/css/icomoon.css">
-    <link href="grid/assets/css/animate-custom.css" rel="stylesheet">
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/foodApp/grid/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
+    <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
+    <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
             
     
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-                  <script src="grid/assets/js/jquery.min.js"></script>
-                  <script type="text/javascript" src="grid/assets/js/modernizr.custom.js"></script>
+                  <script src="/static/foodApp/grid/assets/js/jquery.min.js"></script>
+                  <script type="text/javascript" src="/static/foodApp/grid/assets/js/modernizr.custom.js"></script>
 
   </head>
 
@@ -69,18 +69,18 @@
 
       <title> Cuisine Model </title>
 
-        <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 25px; margin-right: 25px ; margin-bottom: 100px">
+        <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 25px; margin-right: 25px ; margin-bottom: 100px; text-align: center">
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Recipe Count</th>
             <th style="color:black; text-align:center">Popularity - ranking versus other cuisines in terms of number of recipes</th>
             <th style="color:black; text-align:center">Ingredient Count</th>
             <th style="color:black; text-align:center">Diversity - ranking versus other cuisines in terms of number of ingredients</th>
-            <th style="color:black; text-align:center">Average Salt</th>
+            <th style="color:black; text-align:center">Average Salt (g per 100g)</th>
           </tr>
 	  {% for c,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ c.name }}.html"> {{ c.name }} </a> </td>
+            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ c.id }}"> {{ c.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
@@ -95,11 +95,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     
 
-  <script type="text/javascript" src="grid/assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="grid/assets/js/retina.js"></script>
-  <script type="text/javascript" src="grid/assets/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="grid/assets/js/smoothscroll.js"></script>
-  <script type="text/javascript" src="grid/assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="/static/foodApp/grid/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/foodApp/grid/assets/js/retina.js"></script>
+  <script type="text/javascript" src="/static/foodApp/grid/assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="/static/foodApp/grid/assets/js/jquery-func.js"></script>
   <script type="text/javascript" src="js/navsquare_jquery.js"></script>
 
     <!-- Custom Theme JavaScript -->
@@ -117,6 +117,8 @@
     });
    
     </script>
+
+    <script src="/static/foodApp/js/sorttable.js"></script>
 
   </body>
 </html>
