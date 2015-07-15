@@ -23,7 +23,6 @@ class IngredientsSerializer(serializers.ModelSerializer) :
             'id',
             'ing_id', 
             'name',
-            'recipe_count',
             'quant_data', 
             'nut_info'
             )
@@ -33,9 +32,10 @@ class CuisinesSerializer(serializers.ModelSerializer) :
         model = Cuisines
         fields = (
             'id',
-            'cuisine',
-            'name,url',
-            'recipe_count',
+            'id_cusine',
+            'name',
+            'url',
+            'ingr',
             'quant_data'
             )
 

@@ -35,6 +35,13 @@ urlpatterns = [
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
     url(r'^api/recipes/(?P<pk>[0-9]+)/$', api.RecipeDetail.as_view()),
+
+    url(r'^api/cuisines/$',api.CuisineList.as_view()),
+    url(r'^api/cuisines/(?P<i_name>[-\w]+)/$', api.RecipeDetail.as_view()),
+
+    url(r'^api/ingredients/$',api.IngredientList.as_view()),
+    url(r'^api/ingredients/(?P<i_name>[-\w]+)/$', api.RecipeDetail.as_view()),
+
    
 ]
 
