@@ -105,7 +105,7 @@ def cuisines(request) :
        cuisine_dict['recipes'] = eval(cuisine.reci)
        cuisine_dict['ingredients'] = eval(cuisine.ingr)
    
-       context_dict[cuisine.id_cuisine] = cuisine_dict
+       context_dict[cuisine.id_cusine] = cuisine_dict
 
    
    return render_to_response('cuisine_page.html',{'d':context_dict}, context)
