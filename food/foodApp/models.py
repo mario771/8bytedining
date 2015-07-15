@@ -31,13 +31,15 @@ class Cuisines(models.Model) :
    name = models.CharField(max_length=500)
    url = models.CharField(max_length=500)
    quant_data = models.CharField(max_length=5000)
+  # ingredients = models.CharField(max_length=5000)
+  # recipes = models.CharField(max_length=5000)
 
    def get_absolute_url(self):
         #url_name = self.full_name.replace(' ', '_')
         return "/cuisine/%s/" % id_cuisine
 
    def __str__ (self):
-        return self.name
+        return self.id_cuisine
 #-------------
 #Recipe Model
 #-------------
@@ -58,7 +60,7 @@ class Recipes (models.Model) :
    img = models.CharField(max_length=500)
    nut_info = models.CharField(max_length= 5000, default = "")
    quant_data = models.CharField(max_length=500)
-   cuisine_ori = models.CharField(max_length=500, default = "")
+
 
    def get_absolute_url(self):
         #url_name = self.name.replace(' ', '_')
