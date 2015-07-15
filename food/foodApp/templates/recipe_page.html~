@@ -98,6 +98,7 @@
 						  {% for i in d.ingredients %}
 						    <li> {{ i[1] }} <a href="http://8bytedining.me/ingredients/{{ i[2] }}"> {{ i[0] }} </a>
                                                     </li>
+						  {% endfor %}
 						</ul>
 					</div>					
 				</div><!-- row -->
@@ -133,10 +134,12 @@
 						        <div class="modal-body">
 
 				<table border = 5px>
-					<tr ng-repeat="(n,v) in recipes[recipe].nut_info">
-					  <td style= "font-size: 14px"> [[ n ]] </td>
-					  <td style= "font-size: 14px"> [[ v ]] </td>
+				  {% for n,v in d.nut_info %}
+					<tr>
+					  <td style= "font-size: 14px"> {{ n }} </td>
+					  <td style= "font-size: 14px"> {{ v }} </td>
 					</tr>
+				  {% endfor %}
 				</table>
 	
 						        </div>
