@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/foodApp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/foodApp/grid/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="/static/foodApp/css/landing-page.css" rel="stylesheet">
@@ -109,7 +110,7 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="/About">About</a>
+                            <a href="/about">About</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; 8byteDining 2015. All Rights Reserved</p>
