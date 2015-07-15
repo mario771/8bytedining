@@ -34,7 +34,7 @@ class CuisinesSerializer(serializers.ModelSerializer) :
             'id',
             'id_cusine',
             'name',
-             url',
+            'url',
             'ingr',
             'quant_data'
             )
