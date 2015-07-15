@@ -74,17 +74,17 @@
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Recipe Count</th>
-            <th style="color:black; text-align:center">Popularity - ranking versus other ingredients in terms of number of recipes that use this ingredient</th>
+            <th style="color:black; text-align:center">Popularity (appearance in recipes)</th>
             <th style="color:black; text-align:center">Cuisine Count</th>
-            <th style="color:black; text-align:center">Diversity - ranking versus other ingredients in terms of number of cuisines that use this ingredient</th>
+            <th style="color:black; text-align:center">Diversity (appearance in cuisines)</th>
             <th style="color:black; text-align:center">Calories (kcal per 100g)</th>
 	  {% for i,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ v.id }}"> {{ v.name }} </a> </td>
+            <td style= "font-size: 14px"> <a href="http://8bytedining.me/cuisines/{{ v.id }}"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.popularity|floatformat:"-2" }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.diveristy|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.calories_per_100g }} </td>
           </tr>
 	  {% endfor %}

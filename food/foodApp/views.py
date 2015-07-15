@@ -94,15 +94,22 @@ def ingredient(request, i_name):
 def cuisines(request) : 
    context = RequestContext(request)
    cuisines = Cuisines.objects.all()
-   
-   rlist = [c.cuisine_id for c in cuisines ]
-   z = zip(cuisines,clist)
+   context_dict = {}   
 
-  # cuisines = Cuisines.objects.raw('SELECT * FROM "foodApp_cuisines"')
-   context_dict = {
-     'title': 'Cuisines',
-     'wow_urls' : z
-     }
+   for cuisine in cuisines: 
+       cuisine_dict = {}
+       cuisine_dict['id_cuisine'] = cuisine.id_cusine
+       cuisine_dict['name'] = cuisine.name
+       cuisine_dict['url'] = cuisine.url
+       cuisine_dict['quant_data'] = eval(cuisine.quant_data)
+       cuisine_dict['recipes'] = eval(cuisine.reci)
+       cuisine_dict['ingredients'] = eval(cuisine.ingr)
+   
+       context_dict[cuisine.id_cusine] = cuisine_dict
+
+   
+   return render_to_response('cuisine_page.html',{'d':context_dict}, context)
+
 
      
 def cuisine(request, c_name):
