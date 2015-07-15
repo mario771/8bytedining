@@ -91,13 +91,14 @@ def cuisines(request) :
 def cuisine(request, c_name):
 
    context = RequestContext(request)
-   cuisine = Cuisines.objects.get(id_cuisine=c_name)
+   cuisine = Cuisines.objects.get(id_cusine=c_name)
   
    cuisine_dict = {}
-   cuisine_dict['id_cuisine'] = cuisine.id_cuisine
+   cuisine_dict['id_cuisine'] = cuisine.id_cusine
    cuisine_dict['name'] = cuisine.name
    cuisine_dict['url'] = cuisine.url
    cuisine_dict['quant_data'] = eval(cuisine.quant_data)
-
+   cuisine_dict['recipes'] = eval(cuisine.reci)
+   cuisine_dict['ingredients'] = eval(cuisine.ingr)
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
