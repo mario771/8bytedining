@@ -20,14 +20,14 @@ def recipes(request) :
    context_dict = {}
 
    for recipe_dict in recipes :
-     recipe_dict['name'] = recipe.name
-     recipe_dict['id'] = recipe.recipe_id
-     recipe_dict['cuisine'] = eval(recipe.cuisine_ori)
-     recipe_dict['img'] = recipe.img
-     recipe_dict['quant_data'] = eval(recipe.quant_data)
-     recipe_dict['directions'] = recipe.directions
-     recipe_dict['ingredients'] = eval(recipe.ingredient_amount)
-     recipe_dict['nut_info'] = eval(recipe.nut_info)
+     recipe_dict['name'] = recipes.name
+     recipe_dict['id'] = recipes.recipe_id
+     recipe_dict['cuisine'] = eval(recipes.cuisine_ori)
+     recipe_dict['img'] = recipes.img
+     recipe_dict['quant_data'] = eval(recipes.quant_data)
+     recipe_dict['directions'] = recipes.directions
+     recipe_dict['ingredients'] = eval(recipes.ingredient_amount)
+     recipe_dict['nut_info'] = eval(recipes.nut_info)
      
      context_dict[recipe_id] = recipe_dict
  
