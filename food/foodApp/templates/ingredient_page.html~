@@ -316,8 +316,5 @@
    
     </script>
 
-    <!-- AngularJS source -->
-    <script src="static/foodApp/main.js"></script>
-  </div>
   </body>
 </html>
