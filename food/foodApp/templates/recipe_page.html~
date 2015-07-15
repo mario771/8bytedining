@@ -78,7 +78,8 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
+				<h1 class="centered">{{ d.name }}</h1>
+				<!--<h1 class="centered">[[ recipes[recipe].name ]]</h1>-->
 				<hr>
 				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]" target="_self">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
 				<br>
