@@ -30,7 +30,7 @@ def recipes(request) :
      recipe_dict['ingredients'] = eval(recipe.ingredient_amount)
      recipe_dict['nut_info'] = eval(recipe.nut_info)
      
-     context_dict[recipe_id] = recipe_dict
+     context_dict[recipe.recipe_id] = recipe_dict
  
      
    return render_to_response('recipe_model.html', context_dict, context)
