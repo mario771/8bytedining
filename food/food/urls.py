@@ -37,10 +37,10 @@ urlpatterns = [
     url(r'^api/recipes/(?P<pk>[0-9]+)/$', api.RecipeDetail.as_view()),
 
     url(r'^api/cuisines/$',api.CuisineList.as_view()),
-    url(r'^api/cuisines/(?P<i_name>[-\w]+)/$', api.RecipeDetail.as_view()),
+    url(r'^api/cuisines/(?P<pk>[-\w]+)/$', api.CuisineDetail.as_view()),
 
     url(r'^api/ingredients/$',api.IngredientList.as_view()),
-    url(r'^api/ingredients/(?P<i_name>[-\w]+)/$', api.RecipeDetail.as_view()),
+    url(r'^api/ingredients/(?P<pk>[-\w]+)/$', api.IngredientDetail.as_view()),
 
    
 ]
