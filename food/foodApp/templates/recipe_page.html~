@@ -78,7 +78,8 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">[[ recipes[recipe].name ]]</h1>
+				<h1 class="centered">{{ d.name }}</h1>
+				<!--<h1 class="centered">[[ recipes[recipe].name ]]</h1>-->
 				<hr>
 				<h2 class="centered"> <a ng-href="http://8bytedining.me/cuisines?c=[[ recipes[recipe].cuisine[1] ]]" target="_self">[[ recipes[recipe].cuisine[0] ]] Cuisine</a> </h2>
 				<br>
@@ -116,11 +117,13 @@
 			</div><!-- container -->
 		</section>
 
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">NUTRITIONAL INFO</h1>
-				<hr>
+		<div class="row">
+                <br>
+                <h1 class="centered"><a data-toggle="modal" href="#nMod" class="btn btn-primary btn-lg" margin-left="100px" width="auto" style="padding:0px 50px"><h1 style="color:white">Nutritional Info</h1></a> </h1>
+                <hr>
+                <br>
+                <br>
+            </div><!-- /row -->
 				<div class="modal fade" id="nMod" tabindex="-1" role="dialog" aria-labelledby="nModLabel" aria-hidden="true">
 						    <div class="modal-dialog">
 						      <div class="modal-content">
