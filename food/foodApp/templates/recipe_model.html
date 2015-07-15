@@ -1,0 +1,135 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head ng-app="myApp">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i59987/mcdo-design/closed-notes/Diary-Recipe.ico">
+     <link href="grid/assets/css/bootstrap.css" rel="stylesheet">
+
+          <!-- cuisine --><link href="cuisines/assets/css/bootstrap.css" rel="stylesheet">
+          <!-- quant_data <link href="assets/css/bootstrap.css" rel="stylesheet">-->
+          <!--quant_data --> <link href="quant_data/assets/css/main.css" rel="stylesheet">
+        
+            
+
+    <!-- Custom styles for this template -->
+    <link href="grid/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="grid/assets/css/icomoon.css">
+    <link href="grid/assets/css/animate-custom.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+            
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+                  <script src="grid/assets/js/jquery.min.js"></script>
+                  <script type="text/javascript" src="grid/assets/js/modernizr.custom.js"></script>
+
+  </head>
+
+  <body ng-app="myApp" style="background-image:url(http://joshuareis.com/word/wp-content/uploads/2014/09/IMG_7286_L2.jpg)">
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
+            </li>
+            <li>
+                <a href="https://youtube.com" >Home </a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); > Recipes</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); > Ingredients</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Cuisines</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+        </ul>
+    </nav>
+
+      <br>
+      <div class="row">
+        <br>
+        <h1 class="centered" style="font-size:36px; color:white">Recipe Model</h1>
+        <hr>
+        <br>
+        <br>
+      </div><!-- /row -->
+
+    <div ng-controller = "RecipeController">
+
+      <title> Recipe Model </title>
+      
+        <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 25px; margin-right: 25px; margin-bottom: 100px">
+          <tr>
+            <th style="color:black; text-align:center">Name</th>
+            <th style="color:black; text-align:center">ID </th>
+            <th style="color:black; text-align:center">Source url</th>
+            <th style="color:black; text-align:center">Directions</th>
+            <th style="color:black; text-align:center">Cuisine</th>
+            <th style="color:black; text-align:center">Ingredients</th>
+          </tr>
+          <tr ng-repeat="(recipe, attrs) in rmodels">
+            <td style= "font-size: 14px"> <a ng-href="{[{ recipe }]}.html"> {[{ recipe }]} </a> </td>
+            <td style= "font-size: 14px; color:black"> {[{ attrs["recipe_id"] }]} </td>
+            <td style= "font-size: 14px; color:black"> {[{ attrs["url"] }]} </td>
+            <td style= "font-size: 14px; color:black"> {[{ attrs["directions"] }]} </td>
+            <td style= "font-size: 14px; color:black"> {[{ attrs["cuisineGivenRecipe"] }]} </td>
+            <td style= "font-size: 14px; color:black"> {[{ attrs["ingredients"] }]} </td>
+            </div>
+          </tr>
+        </table>
+
+    </div>
+
+    <!-- Modules -->
+    <script src="js/main.js"></script>
+    <script src="js/sorttable.js"></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+  <script type="text/javascript" src="grid/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="grid/assets/js/retina.js"></script>
+  <script type="text/javascript" src="grid/assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="grid/assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="grid/assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="js/navsquare_jquery.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+   
+    </script>
+
+    <!-- Controllers -->
+    <!-- default -->
+
+  </body>
+</html>
