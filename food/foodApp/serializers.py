@@ -11,9 +11,11 @@ class RecipesSerializer(serializers.ModelSerializer) :
            'directions',
            'cuisine',
            'ingredients',
+           'ingredient_amount',
            'img',
            'nut_info',
-           'quant_data'
+           'quant_data',
+           'cuisine_ori'
             )
 
 class IngredientsSerializer(serializers.ModelSerializer) : 
@@ -24,7 +26,9 @@ class IngredientsSerializer(serializers.ModelSerializer) :
             'ing_id', 
             'name',
             'quant_data', 
-            'nut_info'
+            'nut_info',
+            'all_cuisines',
+            'all_recipes'
             )
 
 class CuisinesSerializer(serializers.ModelSerializer) :
@@ -35,8 +39,9 @@ class CuisinesSerializer(serializers.ModelSerializer) :
             'id_cusine',
             'name',
             'url',
+            'quant_data',
             'ingr',
-            'quant_data'
+            'reci'
             )
 
 
