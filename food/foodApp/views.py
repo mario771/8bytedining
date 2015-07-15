@@ -17,15 +17,22 @@ def recipes(request) :
    context = RequestContext(request)
    recipes = Recipes.objects.all()
    
-   rlist = [r.recipe_id for r in recipes ]
-   z = zip(recipes,rlist)
-  # recipes = Recipes.objects.raw('SELECT * FROM "foodApp_recipes"')
-   context_dict = {
-     'title': 'Recipes',
-     'wow_urls' : z
-     }
+   context_dict = {}
+
+   for recipe_dict in recipes :
+     recipe_dict['name'] = recipe.name
+     recipe_dict['id'] = recipe.recipe_id
+     recipe_dict['cuisine'] = eval(recipe.cuisine_ori)
+     recipe_dict['img'] = recipe.img
+     recipe_dict['quant_data'] = eval(recipe.quant_data)
+     recipe_dict['directions'] = recipe.directions
+     recipe_dict['ingredients'] = eval(recipe.ingredient_amount)
+     recipe_dict['nut_info'] = eval(recipe.nut_info)
      
-   return render_to_response('recipes_model.html', context_dict, context)
+     context_dict[recipe_id] = recipe_dict
+ 
+     
+   return render_to_response('recipe_model.html', context_dict, context)
 
    
 def recipe(request, r_name):
