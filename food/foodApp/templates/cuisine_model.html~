@@ -80,7 +80,7 @@
           </tr>
 	  {% for c,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ c.name }}.html"> {{ c.name }} </a> </td>
+            <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ c.id }}.html"> {{ c.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_recipes }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.diversity|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
@@ -117,6 +117,8 @@
     });
    
     </script>
+
+    <script src="/static/foodApp/js/sorttable.js"></script>
 
   </body>
 </html>
