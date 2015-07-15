@@ -75,7 +75,7 @@
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Price </th>
             <th style="color:black; text-align:center">Serves</th>
-            <th style="color:black; text-align:center">Number of Ingredients</th>
+            <th style="color:black; text-align:center">Ingredient Count</th>
             <th style="color:black; text-align:center">Total Fat</th>
             <th style="color:black; text-align:center">Calories</th>
           </tr>

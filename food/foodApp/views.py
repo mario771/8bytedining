@@ -25,7 +25,7 @@ def recipes(request) :
      'wow_urls' : z
      }
      
-   return render_to_response('recipes.html', context_dict, context)
+   return render_to_response('recipe_model.html', {'d': context_dict}, context)
 
    
 def recipe(request, r_name):
