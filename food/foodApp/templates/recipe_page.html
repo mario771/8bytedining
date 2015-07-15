@@ -96,14 +96,14 @@
 						<h2>Ingredients List</h2>
 						<ul>
 						  {% for i in d.ingredients %}
-						    <li> {{ i.1 }} <a href="http://8bytedining.me/ingredients/{{ i.2 }}"> {{ i.0 }} </a>
+						    <li> {{ i }} <a href="http://8bytedining.me/ingredients/{{ i }}"> {{ i }} </a>
                                                     </li>
 						  {% endfor %}
 						</ul>
 					</div>					
 				</div><!-- row -->
 			</div>
-			<h3 style="margin-left:50px"> Serves {{ d.quant_data.Serves }}, {{ d.quant_data.yields }} </h2>
+			<h3 style="margin-left:50px"> Serves {{ d.quant_data.serves }}, {{ d.quant_data.yields }} </h2>
 			<h3 style="margin-left:50px"> Cost: {{ d.quant_data.price | floatformat:2 }} </h2>
 			<br> 
 			<br>
