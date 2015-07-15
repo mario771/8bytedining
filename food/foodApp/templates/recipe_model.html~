@@ -81,7 +81,7 @@
           </tr>
 	  {% for r,v in d.items %}
 	  <tr>
-            <td style= "font-size: 14px"> <a href="http://8bytedining.me/recipes/{{ v.name }}.html"> {{ v.name }} </a> </td>
+            <td style= "font-size: 14px"> <a href="http://8bytedining.me/recipes/{{ v.id }}.html"> {{ v.name }} </a> </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.price }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.Serves }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>

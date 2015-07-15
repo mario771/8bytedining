@@ -76,7 +76,7 @@
             <th style="color:black; text-align:center">Popularity - ranking versus other cuisines in terms of number of recipes</th>
             <th style="color:black; text-align:center">Ingredient Count</th>
             <th style="color:black; text-align:center">Diversity - ranking versus other cuisines in terms of number of ingredients</th>
-            <th style="color:black; text-align:center">Average Salt</th>
+            <th style="color:black; text-align:center">Average Salt (g per 100g)</th>
           </tr>
 	  {% for c,v in d.items %}
 	  <tr>

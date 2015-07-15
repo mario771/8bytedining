@@ -77,7 +77,7 @@
             <th style="color:black; text-align:center">Popularity - ranking versus other ingredients in terms of number of recipes that use this ingredient</th>
             <th style="color:black; text-align:center">Cuisine Count</th>
             <th style="color:black; text-align:center">Diversity - ranking versus other ingredients in terms of number of cuisines that use this ingredient</th>
-            <th style="color:black; text-align:center">Calories</th>
+            <th style="color:black; text-align:center">Calories (kcal per 100g)</th>
 	  {% for i,v in d.items %}
 	  <tr>
             <td style= "font-size: 14px"> <a ng-href="http://8bytedining.me/cuisines/{{ i.id }}.html"> {{ i.name }} </a> </td>
