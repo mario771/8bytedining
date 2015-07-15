@@ -33,7 +33,7 @@ def recipes(request) :
      context_dict[recipe.recipe_id] = recipe_dict
  
      
-   return render_to_response('recipe_model.html', context_dict, context)
+   return render_to_response('recipe_model.html',{'d': context_dict}, context)
 
    
 def recipe(request, r_name):
