@@ -44,6 +44,7 @@ config:
 	git config -l
 
 test: 
+	./manage.py test foodApp
 
 models.html: models.py
 	pydoc3 -w models
