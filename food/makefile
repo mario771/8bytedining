@@ -79,10 +79,10 @@ food:
 	echo 'now make fgrun'
 
 fgrun:
-	python manage.py runserver 0.0.0.0:8000
+	python3 manage.py runserver 0.0.0.0:8000
 
 bgrun:
-	python manage.py runserver 0.0.0.0:8000>/home/test/log.txt &2>1 &
+	python3 manage.py runserver 0.0.0.0:8000>/home/test/log.txt &2>1 &
 
 openport:
 	sudo ufw allow 8000
