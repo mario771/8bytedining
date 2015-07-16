@@ -1,0 +1,9 @@
+./manage.py test foodApp
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.048s
+
+OK
+Creating test database for alias 'default'...
+Destroying test database for alias 'default'...
+make: *** No rule to make target `2'.  Stop.
