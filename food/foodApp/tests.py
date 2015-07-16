@@ -300,3 +300,89 @@ class ModelTestCase(TestCase):
         self.assertEqual(ingredients_get.all_recipes,
                          test_dict['all_recipes'])
 
+
+
+# API tests commented out due to travis-ci config and install issues
+
+
+#from rest_framework.test import APITestCase
+#import requests
+#
+#
+##NOTE: When running tests, must have python3 manage.py runserver in background
+#localURL = "http://127.0.0.1:8000"
+#
+#class APITest(APITestCase):
+#
+#  def test_get_recipe1(self):
+#    expectedData = {"id":1,"name":"Flaky Pie Dough Shell","recipe_id":"flaky-pie-dough-shell","directions":"SHAPING CRUSTS  Crusts are shaped by rolling out the dough to fit into a pie pan or tart shell (mold) or to sit on top of fillings. Mealy, flaky and sweet doughs are all easier to roll out and work with if well chilled, as chilling keeps the fat firm and prevents stickiness. When rolling and shaping the dough, work on a clean, flat surface (wood or marble is best). Lightly dust the work surface, rolling pin and dough with pastry flour before starting to roll the dough. Also, work only with a manageable amount at a time: usually one crusts worth for a pie or standard-sized tart or enough for 10 to 12 tartlet shells. ","cuisine":2,"ingredients":[229],"ingredient_amount":"{'flaky-pie-dough': ['Flaky Pie Dough', '2, 10 lb', 'flaky-pie-dough']}","img":"https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg","nut_info":"{'sodium': '1632.4 mg per 100g ', 'cholesterol': '325.92 mg per 100g ', 'trans fat': '0 g per 100g ', 'carbohydrates': '164.92 g per 100g ', 'calories from fat': '1136.52 g per 100g ', 'protein': '26.46 g per 100g ', 'saturated fat': '78.26 g per 100g ', 'calories': '1841.56 kcal per 100 ', 'calcium': '162.4 mg per 100g ', 'iron': '9.52 mg per 100g ', 'fat': '126.28 g per 100g ', 'vitamin c': '0.42 mg per 100g ', 'vitamin a': '3879.68 IU per 100g '}","quant_data":"{'price': 3.49, 'number_of_ingredients': 1, 'total_fat': 203.54000000000002, 'calories_per_100g': 1841.56, 'Serves': 3, 'yields': 'Yields 3 ea'}","cuisine_ori":"['American', 'american']"}
+#
+#    response = requests.get(localURL+ '/api/recipes/1/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#
+#  def test_get_recipe2(self):
+#
+#    expectedData = {"id":9,"name":"Balsamic Mustard Vinaigrette","recipe_id":"balsamic-mustard-vinaigrette","directions":"1 In a stainless steel bowl, whisk together the vinegar, mustard, shallots, salt and pepper. 2 Combine the oils. Slowly whisk them into the vinegar-and-mustard mixture to form an emul-sified dressing. ","cuisine":20,"ingredients":[506,121,392,327,67,577,96],"ingredient_amount":"{'shallot': ['shallot', '2 tsp', 'shallot'], 'oil-canola': ['canola oil', '4 tbl', 'oil-canola'], 'vinegar-balsamic': ['balsamic vinegar', '2 tbl', 'vinegar-balsamic'], 'oil-extra-virgin-olive': ['extra virgin olive oil', '4 tbl', 'oil-extra-virgin-olive'], 'mustard-dijon': ['Dijon mustard', '2 tsp', 'mustard-dijon'], 'salt': ['salt to taste', '', 'salt'], 'pepper-ground-black': ['ground black pepper to taste', '', 'pepper-ground-black']}","img":"https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg","nut_info":"{'sodium': '20.74 mg per 100g ', 'cholesterol': '0.0 mg per 100g ', 'trans fat': '0.03 g per 100g ', 'carbohydrates': '0.62 g per 100g ', 'calories from fat': '149.51 g per 100g ', 'protein': '0.16 g per 100g ', 'saturated fat': '1.76 g per 100g ', 'calories': '149.65 kcal per 100g ', 'calcium': '2.28 mg per 100g ', 'iron': '0.11 mg per 100g ', 'fat': '16.61 g per 100g ', 'vitamin c': '0.28 mg per 100g ', 'vitamin a': '38.75 IU per 100g '}","quant_data":"{'price': 0.68, 'number_of_ingredients': 7, 'total_fat': 18.4, 'calories_per_100g': 149.65, 'Serves': 6, 'yields': 'Yields 6 fl oz'}","cuisine_ori":"['French', 'french']"}
+#
+#    response = requests.get(localURL+'/api/recipes/9/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#   
+#  def test_get_recipe3(self):
+#
+#    expectedData = {"id":12,"name":"Balsamic Honey Vinaigrette","recipe_id":"balsamic-honey-vinaigrette","directions":"","cuisine":29,"ingredients":[],"ingredient_amount":"{}","img":"https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg","nut_info":"{'sodium': '0 mg per 100g ', 'cholesterol': '0 mg per 100g ', 'trans fat': '0 g per 100g ', 'carbohydrates': '0 g per 100g ', 'calories from fat': '0 g per 100g ', 'protein': '0 g per 100g ', 'saturated fat': '0 g per 100g ', 'calories': '0 kcal per 100g ', 'calcium': '0 mg per 100g ', 'iron': '0 mg per 100g ', 'fat': '0 g per 100g ', 'vitamin c': '0 mg per 100g ', 'vitamin a': '0 IU per 100g '}","quant_data":"{'price': -1.0, 'number_of_ingredients': 0, 'total_fat': 0.0, 'calories_per_100g': 0.0, 'Serves': 0, 'yields': 'Yields 0 N/A'}","cuisine_ori":"['N/A', 'n-a']"}
+#
+#    response = requests.get(localURL+'/api/recipes/12/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#
+#  def test_get_ingredient1(self):
+#
+#    expectedData = {"id":3,"ing_id":"mealy-pie-dough","name":"Mealy Pie Dough","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 131.54, 'number_of_cuisines': 1}","nut_info":"{'protein': '1.89 g per 100g ', 'carbohydrates': '11.78 g per 100g ', 'saturated fat': '5.59 g per 100g ', 'fat': '9.02 g per 100g ', 'iron': '0.68 mg per 100g ', 'calories from fat': '81.19 g per 100g ', 'trans fat': '0 g per 100g ', 'cholesterol': '23.28 mg per 100g ', 'calories': '131.54 kcal per 100g ', 'vitamin a': '277.12 IU per 100g ', 'vitamin c': '0.03 mg per 100g ', 'calcium': '11.6 mg per 100g ', 'sodium': '116.6 mg per 100g '}","all_cuisines":"{'american': ['American', 'american']}","all_recipes":"{'mealy-pie-dough-shell': ['Mealy Pie Dough Shell', 'mealy-pie-dough-shell']}"}
+#
+#    response = requests.get(localURL+'/api/ingredients/3/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#
+#  def test_get_ingredient2(self):
+#    expectedData = {"id":4,"ing_id":"clams-canned","name":"canned clams","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 2.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '0.4 g per 100g ', 'carbohydrates': '0.1 g per 100g ', 'saturated fat': '0.002 g per 100g ', 'fat': '0.02 g per 100g ', 'iron': '0.3 mg per 100g ', 'calories from fat': '0.18 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '3.0 mg per 100g ', 'calories': '2.0 kcal per 100g ', 'vitamin a': '30.0 IU per 100g ', 'vitamin c': '1.0 mg per 100g ', 'calcium': '13.0 mg per 100g ', 'sodium': '215.0 mg per 100g '}","all_cuisines":"{'american-new-england': ['American: New England', 'american-new-england']}","all_recipes":"{'new-england-style-clam-chowder': ['New England-Style Clam Chowder', 'new-england-style-clam-chowder']}"}
+#
+#    response = requests.get(localURL+'/api/ingredients/4/?format=json')
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#   
+#  def test_get_ingredient3(self):
+#
+#    expectedData = {"id":5,"ing_id":"chocolate-unsweetened","name":"unsweetened chocolate","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 501.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '12.9 g per 100g ', 'carbohydrates': '29.84 g per 100g ', 'saturated fat': '32.351 g per 100g ', 'fat': '52.31 g per 100g ', 'iron': '17.4 mg per 100g ', 'calories from fat': '470.79 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '0.0 mg per 100g ', 'calories': '501.0 kcal per 100g ', 'vitamin a': '0.0 IU per 100g ', 'vitamin c': '0.0 mg per 100g ', 'calcium': '101.0 mg per 100g ', 'sodium': '24.0 mg per 100g '}","all_cuisines":"{'french': ['French', 'french']}","all_recipes":"{'chocolate-caramel-mousse': ['Chocolate Caramel Mousse', 'chocolate-caramel-mousse']}"}
+#
+#    response = requests.get(localURL+'/api/ingredients/5/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+# 
+#  def test_get_cuisine1(self):
+#
+#    expectedData = {"id":4,"id_cusine":"american-california","name":"American: California","url":"","quant_data":"{'diversity': 2.644628099173554, 'diveristy': 2.644628099173554, 'popularity': 0.4, 'number_of_recipes': 2, 'number_of_ingredients': 16, 'avg_salt': 247.08333333333334}","ingr":"{'pepper-jalapeno-chile': ['jalapeno chile pepper', 'pepper-jalapeno-chile'], 'cumin-ground': ['ground cumin to taste', 'cumin-ground'], 'shrimp-16-20-ct': ['16-20 ct shrimp', 'shrimp-16-20-ct'], 'clarified-butter': ['Clarified Butter', 'clarified-butter'], 'onion-green': ['green onion', 'onion-green'], 'garlic': ['garlic', 'garlic'], 'chicken-breast-boneless-skinless': ['boneless skinless chicken breast', 'chicken-breast-boneless-skinless'], 'butter-unsalted': ['unsalted butter', 'butter-unsalted'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'mushrooms-medium': ['medium mushrooms', 'mushrooms-medium'], 'cheese-monterey-jack': ['monterey jack cheese', 'cheese-monterey-jack'], 'cilantro-fresh': ['fresh cilantro', 'cilantro-fresh'], 'avocado': ['avocado', 'avocado']}","reci":"{'shrimp-and-avocado-omelet': ['Shrimp and Avocado Omelet', 'shrimp-and-avocado-omelet'], 'garden-frittata': ['Garden Frittata', 'garden-frittata']}"}
+#
+#    response = requests.get(localURL+'/api/cuisines/4/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#
+#  def test_get_cuisine2(self):
+#
+#    expectedData = {"id":5,"id_cusine":"american-hawaii","name":"American: Hawaii","url":"","quant_data":"{'diversity': 0.0, 'diveristy': 0.0, 'popularity': 0.0, 'number_of_recipes': 0, 'number_of_ingredients': 0, 'avg_salt': 0.0}","ingr":"{}","reci":"{}"}
+#
+#    response = requests.get(localURL+'/api/cuisines/5/?format=json')
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#   
+#  def test_get_cuisine3(self):
+#
+#    expectedData = {"id":6,"id_cusine":"american-mid-atlantic","name":"American: Mid-Atlantic","url":"","quant_data":"{'diversity': 2.1487603305785123, 'diveristy': 2.1487603305785123, 'popularity': 0.2, 'number_of_recipes': 1, 'number_of_ingredients': 13, 'avg_salt': 141.715}","ingr":"{'worcestershire-sauce': ['worcestershire sauce to taste', 'worcestershire-sauce'], 'onion-green': ['green onion', 'onion-green'], 'pepper-green-bell': ['green bell pepper', 'pepper-green-bell'], 'mustard-dijon': ['Dijon mustard', 'mustard-dijon'], 'tabasco-sauce': ['tabasco sauce to taste', 'tabasco-sauce'], 'clarified-butter': ['Clarified Butteras needed', 'clarified-butter'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'fresh-bread-crumbs': ['Fresh Bread Crumbs', 'fresh-bread-crumbs'], 'crabmeat-lump': ['lump crabmeat', 'crabmeat-lump'], 'cream-heavy': ['heavy cream', 'cream-heavy']}","reci":"{'blue-crab-cakes': ['Blue Crab Cakes', 'blue-crab-cakes']}"}
+#
+#    response = requests.get(localURL+'/api/recipes/6/?format=json)
+#    rawData = response.json()
+#    self.assertEqual(rawData,expectedData)
+#
+#
+#
