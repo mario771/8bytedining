@@ -13,20 +13,20 @@ IP := 104.239.231.99
 all:
 
 check:
-	@echo "\nFiles found:\n=================================="
-	@for i in $(FILES);                                         \
-	do                                                          \
-		[ -e $$i ] && echo "$$i"; \
-	done
-	@echo "\n*********************"
-	@echo "* Files NOT FOUND:  *"
-	@echo "*********************"
-	@echo "=================================="
-	@for i in $(FILES);                                         \
-	do                                                          \
-		[ -e $$i ] || echo "$$i"; \
-	done
-	@echo ""
+#	@echo "\nFiles found:\n=================================="
+#	@for i in $(FILES);                                         \
+#	do                                                          \
+#		[ -e $$i ] && echo "$$i"; \
+#	done
+#	@echo "\n*********************"
+#	@echo "* Files NOT FOUND:  *"
+#	@echo "*********************"
+#	@echo "=================================="
+#	@for i in $(FILES);                                         \
+#	do                                                          \
+#		[ -e $$i ] || echo "$$i"; \
+#	done
+#	@echo ""
 
 final:
 	pydoc3 -w models
