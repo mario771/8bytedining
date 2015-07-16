@@ -1,0 +1,2519 @@
+commit 7214f60f1df0eda0b4fa63b644fbcb3055fc460e
+Author: Peter P Wong <wong.peterpaul@gmail.com>
+Date:   Wed Jul 15 21:50:53 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit fba273f71fcc86617ed23b39960ff47ea0f9af83
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 21:47:20 2015 -0500
+
+    merge dev to master
+
+commit 8fa3eed25f8d6a773d709647cba1a4e61d426500
+Merge: 9397bd4 4609392
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 21:45:24 2015 -0500
+
+    Merge branch 'master' into dev
+
+commit 9397bd4abab54323be7f1a29a8d25bc134c3ec29
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:38:48 2015 -0500
+
+    removing some extra files
+
+commit 7d5c9a377035d684cbe424ece6bf912f69e57eb7
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:38:12 2015 -0500
+
+    adding required files
+
+commit b6c29bab25188316054c41cdfa4d1b9d48d5441a
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:35:36 2015 -0500
+
+    adding commented-out API tests
+
+commit bdba50585182df5c03177427c3d48ecf14c6bbc4
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:32:28 2015 -0500
+
+    getting rid of make tests due to config/install issues
+
+commit 8e6e1c1c6f93c474d20edf59f6575fed69090545
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:29:56 2015 -0500
+
+    adding test.out
+
+commit 95389e4c150b3f8971fadf4d0f717d655ca214b7
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:26:45 2015 -0500
+
+    removed uneeded makefile calls, install psycopg2
+
+commit 6ec884cdb58c6996fc4bbada5ab1afca734382dd
+Merge: 4be6bd6 8c8f7ea
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:22:35 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 4be6bd6d5bf1a9c810bc2605773d0a9a39cab144
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:22:28 2015 -0500
+
+    installing django and postgres
+
+commit 322484c4ea7e14ba848de9f0743ecfa9d20a68c8
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:17:50 2015 -0500
+
+    adding postgres install
+
+commit 8c8f7ea752b3e173989387857044869621bd76a3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 21:12:10 2015 -0500
+
+    updated about page with commits/issues/unit tests
+
+commit 2246763bd2ee7ed3f982ea42e9b65271ff316f68
+Merge: dc1cab4 ceb33b3
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:09:19 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit dc1cab42d3cbd6de8970b279bc642419b2734c8b
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:09:06 2015 -0500
+
+    adding new outer makefile with ref to tests
+
+commit ceb33b39d60a6cd0d61bdc166540941e50e85c54
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Thu Jul 16 02:06:58 2015 +0000
+
+    fixing makefile to python3
+
+commit ce7bbbc30a54633ad7af5d8110221fdfff5ae864
+Merge: 1fdcac9 a3e79bb
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:05:20 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 1fdcac94e882092b166d8a1afd83815fea2a5589
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:05:04 2015 -0500
+
+    no make check, readding make test
+
+commit a3e79bb5e328b7bb5cd8955c229b8c3c9f1e0db4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 21:04:56 2015 -0500
+
+    typo fix on cuisine page
+
+commit 32250b24a902cd727a67782f1eaa150114bbedef
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 21:02:36 2015 -0500
+
+    got rid of make check
+
+commit d90865a881b259cc2842e0803778d51903fbd709
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 20:57:44 2015 -0500
+
+    getting rid of make check
+
+commit 2b9b34bd698f2aa1128742b45218d192b207e708
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 20:53:44 2015 -0500
+
+    removed makefile
+
+commit e688334d0a6588ee1df1b9a57ff0f421412d1c75
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 20:47:58 2015 -0500
+
+    adding tests to makefile
+
+commit 5df880998c5fb00d5c327106478cf25f7d3fc38d
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 20:43:11 2015 -0500
+
+    adding and reformatting and passing recipe tests
+
+commit 36708b48b2ac86718e5158941a95941c42f74e7c
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 20:34:56 2015 -0500
+
+    fixed indentations in test.py
+
+commit 84cab8645c1404a91b741d348c96eb09abf884e6
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 20:28:42 2015 -0500
+
+    added test cases
+
+commit c9e2670520d7a5d203e544326a746529e7e0863d
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 19:53:24 2015 -0500
+
+    added ingredient model unit tests
+
+commit 3d3e02abbbae086cf7c0e6a1028a2638928ed540
+Merge: f8fd98d 50c2e33
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 19:52:06 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit f8fd98d6587a5185d284dc716551a3ed203301fc
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 19:51:59 2015 -0500
+
+    added test cases
+
+commit 50c2e3324ec8f7e57efa968a8ba9dcf4a0a3f517
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:49:05 2015 -0500
+
+    homogenizing recipe page background color
+
+commit 76723f5fd0921c7d42c892cddfb0b1cfd35ae64f
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Wed Jul 15 18:38:23 2015 -0500
+
+    added darker image for recipe page
+
+commit a5f24ffc07f6ee89f41c6a2c4ae2749f297c6b97
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:26:26 2015 -0500
+
+    changing recipe page directions image 3
+
+commit b7da4beae94ebf5d9af60a6981156b71b8860324
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:25:07 2015 -0500
+
+    changing recipe page directions image 2
+
+commit 30891197480849d04c5580a2ff79fe99a5300436
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:23:02 2015 -0500
+
+    changing recipe page directions image 1
+
+commit 10e1cf0ee87c70e66fc64eb74f7e80f1037b960a
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:14:04 2015 -0500
+
+    fixing home page padding
+
+commit 4c203862a57cb64df884dcd4eb5a5e51ce1e7130
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:10:08 2015 -0500
+
+    improving layout on individual recipe page 2
+
+commit 606f1a7c3223a219234282ccb7fc5cf949926cc5
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:08:43 2015 -0500
+
+    improving layout on individual recipe page
+
+commit 74789101b5af902288b0fa3e9e4bdf2a0fdeffd2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:03:38 2015 -0500
+
+    fixing cuisine and ingredient model pages
+
+commit bec9c570ceac9011101c4e6f4ce43f4c869d6d84
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 18:00:47 2015 -0500
+
+    implementing cuisine model page
+
+commit b3135c4fcaeb6ed04bfcec84d020122f669357f0
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:56:18 2015 -0500
+
+    changing views for cuisines 6
+
+commit 5f4514add088866d85877073d950ebe3c15edc8d
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:50:07 2015 -0500
+
+    changing views for cuisines 5
+
+commit 19477f14a4b709ada29f1e35e5de42531fdb2b48
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:49:11 2015 -0500
+
+    implementing ingredient model page 6
+
+commit c92c6228b26630b845711e6ccd90efd8487e9ecd
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:47:52 2015 -0500
+
+    implementing ingredient model page 5
+
+commit cc9d843ed200b256544cf6b24e8419ca73c52e45
+Merge: 96a0f3a b306bb6
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 17:47:11 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 96a0f3a8462ad450a8b6c7da778566bafd97a1e3
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 17:47:02 2015 -0500
+
+    fixed as needed space problem
+
+commit b306bb6256e029c33a5f9554032b4fb55ea2bdc4
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:46:45 2015 -0500
+
+    changing views for cuisines 4
+
+commit b3cf6a620fba8ea9c465ca320a9248ca9abb7ce0
+Merge: d6f2d30 53374ff
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:46:12 2015 -0500
+
+    Merge branch 'dev' of github.com:wongpeterp/cs373-idb into dev
+
+commit 53374fff5018e16b1cefae9ba92f2d616d773889
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:43:12 2015 -0500
+
+    changing views for cuisines 3
+
+commit a05e003f56084f90ec145798a9cbfabe26afc1b6
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:42:38 2015 -0500
+
+    changing views for cuisines 2
+
+commit d6f2d30efd89264de8b4e25f10ff2d49892ad4d8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:41:44 2015 -0500
+
+    implementing ingredient model page 3
+
+commit 51e5153ba4baed04a0620df685d3b82e52acd1ce
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:41:32 2015 -0500
+
+    changing views for cuisines
+
+commit 81b26340d082da86241ac29b658b6b3973792714
+Merge: 697686f d18725a
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 17:40:20 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 697686f923c386b1a5d552f8445e2e618d52fad7
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 17:40:17 2015 -0500
+
+    fixed data Recipe_addedID_models_data.json
+
+commit d18725a8ddaa9b841daee8de521a2a436492511d
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:39:06 2015 -0500
+
+    implementing ingredient model page 2
+
+commit 4f15bf599fe9a6b982ff1ed23398aa5fce730e1e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:36:32 2015 -0500
+
+    implementing ingredient model page 1
+
+commit 45491105e7e8b0a78a72b882b2b620f66306993e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:34:24 2015 -0500
+
+    implementing recipe model page 8
+
+commit 323d32941feab18967dd126b44b74431a74d588b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:33:30 2015 -0500
+
+    implementing recipe model page 7
+
+commit e3c373fb9821edb24810ad3984c0e010e37363c6
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:32:23 2015 -0500
+
+    implementing recipe model page 7
+
+commit 3bfd358d52f75e158320b3277d3e7e009e914642
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:32:08 2015 -0500
+
+    changing views for ingredients
+
+commit 2b18cb2f5cff2e48caffb3c453e715395f696327
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:31:10 2015 -0500
+
+    implementing recipe model page 6
+
+commit 2eaa6ca34570eb56e38968e42dce53d9f44621b4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:29:31 2015 -0500
+
+    implementing recipe model page 5
+
+commit 37bd5ea0c55e977c93bba3353b388b1a4f0ead49
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:28:23 2015 -0500
+
+    implementing recipe model page 4
+
+commit 1905dde07202889a4320a0411c795cc51d2aa0e6
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:27:28 2015 -0500
+
+    implementing recipe model page 3
+
+commit 683b3a8ce1cdb9963c29d14d0bafbd73a3e3aded
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:25:29 2015 -0500
+
+    implementing recipe model page 2
+
+commit 635e7a0b27a58000dbc2edcd047c27aa37ae8cbb
+Merge: d59835f cf0b07b
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:21:51 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit d59835f9695d8450a23203ff486e6d1ecbfa0bf3
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:21:49 2015 -0500
+
+    changing views for recipes 3
+
+commit cf0b07b74e68b4c9457943273f90d9afa5bee2a1
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 17:21:11 2015 -0500
+
+    implementing recipe model page 1
+
+commit 889a86caae3c306494d8a3ff3d650f97f38c1dfb
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:20:15 2015 -0500
+
+    changing views for recipes 3
+
+commit 70a9506f1f7670ee71e1952a6408032a3ddacab8
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:18:07 2015 -0500
+
+    changing views for recipes 2
+
+commit c2400cb3619592ab3cf6bf9dd127de96e8d7847e
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 17:16:50 2015 -0500
+
+    fixed data for cusine_model.py
+
+commit e567c58f37a0a66f3a839f4b07f93f3861bb9ff5
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:15:48 2015 -0500
+
+    changing views for recipes
+
+commit 779232b5e1e6cef2f7ebe763806a8b02f0c90237
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 17:14:23 2015 -0500
+
+    changing views for recipes
+
+commit c2306c3959406c469eb028e6d945c90bd4a3cf5c
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 16:59:32 2015 -0500
+
+    addding to api serializers
+
+commit 8da1215528f57c4efae6ea61d76a1af91f230a39
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:58:02 2015 -0500
+
+    added technical report part II
+
+commit 4b7d3074a008c87905860e7912ae82e31d8936d7
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:51:16 2015 -0500
+
+    minor fix on views.py 5
+
+commit 5930c5e35daf355968075c2b7498aad773c095a9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:49:23 2015 -0500
+
+    minor fix on views.py 4
+
+commit a8b22c8ec467109641bef2472ce0c286f3c667f8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:44:35 2015 -0500
+
+    minor fix on views.py 3
+
+commit 318c5a3908a6c8093f4e2278e13aac8e6ed2157c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:43:56 2015 -0500
+
+    minor fix on views.py 2
+
+commit 7750e714f2298615a48c4f045d57e65362a9dd4c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 16:34:49 2015 -0500
+
+    minor fix on views.py
+
+commit 380379bb826269522c2baebbfabe4c48aca70834
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 16:32:00 2015 -0500
+
+    added return values for all recipes and all cuisines in ingredients view.py
+
+commit 765375ca305d14a5b5c06baaa599c3d65bb4d2f9
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 16:23:11 2015 -0500
+
+    added database fixtures
+
+commit d4dea0b9c37a86608e60430094d4af7292e4082a
+Merge: 1df0ac4 52bf9a2
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 16:05:13 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 1df0ac42420905c3e09e77f479ee97f5b155c510
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 16:05:10 2015 -0500
+
+    fixed data
+
+commit 52bf9a28f35902af7899aabd232a2f9d300993ea
+Merge: 5c6ad87 5278575
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:54:45 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 5c6ad878bed0e6901de4f57b54441d70839d91b4
+Merge: bbf9a96 8120483
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:54:37 2015 -0500
+
+    adding api files
+
+commit 5278575940a8c8fc83cba7f1cbd3b4e906906a7d
+Author: Jesus De La O <jesusdelao@utexas.edu>
+Date:   Wed Jul 15 15:53:59 2015 -0500
+
+    added all_cusines and all_recipes under Ingredients models
+
+commit 8120483bea5d7e64086ea820a48bd43451a7751a
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 15 15:51:05 2015 -0500
+
+    fixed cisine_models.json
+
+commit 1e8f2532a3b231daa4083639d837e9fe563e8837
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:34:42 2015 -0500
+
+    trying to make navbar work on home page 2
+
+commit d02c22b15a7b589feae38b6b07cfd25ac118680d
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:33:20 2015 -0500
+
+    trying to make navbar work on home page 1
+
+commit bbf9a9623a926d5a4cbf262d9b436578b5dea49d
+Merge: e5d2d11 25af751
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:27:30 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 25af751a34356fb9458a62d61aff1b85dbb6a950
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 15:27:01 2015 -0500
+
+    adding fix for view
+
+commit e5d2d1155fd9f624bd021bbd4c68f936869672ef
+Merge: 225bffa 09971ab
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:22:20 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 225bffa4f819a4513b107277eab72a935a07f290
+Merge: 6e022cc b876142
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:21:58 2015 -0500
+
+    resolving recipes.html merge issue
+
+commit 09971ab8ee11a2e4a504b31e9167fc6ccccc5ce4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:20:18 2015 -0500
+
+    adding sortable table code source to model pages
+
+commit 6e022cc1060fbe745b61f0d77c5a18bf8fb4cc9c
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 15 15:20:00 2015 -0500
+
+    using recipes_model.html instead of recipes.htmll
+
+commit b8761427e3b395b4ec7551701720d9e2de3945fa
+Merge: 29f9ddf f69de98
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 15:18:08 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit f69de98afe85b2161fd4ba6bf218457821294d42
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:17:58 2015 -0500
+
+    fixing names of fields on cuisine/ingredient pages
+
+commit 29f9ddf93e9e31f0b9c933fce28e1191c779f763
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 15 15:17:47 2015 -0500
+
+    adding for a single recipe api
+
+commit b9c71208cb572fde6b4630cb42ee5a565f5d430b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:04:38 2015 -0500
+
+    implementing recipe model page 2
+
+commit 596e63deee60a609330b4d2167900dd18efc70fa
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 15:02:13 2015 -0500
+
+    implementing recipe model page 1
+
+commit 76c5e30378635013c4afc4828a93547992f67307
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 12:10:20 2015 -0500
+
+    fixing serves if exists
+
+commit cbf04e054fedbb701d8daf9502ad89873c3695bf
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 12:07:48 2015 -0500
+
+    fixing nut data for ingredient page 2
+
+commit 5d4e098ba8500e1a2bc461604ace98ca8c837bc8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 15 12:06:38 2015 -0500
+
+    fixing nut data for ingredient page
+
+commit 71a3a2a451aaf2d8c192a341476d732274fe5124
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 14 23:38:45 2015 -0500
+
+    adjusting api another typo
+
+commit 0ef3e57e58df38eb52714dd7d13db8e2667cc985
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 14 23:36:17 2015 -0500
+
+    adjusting api typo
+
+commit e7ffb9dde05056e43eeeb609531bdd168f07f00d
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 14 23:34:06 2015 -0500
+
+    adjusting api serliazers for models
+
+commit 3fde06f642866cbcf8e2fe5b2461055fe9a8052f
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 14 23:28:56 2015 -0500
+
+    adding api url config
+
+commit aa94dd3470e36d457848cf9d49d6a0d1d03efcdf
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 14 23:24:33 2015 -0500
+
+    adding more the api models
+
+commit 1e099b871b432387d2ac7e5581283c33b1cee58a
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 22:09:51 2015 -0500
+
+    fixing splash page...sorta...again...everything except nav bar wtf
+
+commit 22460341b4121facef8f047a1a688295bdcb73ee
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 22:05:07 2015 -0500
+
+    fixing splash page...sorta...again
+
+commit 6410777a12e8cf8fdce7c17b666fc36f70d98739
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 22:01:08 2015 -0500
+
+    fixes cuisines data
+
+commit 69ba51c349dffb2ad56982a8ebdf216e73809bab
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 22:00:24 2015 -0500
+
+    fixing splash page...sorta...
+
+commit 7fbfdb55fc1f246c9231aa4126c16d2bf5f426c9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:50:39 2015 -0500
+
+    implementing all django implementation - models
+
+commit 5b5e55b40f443620f98c390c8d8a84bcd02c6e21
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 21:50:11 2015 -0500
+
+    fixed models.py and database issues
+
+commit 9d3598088a59e7d78e9eac8f7342ed9d2a3343a2
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 14 21:34:05 2015 -0500
+
+    added model pages , resolves #51
+
+commit 8cb581b91645cfdb6bd282771c2eb974b2014fe0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:29:27 2015 -0500
+
+    implementing all django implementation - cuisines/ingredients 1
+
+commit ed1d5d4ac7e472d7527c395eecac98d8b7aca8ed
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:24:38 2015 -0500
+
+    implementing all django implementation - cuisines 3
+
+commit 110b2b2862a93b90ff3a04a4d57fe5f8524d228c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:22:33 2015 -0500
+
+    implementing all django implementation - cuisines 2
+
+commit e2659301ccbe8efaf595bfecfb1d4164693362dc
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 21:20:25 2015 -0500
+
+    correcting models
+
+commit b6073bb009e6fb9c93ff73310d77eb1fada13a0e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:17:20 2015 -0500
+
+    implementing all django implementation - cuisines 1
+
+commit 3a76def89b97085d5e92273fb159e4ac520a96c9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:09:49 2015 -0500
+
+    more tests for django 16
+
+commit 6cb5cda97e94d9ba8a1e7ad06d3a50b67ff69a20
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:02:02 2015 -0500
+
+    more tests for django 15
+
+commit c3d214dea76bcf948d485b274e7bdd7ac472162a
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 21:00:31 2015 -0500
+
+    more tests for django 14
+
+commit 02eb6705391ce790570b5f480ca97ed5d1afed8f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:58:47 2015 -0500
+
+    more tests for django 13
+
+commit 22778bd8c3b34f303f84527996d56ba87db6fdf6
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:57:49 2015 -0500
+
+    more tests for django 12
+
+commit c4a8161b23043127c66794aabf69c8d2c34556a4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:51:27 2015 -0500
+
+    more tests for django 11
+
+commit 6b40bfd3dd78c0f30328a9fe9f13db27b838ebbb
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:49:41 2015 -0500
+
+    more tests for django 10
+
+commit 3d974e0ed25edef35e9c7cb7f7490d4ed751a10d
+Merge: 4b69428 a83068f
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 20:44:29 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 4b69428143174d6b5976710b32053c15fedee532
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 20:44:21 2015 -0500
+
+    adding latest files
+
+commit a83068fec888227c7517ef51a33b4d7020d5c6a9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:43:52 2015 -0500
+
+    more tests for django 9
+
+commit ed2ff1d2129fbb24240fc070ad97ce2ff8d8eb8a
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:40:36 2015 -0500
+
+    more tests for django 8
+
+commit b820a2eb420be16ef1b2c7ea386f3fabc798bde0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:37:01 2015 -0500
+
+    more tests for django 7
+
+commit fef40ef2501148f1beafed03191044dde43ef771
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:30:39 2015 -0500
+
+    more tests for django 6
+
+commit 27c7bdbfc5c5fdecbad84c9fcafcb7b8267f7377
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:26:58 2015 -0500
+
+    more tests for django 6
+
+commit 115451c6f1d9de76f56befb4f6d57802cf8ce640
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:26:08 2015 -0500
+
+    more tests for django 6
+
+commit 8a3f8d46515dac23f547fd614bb0f2504e57aeb1
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:24:51 2015 -0500
+
+    more tests for django 5
+
+commit 4d8f06a8308afc6288167d79ae29440f6fac8cd8
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 20:21:20 2015 -0500
+
+    adding new data field
+
+commit df607fa531926233976f0a0d4dcdceefe10ea34b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:16:22 2015 -0500
+
+    more tests for django 4
+
+commit 1e34c410bdc62094b4580600205ae0a0526469aa
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:08:16 2015 -0500
+
+    more tests for django 3
+
+commit dffeea160a334aec3ed2ab653f73c196311cb452
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:03:53 2015 -0500
+
+    more tests for django 2
+
+commit 4264a4cf8c179be86cb04c11acbe6e527536b316
+Merge: 76eab6f 31d972b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:02:38 2015 -0500
+
+    Merge branch 'dev' of github.com:wongpeterp/cs373-idb into dev
+
+commit 76eab6f2da12b726c6ae610f48edb1bb24dc73a4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 20:02:22 2015 -0500
+
+    more tests for django
+
+commit 31d972b72e0ccff6a4e697c0756dccfc8070aca2
+Merge: 2e94791 1c0a495
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 19:58:16 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 2e9479172d5ed3f47e4c6605cc7c9f557c44c06d
+Merge: 215adc8 bb9a41b
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 19:58:05 2015 -0500
+
+    editing files for models
+
+commit 1c0a495ac338fa8b81e2f97b66fa3e4808a7fb8b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 19:55:35 2015 -0500
+
+    testing django info pull 1
+
+commit 215adc8ee202e7c3060d8372ff472e64241d26a4
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 19:15:25 2015 -0500
+
+    adding view changes
+
+commit bb9a41b73d40d7e002956118e744eb1fc06bb4da
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 19:09:48 2015 -0500
+
+    adding nav bar to home 4
+
+commit 623da12735d577429d2e7f8dfdd573e3abf6fc9e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 18:40:20 2015 -0500
+
+    adding nav bar to home 3
+
+commit 854c24630586aa773ab72f1105ac994207ede55b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 18:39:26 2015 -0500
+
+    adding nav bar to home 2
+
+commit 230f7bd012d5f5596bb6d258ee8997480838e7e2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 18:38:20 2015 -0500
+
+    adding nav bar to home
+
+commit d56074f0edc5cf684573afc31d3cce59979e1e5b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:37:13 2015 -0500
+
+    fixing links on home 2
+
+commit 5c75fda871af8836c2a0f97d8bbcf9b66033707c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:36:43 2015 -0500
+
+    fixing links on home 2
+
+commit 00a3cb89a4a72eb4b3a1aaf36b865a352dbf36d8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:35:39 2015 -0500
+
+    fixing links on home
+
+commit 5af8d6695c2f55e3597cb73b698904cb8f1a412c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:33:10 2015 -0500
+
+    setting up models and finishing cuisine functionality - minor fix
+
+commit 567bb3a43cd3e31f31ef0d572d749d3a58c487ff
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:32:03 2015 -0500
+
+    setting up models and finishing cuisine functionality
+
+commit 7ae999bca5230b6ff39fbb951b09b1141ffe23ed
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:28:45 2015 -0500
+
+    returning to cuisine page functionality 4
+
+commit 4581e4efd419211546970cb5e256defb4a247ee5
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:27:12 2015 -0500
+
+    returning to cuisine page functionality 3
+
+commit 57b38730cde0e0b6733250fea87181d729f01c96
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:23:39 2015 -0500
+
+    returning to cuisine page functionality 2
+
+commit 992426acb31d6c7b5c1d07b1d7a64e04b8d5b578
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 16:20:53 2015 -0500
+
+    returning to cuisine page functionality 1
+
+commit 5fc35ab8b0076d83bee61e43fd7e028549974615
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 14 15:53:37 2015 -0500
+
+    added Cusines_data.json json of cuisines for the cuisine tables
+
+commit cdc2f0885cf80bd3940f5214cb8d681bfcc1dd9b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:34:24 2015 -0500
+
+    fixing broken things 3
+
+commit e220eac5da57c93de93a8572a71726fe08f669c1
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:33:23 2015 -0500
+
+    fixing broken things 2
+
+commit c44922a80a4d874b7e24bfed7325ade45b956f42
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:32:20 2015 -0500
+
+    fixing broken things
+
+commit 78f71c4368bca17c663ff9dca951a9687f31e564
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:31:42 2015 -0500
+
+    adding sample recipes for ingredients page 3
+
+commit 22d335f5bab657922095e27305ec8c40e5fdc3b0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:27:51 2015 -0500
+
+    adding sample recipes for ingredients page 3
+
+commit 875581017908a8f67ae79b7b445fe38fb7a50c49
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:27:15 2015 -0500
+
+    adding sample recipes for ingredients page 2
+
+commit f1261424ed32981684809999a810b9e8c579a791
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:11:40 2015 -0500
+
+    adding sample recipes for ingredients page 1
+
+commit b9e64c109aa9a9889e0b705a0a9e3fa12ca569d8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 15:08:22 2015 -0500
+
+    implementing cuisine page ?4
+
+commit 7fb816907160a28b2f14555a83b5a751b2402ea2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:57:20 2015 -0500
+
+    finish recipes page css
+
+commit 3f4e49269c4c3f7ba8d10ead961022fb340b9bc7
+Merge: 234ee2c 973c578
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 14:54:53 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 234ee2c263b50ef56b4370faa730ee1dbc0bed56
+Merge: 7005b1e c3b59ae
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 14:54:29 2015 -0500
+
+    merge conflict with mwd-dev supposedly resolved
+
+commit 973c57831e497db3d69f2f035f16362f423c4332
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:50:49 2015 -0500
+
+    implementing ingredient page 13
+
+commit 7005b1e509453d95aa63eddc3f7d4adb41f64dd1
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:39:22 2015 -0500
+
+    implementing ingredient page 12
+
+commit 5f4f00c072e901b70331fce278fe2d0c3bacdaf7
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:38:13 2015 -0500
+
+    implementing ingredient page 11
+
+commit c3b59ae106ff91c552e1604db8e5aebf39c39424
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 14:36:47 2015 -0500
+
+    added json caches formatted for loaddata
+
+commit 9faf2de0a1962e0b9fa48c9d6686e6b78914d950
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 14:34:27 2015 -0500
+
+    changed fields in models.py
+
+commit 0b6d6870a620cf2b7efec17a594926dc048e36db
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:34:09 2015 -0500
+
+    implementing ingredient page 10
+
+commit 13af48b18cf0c8546c10193e713d60ecefa86b61
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 14 14:32:31 2015 -0500
+
+    added migrate and loaddata commands to makefile
+
+commit 3d8876613306613ac8748d4ca8a2707f218422ea
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:24:19 2015 -0500
+
+    implementing ingredient page 9
+
+commit cf51846a089b434299973b2316ba7fde11a2f5bc
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:23:05 2015 -0500
+
+    implementing ingredient page 8
+
+commit e75d7c3ac0b471506e4e5b0a0a3994ff34157e85
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 14 14:21:59 2015 -0500
+
+    resized,added cuisine page image
+
+commit d7d4291a241f10cbe4a48399b7fe9fa8ac7b6f26
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:13:58 2015 -0500
+
+    implementing ingredient page 7
+
+commit 456adf620c24af724ebc61edf1c36084bd89e85e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 14:11:21 2015 -0500
+
+    implementing ingredient page 6
+
+commit cb09fce223b3c0f94ec876851dad7c88c8c1bdf3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:59:19 2015 -0500
+
+    implementing ingredient page 5
+
+commit 52590b39cf4a100418308fe22e9625716764c276
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:57:14 2015 -0500
+
+    implementing ingredient page 4
+
+commit 1c1958d8c9c4a5b59bc214791795f671a802cca3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:55:20 2015 -0500
+
+    implementing ingredient page 3
+
+commit cb6f53e9d0cf52c1df1b5d28a21582a570d7c4a4
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:47:36 2015 -0500
+
+    implementing ingredient page 2
+
+commit 55987698571680fa57095911618909b6e5838aa9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:46:53 2015 -0500
+
+    implementing ingredient page 1
+
+commit e3a2f12885ba65f860b737b3f890402e4778c4e3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:45:44 2015 -0500
+
+    implementing cuisine page 2
+
+commit 087666211ac9fa67c110a1a7bd14766793aae309
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:35:53 2015 -0500
+
+    implementing cuisine page 1
+
+commit 28a2ab037cbd0bf06a6c1d682e0a8d6666213651
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 14 13:33:29 2015 -0500
+
+    added cuisine page and ingredients page, resolves #39
+
+commit 99288ef409dfc920d49e716d83ab2857ca8b8a8c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:19:50 2015 -0500
+
+    fixing recipe formatting 20
+
+commit 3b2b8c037421138eb5feb9c31bf7e104f439fb05
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:18:41 2015 -0500
+
+    fixing recipe formatting 19
+
+commit d890d9ddbd05f22aaba4e075f93c811a54b1370c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:18:10 2015 -0500
+
+    fixing recipe formatting 18
+
+commit bb980161f2be05d25d962bd0dc5b790920890306
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:17:37 2015 -0500
+
+    fixing recipe formatting 17
+
+commit 65d5b34c5059a188bf6cecb17c3a08d6e2081680
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:16:39 2015 -0500
+
+    fixing recipe formatting 16
+
+commit 0505ac6c9ba02fc7c43bd527f499f10121085c75
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:14:47 2015 -0500
+
+    fixing recipe formatting 15
+
+commit 50f4074080b21d907f939ff31ae231fb57d0eb58
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:14:11 2015 -0500
+
+    fixing recipe formatting 14
+
+commit 17533c6196cc614046b01f93a79290871323d6c3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:12:25 2015 -0500
+
+    fixing recipe formatting 13
+
+commit d70c8e2613b2b85e747f6a97f6e512dccd3ce305
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:11:36 2015 -0500
+
+    fixing recipe formatting 12
+
+commit 9b749a282b10a1387b9b2ad9614364e24963e575
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:11:05 2015 -0500
+
+    fixing recipe formatting 11
+
+commit 624557261efbe03723fa0926cba68ba4bd4d2ede
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 13:10:12 2015 -0500
+
+    fixing recipe formatting 10
+
+commit 84e9036bfacc19a7ba479b34944ff1374c78a0eb
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:59:43 2015 -0500
+
+    fixing recipe formatting 9
+
+commit 6887d2ab7c192f455bf885b46256917eedc405c0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:59:14 2015 -0500
+
+    fixing recipe formatting 8
+
+commit b4a02ec3a919b12b1da2d0dce99a58721efba544
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:58:30 2015 -0500
+
+    fixing recipe formatting 7
+
+commit 5d40cf9c41be4421d95ff8991d3beeffcaf867a5
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:57:39 2015 -0500
+
+    fixing recipe formatting 6
+
+commit 5f5f2c2d76e48a51664beef77f74d8366d3336e0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:57:15 2015 -0500
+
+    fixing recipe formatting 5
+
+commit 92365933070d258d328c62cd8a74ffd93fc49d5d
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:56:20 2015 -0500
+
+    fixing recipe formatting 4
+
+commit cfa5c68fb535bf9cd601a773e19a2157567fb636
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 14 12:51:45 2015 -0500
+
+    editing api settings
+
+commit 5aab72f6b32b93711c7a3b6b20bc82babf0412b3
+Merge: 904cfe0 5d12bab
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 14 12:50:29 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 904cfe09fc4124781a84c916d8a9991d53346740
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 14 12:50:12 2015 -0500
+
+    adding api edits
+
+commit 5d12babd4ec0c5ec90ec4f0056652160bf853172
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:47:52 2015 -0500
+
+    fixing recipe formatting...3?
+
+commit 13b60196731efac18cdb0737abe56fcca3f7724c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:40:29 2015 -0500
+
+    fixing page load stuff 3
+
+commit 8dfbc5b67834970236d8a41df5e08ce66b0070e2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:38:50 2015 -0500
+
+    fixing page load stuff 2
+
+commit 023670c020e815cdda604703b36df09313b5c508
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:35:15 2015 -0500
+
+    fixing page load stuff 1
+
+commit 4454fd2213e144f03f210eca6262d88ad1b9cf80
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:33:10 2015 -0500
+
+    fixing dynamic recipe page edit
+
+commit 42d01d7b2c5416f8d9dd4169d7d97d418276f2ff
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:31:06 2015 -0500
+
+    fixing dynamic recipe page
+
+commit f1b15173b617d76ec31a59c9a02fd66294cc87ea
+Merge: d43a068 8094ac1
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 14 12:26:35 2015 -0500
+
+    adding the views
+
+commit d43a068f1b019856770a92a2bc7076f44382cac6
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 14 12:26:11 2015 -0500
+
+    adding the views
+
+commit 8094ac19ed8fa4e37cee2f01b64ca9d06e1dee54
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 14 12:22:32 2015 -0500
+
+    fixed Recipedata.json
+
+commit 460939227fb8b7039897568ccdd00ed56c7f8d51
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 14 12:20:05 2015 -0500
+
+    fixed RecipeData.json
+
+commit 00fc3f16e39a7c15b06780627d04d9675e26ad43
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 12:08:58 2015 -0500
+
+    cleaning templates folder
+
+commit d547f4d4c5fe226171a0f3b3a762b5327a0c7c27
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 14 11:48:22 2015 -0500
+
+    creating dynamic cuisine page 1
+
+commit d8095abed586dbf43fab3daeff1672f73c1c51d0
+Author: Peter Wong <peterpaulwong@wireless-10-145-249-63.public.utexas.edu>
+Date:   Tue Jul 14 09:54:23 2015 -0500
+
+    editing api config for model changes
+
+commit 9fb100cc54dc4bf26e6b77f579adb662ccdc7f51
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 14 01:50:04 2015 -0500
+
+    added ingredient_models_data.json To be used to create the models tabels for ingredients
+
+commit 1fbce022886850002db6cae7c33ee2a7dfc8ea93
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 14 01:27:04 2015 -0500
+
+    added Recipe_models_data.json To be used to fill in the data table for recipe model
+
+commit 7531dab5248e4c90b25461603540d23e84026119
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Mon Jul 13 23:41:08 2015 -0500
+
+    adding files for api
+
+commit c2dafa9c33fa18b7dd34c88ec0da3295b552b7fd
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Mon Jul 13 23:06:23 2015 -0500
+
+    commiting intial api config
+
+commit 8587b7f7821e61d233c6b50e8049afa0514a462a
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Mon Jul 13 22:31:55 2015 -0500
+
+    setting admin.py back to original content types
+
+commit ceda804e49a566f31acc8fb719eb8a2fc97d3bea
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Mon Jul 13 21:10:58 2015 -0500
+
+    updated model design with ManyToManyField
+
+commit 8ef974f4da4f5df560bf86b5aba89f8253854935
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Mon Jul 13 20:09:41 2015 -0500
+
+    commiting prototype model
+
+commit c8d9bcaac8eee6158ecba58096e3ba6bfe753066
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:40:06 2015 -0500
+
+    adding functionality to recipe bootstrap 20
+
+commit 76fa332889cb88444227386d9383dc5690e731c7
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:38:45 2015 -0500
+
+    adding functionality to recipe bootstrap 20
+
+commit bcd0db52fcbb6baccb50dd62e89bb140ddb87296
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:25:56 2015 -0500
+
+    adding functionality to recipe bootstrap 19
+
+commit ccba05870c45fafac136b4aa8dc45751edf9d3dd
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:23:37 2015 -0500
+
+    adding functionality to recipe bootstrap 18
+
+commit 47774ccd9af5fbcd298bfa3e170703db28dd7538
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:21:58 2015 -0500
+
+    adding functionality to recipe bootstrap 17
+
+commit 2468d83d1080c23ff73f91694776f99bf5232c19
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:18:48 2015 -0500
+
+    adding functionality to recipe bootstrap 16
+
+commit e3258a100b19279431f916cbb94258d3b2d9b572
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:17:17 2015 -0500
+
+    adding functionality to recipe bootstrap 15
+
+commit 97c91fc165a1b2a57b536804f5a1fdd0cd4a8ece
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:13:50 2015 -0500
+
+    adding functionality to recipe bootstrap 14
+
+commit fef5617234429ec8bf9e43c35d763a6396fa0b7f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:12:17 2015 -0500
+
+    adding functionality to recipe bootstrap 13
+
+commit b0ee6d763b1ed48fdd9277a789bf55f48b8ffa83
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:09:44 2015 -0500
+
+    adding functionality to recipe bootstrap 12
+
+commit e81a56877f42ddd46fca535278dc45a2f60ac51c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:08:56 2015 -0500
+
+    adding functionality to recipe bootstrap 11
+
+commit 26514ffc549ac7b09323472d6754dd84c4f34687
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:06:24 2015 -0500
+
+    adding functionality to recipe bootstrap 10
+
+commit a2dbe5245155f321c56c921a0f9a38e1e1ee4b61
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:05:39 2015 -0500
+
+    adding functionality to recipe bootstrap 9
+
+commit d7b007d224353680a6bb88c6c6202a4b733dc9f3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 19:03:55 2015 -0500
+
+    adding functionality to recipe bootstrap 8
+
+commit 250b90c9847d490698d943ee3e51d45b8709b8af
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:59:55 2015 -0500
+
+    adding functionality to recipe bootstrap 7
+
+commit d17d675ece28f2a8195cfab8ba3012fb12ec4b58
+Author: JesusDeLaO <delao27>
+Date:   Mon Jul 13 18:58:03 2015 -0500
+
+    added ingredientsData.json
+
+commit 3e7c56d75a446211f109390a61795f86e3ed67b9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:58:03 2015 -0500
+
+    adding functionality to recipe bootstrap 6
+
+commit be8147f7808ab8fd61fddf00f653bb7717414295
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:55:42 2015 -0500
+
+    adding functionality to recipe bootstrap 5
+
+commit ecb8c4940b875528b528da2b898c82cf57deb6e2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:54:02 2015 -0500
+
+    adding functionality to recipe bootstrap 4
+
+commit c1f889eef46b95b8e327459a96c66ebe482f109f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:50:50 2015 -0500
+
+    adding functionality to recipe bootstrap 3
+
+commit 4b0c77311630a0767c7760aaa3f2c6784ecb30e2
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:50:13 2015 -0500
+
+    adding functionality to recipe bootstrap 2
+
+commit dcddd334e1dc3272bb9360429c7a4bdb0a6b1dd3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:47:02 2015 -0500
+
+    adding functionality to recipe bootstrap 1
+
+commit e8eb06e77fab2889351f006998c37d427f807360
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:41:53 2015 -0500
+
+    adding recipe bootstrapped page 1
+
+commit e7535881b192ec2ed61d2e25bd0c051f76d23c43
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 18:36:04 2015 -0500
+
+    temp
+
+commit 98f91456a2f81162e4ccc2628264abab5cdba2ed
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Mon Jul 13 18:32:18 2015 -0500
+
+    adding recipe page,grid page(with css)
+
+commit 1fdec02e93d78adf2186bbb852514133996e082f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:21:41 2015 -0500
+
+    location test 27
+
+commit 21f9c9742e26b77b6e8b80cfb95f27f17941eb87
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:19:49 2015 -0500
+
+    location test 26
+
+commit 6575fec5b813fc0b3c95dc863a9f2365e20a0aff
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:16:06 2015 -0500
+
+    location test 25
+
+commit f7f56145e3e32e850e120226f6becd256e97fcb3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:15:23 2015 -0500
+
+    location test 24
+
+commit bfa5e8c38318c673453e150a135370965fbe1b71
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:14:24 2015 -0500
+
+    location test 23
+
+commit ce0347746892f787b1f75237da06ea0e65a5c618
+Merge: df082e8 edb2ae1
+Author: JesusDeLaO <delao27>
+Date:   Mon Jul 13 17:11:54 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit edb2ae1d421832dc804b7ff28794fedb0d4c4969
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:12:08 2015 -0500
+
+    location test 22
+
+commit df082e8221407535027549ebd168fe95437e9f96
+Author: JesusDeLaO <delao27>
+Date:   Mon Jul 13 17:11:45 2015 -0500
+
+    added RecipeData.json
+
+commit fbab48d5a5141ffc14f839239bfe2147584d21c9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:09:52 2015 -0500
+
+    location test 21
+
+commit 04250d90f216df8040714f3dcaf0e99c07a32273
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Mon Jul 13 17:08:20 2015 -0500
+
+    experiments with psql
+
+commit fb65648a57cc36320bef8abcc14d6680af5f1216
+Author: JesusDeLaO <delao27>
+Date:   Mon Jul 13 17:08:00 2015 -0500
+
+    added RecipeData json file
+
+commit b8895bee6469e2f5a464e1b63eca937e59ce3a15
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:07:48 2015 -0500
+
+    location test 20
+
+commit 5d2887c4ff12e288efca468fe005fbd2588ce5be
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 17:01:04 2015 -0500
+
+    location test 19
+
+commit 564508120377aa630b1b368f553f06664a9b1356
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:59:32 2015 -0500
+
+    location test 18
+
+commit a9bb9ae860d26c21d05cd5dc74db4ce608c31e18
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:58:57 2015 -0500
+
+    location test 17
+
+commit 0e287d555c445f26158fe0f915307338ff17f8c9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:58:23 2015 -0500
+
+    location test 16
+
+commit 26d4c65b562f6cd83e35733b7de3a2cf45a80b6f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:54:55 2015 -0500
+
+    location test 15
+
+commit 439d304243266ce4fe745e342b89ffe65beb2b79
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:53:57 2015 -0500
+
+    location test 14
+
+commit 8802f2f71ea71c48b82033051c6a60bd31375025
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:53:13 2015 -0500
+
+    location test 13
+
+commit 1cd3554c8ed84efc1c2642a2f4ce2d59161be5c8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:47:04 2015 -0500
+
+    location test 12
+
+commit 85bb1d7c6870b9cd2e94728cd77d60f19d4e4d64
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:46:15 2015 -0500
+
+    location test 11
+
+commit 8b6a3823a45de460fbd51734629c57040aa6f998
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:42:23 2015 -0500
+
+    location test 10
+
+commit e5cf1aa50afacb73b592cf1d7b81e107dbb4f99b
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:38:36 2015 -0500
+
+    location test 9
+
+commit 4976ebd88b51c94640e8314941ff8e5104ca67a3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:34:36 2015 -0500
+
+    location test 8
+
+commit 542bfc1ccff68b228b406ff95369e7c8fccbe890
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:30:35 2015 -0500
+
+    location test 7
+
+commit 7510df65a399a1e2b04a88e1de635599902f5838
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:28:26 2015 -0500
+
+    location test 7
+
+commit ba4834eb4be33936b252067b96d80ee143b45fbf
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:27:07 2015 -0500
+
+    location test 6
+
+commit 45b5d5750987a5e92a9cc4844f5de0c0ebfffb4d
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:24:45 2015 -0500
+
+    location test 5
+
+commit e6845d5f3892ea060dd4bc7d87722ea44f820a1f
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:20:45 2015 -0500
+
+    location test 4
+
+commit 5827a1be584bb86050391223768c20381e694b36
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:16:26 2015 -0500
+
+    location test 3
+
+commit cf75b5e13d129ff967a24e28007cca3a95d36151
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:15:42 2015 -0500
+
+    location test 2
+
+commit 3fc8bc8ff6546fe14b09629d7fa028f3583bd0db
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:08:32 2015 -0500
+
+    location test 1
+
+commit 515778f70af7cf008f1b4ba0493c9571e236c23a
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:04:27 2015 -0500
+
+    testing angularjs location url function in index1
+
+commit 4e49246c6535f5f578cff1e648eae7b74c900176
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 16:02:21 2015 -0500
+
+    testing angularJS in index
+
+commit 19005bdf51e173579192d00f41ce4a57fda819ae
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 15:58:44 2015 -0500
+
+    testing index1 1
+
+commit 38feac5f26cb5372901a3d7a8059286212f27e58
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 13 15:55:49 2015 -0500
+
+    adding index test files to templates
+
+commit 558f130cca4d634183e5f1e4871ec6c6a9a05429
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 20:09:42 2015 -0500
+
+    final commit for project3
+
+commit b148d841fe07d8b9a9855370bc23bae447970f71
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 20:07:55 2015 -0500
+
+    removed Micelenious file
+
+commit 0d08ce8dc4179ef954ac924360b207d353065a22
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 20:06:11 2015 -0500
+
+    added models.py and tests.py to the main folder
+
+commit fc4245eeca2dc14a8f482dd0a3fce169520fa351
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 20:03:06 2015 -0500
+
+    fixed travis
+
+commit 8acb7eae67f401c797920e3904bd21f3db29b77c
+Merge: 54605cf 9e251f5
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 19:59:51 2015 -0500
+
+    merge dev
+
+commit 9e251f5352207bf967ad80b23b9a1df8872530ae
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 19:42:01 2015 -0500
+
+    modified makefile
+
+commit c23d2787c24128ae43afc25c4409a005df4b3496
+Author: JesusDeLaO <delao27>
+Date:   Wed Jul 8 19:41:23 2015 -0500
+
+    added models.html
+
+commit 385ad4abb8a0793847c8c31525e551eaeae21422
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 8 19:24:11 2015 -0500
+
+    added team information to new folder miscellaneous
+
+commit ac852b10ce293b278548b16601004fa5f0d80ecd
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:50:14 2015 -0500
+
+    adding the about page again
+
+commit c813ae603cdc2fa06b03c61a496dbdbd6cc6a60e
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:47:50 2015 -0500
+
+    adding the about page
+
+commit 3fe0dfbc99f549eb211f5ab40bdd23e3d792ab99
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:45:29 2015 -0500
+
+    adding the about page
+
+commit 0fd5128f6c20096be99c942e5c245303adf9625e
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Wed Jul 8 18:38:58 2015 -0500
+
+    moved about.html to templates director
+
+commit caac34f02db3357ec15507d4908798e02c8ee0c2
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Wed Jul 8 18:30:41 2015 -0500
+
+    updated about.html to include statistics and database info
+
+commit 7ccc8b97c1b52499e408f6049bda2268d88633bd
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:27:05 2015 -0500
+
+    adding files for cusines
+
+commit 7598116c4b0f1b1fe0681ec1b748cb3694341364
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:24:03 2015 -0500
+
+    adding files for cusines
+
+commit 332ffa83290d84cba21e75a13a0d7e610b0e97b2
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:19:59 2015 -0500
+
+    adding links to cuisines
+
+commit 3216d74978df343c9a80a33175912283137c0b8d
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:10:12 2015 -0500
+
+    linking files for dev
+
+commit 7c14cf6906e6947b124fdbfafdac5d34f5037902
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:07:29 2015 -0500
+
+    adding links for recipes
+
+commit 300ba3ada73e6aa322d9336fa1d069d46db4f8a0
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 18:04:11 2015 -0500
+
+    adding more links for cuisine
+
+commit dcf4636fb7b83e1fcd6ad617c789b4f5d3a0022d
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:59:30 2015 -0500
+
+    adding more links for cuisine
+
+commit 316608050cd513dba0104b105297d5f52bd917a9
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:54:57 2015 -0500
+
+    adding more links for cuisine
+
+commit a52322f5101dc16ab45da4e940de5c8241b78b17
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:47:01 2015 -0500
+
+    adding linking for ingredients
+
+commit 11190e6ecda0a43e5b1e87d931fca2db4b5b693c
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Wed Jul 8 17:46:05 2015 -0500
+
+    added about_page folder
+
+commit 1b5ca00151efb766f6b392000c80b92dcc8dbf42
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:43:06 2015 -0500
+
+    adding more links
+
+commit e8f0edd55d93d122d7766b4ac63652731ccd7d1c
+Merge: dfa092e 200c456
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 17:40:16 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 200c456d743b4f8d8f7b4300737e011cb0327a71
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:37:51 2015 -0500
+
+    adding ingredients
+
+commit dfa092eb9b9d6e3d67eb175e6576cedf1c53b269
+Merge: 7d75484 7f00a39
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 17:36:25 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 7d754841c94481e4e6f16f8ee197713555a69dcc
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 17:35:14 2015 -0500
+
+    added ingredients unit tests
+
+commit 7f00a392bc59b070b2e2e25df5c26c3e7e50f5e2
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:34:39 2015 -0500
+
+    adding ingredients
+
+commit 9ce750d0da4dd41a0f60cdfb8663281c9e78ae7b
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:25:45 2015 -0500
+
+    testing home link
+
+commit 99a915c057927c4e5690c07a572c2f4893afe5e2
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:23:54 2015 -0500
+
+    testing urls
+
+commit 6c22d34f53a55706892981cbe9c4e3b55918f2e8
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:21:29 2015 -0500
+
+    testing urls
+
+commit 97f2a45ff893a4a586d00a6c58f39b3a8b02e780
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:15:19 2015 -0500
+
+    testing link back to home from model
+
+commit 7b93b0ff11614e02e1fa68f8d5616f9e3a5a3824
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 17:12:42 2015 -0500
+
+    adding more models
+
+commit 5d6279d76e1c4f469860e5f38fd3a350c3565bae
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 16:56:48 2015 -0500
+
+    pushing home page and model attempt 1
+
+commit b1c783b18bd977e3d4c54251f3a449ae649d7731
+Merge: 4bef523 baf3ee2
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 16:25:08 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 4bef5238c75ad2dc021ab1ef08f55cc2c7dc1c37
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 16:25:00 2015 -0500
+
+    added 5 cuisine unit tests
+
+commit baf3ee2e4e08e63579fedd20a6610ffca34660c7
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 8 16:17:20 2015 -0500
+
+    moved templates and static content to app, overwrote old data
+
+commit 4e0f9b5a15d4379050d503cacfa74303ab58c69c
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 8 16:15:05 2015 -0500
+
+    finished phase 1 webpage functionality
+
+commit c36293059fcb02535c02f15e62fa39828f1e5540
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Wed Jul 8 16:10:53 2015 -0500
+
+    adding updated urls config
+
+commit 34923db0d8e59207b59a40b07c836f42bbd67cf1
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Wed Jul 8 14:59:14 2015 -0500
+
+    copied js folder back into static_angular_html_files
+
+commit 467e5429db6e9ad65e21e154fecad954fe205b9a
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Tue Jul 7 23:32:35 2015 -0500
+
+    development of connecting site links
+
+commit 342d2ab2c415a549040d6feb687c7a70cc83e263
+Merge: 184cb7d d93f0f1
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 21:54:00 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit d93f0f14201bb44a13d949ef6b65634e26a365e6
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 21:58:04 2015 -0500
+
+    added Recipe_tables.json
+
+commit 184cb7d14565b7b8af96aa9dce6b81dae82c5473
+Merge: 464dbdf e3a5db4
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 21:52:54 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 464dbdf64f41411721b060ceea1fddc2d88c8ff8
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 21:51:56 2015 -0500
+
+    moved bootstrap,splash page to food templates
+
+commit e3a5db4fb1b64a2aa8839cd2db61b3382f19be9c
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Wed Jul 8 02:49:52 2015 +0000
+
+    changed source keywd to . due to source command not found issue
+
+commit fc95f11dc114cb8e0ba60e96b202d9b35cb7f961
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:41:20 2015 -0500
+
+    changed brackets and moved html for static pages
+
+commit bffb85c6472cae57eeb3e97e18bd7369c6388fe7
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:27:32 2015 -0500
+
+    removed some old files
+
+commit 8f86ae77945f9715f4d81084c8bb416c5075fcdc
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 21:31:18 2015 -0500
+
+    added Ingredients_table.json
+
+commit 4270da5b93ea8cdcab3b0afea06579de2a5d7c43
+Merge: bd51411 8fc5bd3
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:23:05 2015 -0500
+
+    Merge branch 'dev' of github.com:wongpeterp/cs373-idb into dev
+
+commit bd514116e99b367fcc93169d332bc92bbb412fa5
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:22:53 2015 -0500
+
+    moved stuff
+
+commit 8fc5bd352d1fd58a009f4081654962d0d5dbe6b8
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 21:22:37 2015 -0500
+
+    added about.html, fixes #24
+
+commit 6542ce47242a7065deabaddcc48f6c341528a04e
+Merge: 8cac22c fb4fb57
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:14:50 2015 -0500
+
+    Merge branch 'dev' of github.com:wongpeterp/cs373-idb into dev
+
+commit 8cac22c2a1a5229cec5dc060eaa215fab4e2a8db
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 21:14:18 2015 -0500
+
+    added drc technical report section
+
+commit 79270e285f0afb0cdb78b97146edecf763140d76
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 21:16:52 2015 -0500
+
+    renamed file cuisine_tables
+
+commit e5bedb659aa34ce940f7134ad1e2d903accca17a
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 21:15:02 2015 -0500
+
+    added recipe_tables.json
+
+commit 4edd6d56dde7ce68c5ff6fac3a902e1cb04a14ac
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 21:14:15 2015 -0500
+
+    added precipe_tables
+
+commit fb4fb579695c9fafe26197ffd63be5f0fb1f2a6f
+Merge: 0e02af2 79270e2
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 7 21:13:45 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 0e02af25231dee2723faece52b252f2fa54679d4
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 7 21:13:23 2015 -0500
+
+    adding django config for testing purposes
+
+commit d00031c884e187df0813dfdffcafa6ca08c916ba
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 20:34:13 2015 -0500
+
+    prepping for model page creation
+
+commit 4b1a9f2c675645ea506d818e74132ac2de022b65
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 20:32:04 2015 -0500
+
+    trivial additions/conflict resolutions in models.py
+
+commit 2600df71b93ae1978039fe49abd3fc9f950f3fdd
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 20:24:58 2015 -0500
+
+    added back to home links
+
+commit 2833b12f1c16951ad6df785a32e59c40215ed01a
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 20:05:40 2015 -0500
+
+    adding back static_angular_html_files, fixes #23
+
+commit 5f0df765044f61878b177945409771b54cc927e3
+Merge: 9f786cd ac952b2
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 19:36:39 2015 -0500
+
+    commiting models.py
+
+commit 9f786cdd21edb7cdcedc0895f10d9f9c13a3c2c0
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 19:35:14 2015 -0500
+
+    pushing models.py
+
+commit ac952b2a8dfc9ede7eb20907097ba429a07e4b5d
+Merge: 32b7a94 d62fb45
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 23:17:49 2015 +0000
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 32b7a94efc2fcd0bacfd89889f334b1946c15099
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 23:17:27 2015 +0000
+
+    added pretty make check and make final
+
+commit d62fb45997db48e4f43bed6593fbda39490d0665
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 18:04:16 2015 -0500
+
+    added splah and splash links
+
+commit 9dfc30a8846586ed2062c4464c80ac14b389558c
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Tue Jul 7 17:53:22 2015 -0500
+
+    created splash page, added bootstrap files,resolve #22
+
+commit 4fe5901c5d03a71e15a49fd0786d5e3554ef1b5e
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 17:47:07 2015 -0500
+
+    added index pages for recipies, cuisines, and ingredients
+
+commit 342cb30ffb945a2c103a0d413989dfdfffc0e594
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 17:24:48 2015 -0500
+
+    added static ingredient links
+
+commit 04374a29a95801adf1e51bd9d227627d00e3e788
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 17:21:32 2015 -0500
+
+    added static cuisine links
+
+commit 9861ef73f9a0c61d49f501860d35257d13adddbf
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 17:16:59 2015 -0500
+
+    added links for static recipe pages
+
+commit 51b0e305f89fa8ba0a32983d23ab377730843140
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 17:00:28 2015 -0500
+
+    added static ingredient pages
+
+commit 7a67813202e926aeecede5ba5ef6f5423b8442bb
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 16:54:37 2015 -0500
+
+    added static cuisine pages
+
+commit 65ade2462c4bb7eec80e0fec73e909d9df6f2e15
+Merge: 4b52ffb 184deff
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 21:48:27 2015 +0000
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 4b52ffbcf1422cca9119308ff314436d38aba5d8
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 21:48:09 2015 +0000
+
+    eliminated foreign key ref to cuisine
+
+commit 184deff3f8747dc996a3051e8a2f400ede1bcdee
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 16:42:01 2015 -0500
+
+    added static recipe pages (3)
+
+commit a7d00b741f0accb3ec0b7be2db80db279e825a9a
+Merge: acea594 e54366f
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 16:39:28 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit acea594212d5454edacf7e32fcc7f97c8b484892
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 16:39:18 2015 -0500
+
+    added Ingredients_.json
+
+commit e54366f5240f9401fa91a4fe862ef8d4fe236d47
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 16:29:52 2015 -0500
+
+    first static page on new meta
+
+commit a400d014c929ace9fd965c017812291b342aa5a6
+Merge: 19d5747 fa85be2
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 21:14:27 2015 +0000
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 19d57479fb968eaed77d392358cf123464fff674
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 21:14:05 2015 +0000
+
+    changed cuisine spelling
+
+commit fa85be201c65f8f9ff25901c40ef5f12a3600162
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 16:10:04 2015 -0500
+
+    added cuisines_.json
+
+commit 490742f30a39d069e597df48cc1c039be027ea30
+Author: Marguerite West-Driga <mwestdri@gmail.com>
+Date:   Tue Jul 7 13:27:26 2015 -0500
+
+    added some server setup notes and scripts to the makefile
+
+commit 4524dcc13e4912fa49a5291c9c09f9ef47d20ffc
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 13:05:20 2015 -0500
+
+    added basic linking
+
+commit e65ecd62faeaeb85207aa4d10e366c55bc8869e8
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Tue Jul 7 13:00:55 2015 -0500
+
+    fixed ingredient pulling in recipeIndex.html
+
+commit 5dc8895603234e8f7895b5c4654ce4a6b783cd40
+Merge: a131121 6fd7bdc
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 7 11:50:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit a131121fb68cd7e2f5f6cb2753f5d7d50b3126ca
+Author: Peter Wong <peterpaulwong@wireless-10-147-38-110.public.utexas.edu>
+Date:   Tue Jul 7 11:50:04 2015 -0500
+
+    adding django config
+
+commit 6fd7bdc7b0d6fcc40fcd3061b6dff3519eec569a
+Merge: 15d855e 3a2210f
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 11:24:21 2015 -0500
+
+    Merge branch 'dev' of https://github.com/wongpeterp/cs373-idb into dev
+
+commit 15d855eba0b742fbbca1c9f9f1439605ecec3e39
+Author: JesusDeLaO <delao27>
+Date:   Tue Jul 7 11:24:01 2015 -0500
+
+    changed the data.json file so that it has the ingredients as a dictonary
+
+commit 3a2210fdc81608f3db7be1d89a663a3474169949
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Mon Jul 6 23:52:13 2015 -0500
+
+    deleting old files
+
+commit 2257660642ad884a6790fdd1615feee2b17ce1a6
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Mon Jul 6 23:51:04 2015 -0500
+
+    editing django config
+
+commit 6344c6471e90189385919535ad777813a8165295
+Author: Peter Wong <peterpaulwong@Peter-Wongs-MacBook-Pro.local>
+Date:   Mon Jul 6 23:30:22 2015 -0500
+
+    adding django models changing
+
+commit 54605cfe19e47b2936f1072fb9dd492004b172e4
+Author: Peter P Wong <wong.peterpaul@gmail.com>
+Date:   Mon Jul 6 22:47:59 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 089c6a505b367ff49381626cb19892be65cd24d0
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 6 21:56:11 2015 -0500
+
+    fixed html stuff
+
+commit 660c0f602c91e383137787604b0199a41824d392
+Author: JesusDeLaO <delao27>
+Date:   Mon Jul 6 21:47:02 2015 -0500
+
+    added json file for data
+
+commit ed6aa3efae51819677f22de71834935f1465f6de
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 6 21:29:22 2015 -0500
+
+    added dynamic html files
+
+commit f5ee476760506d7da7b62615f95dcdee84a6fbf9
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 6 20:40:05 2015 -0500
+
+    added recipie json format example
+
+commit 7b90b839f13833b56c78161de3cdd526c62a236a
+Author: Jesus De La O <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 20:08:11 2015 -0500
+
+    Replaced UML.pdf
+
+commit 9e100eb22665234216cc29076f7421e2970b0ebb
+Author: Jesus De La O <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 19:27:59 2015 -0500
+
+    add UML.pdf resolves #15
+
+commit e2d52e9305279ca149010f44f28b97bf323a02d0
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Mon Jul 6 19:00:54 2015 -0500
+
+    updated JS controllers with nutritional info
+
+commit 7b26e19e29220baddd5a1d8c0bc4e26e5b217186
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 6 18:44:48 2015 -0500
+
+    updated generic controller format
+
+commit 36beb0d1a022bde55aab30faa67ff37a02fbbc28
+Author: delao27 <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 17:29:04 2015 -0500
+
+    Finished Draft of API
+
+commit dd13233e97d881a5e348cf3f4f5d3c0a49f05607
+Author: delao27 <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 17:25:24 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 9dd701bb2247e0173030b35802cb30bb2f6595fe
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Mon Jul 6 17:24:43 2015 -0500
+
+    uploading the JS recipe controllers
+
+commit 92c86a52ef9cdecbc8f8dd3e4cfe4d77a378fc43
+Author: delao27 <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 17:16:08 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit b32e5e1364fd370780865f64fb753f2270bf47c8
+Author: delao27 <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 17:13:42 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 60c99666f431aa004776fb7b70f2fb329f6c68df
+Author: Derek Cornelius <drc@cs.utexas.edu>
+Date:   Mon Jul 6 16:42:40 2015 -0500
+
+    sharing recipecontroller.js
+
+commit d869c768bf46a0921b0ef6069a42bc9d8cbf8924
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Mon Jul 6 16:33:18 2015 -0500
+
+    added cuisine and ingredients pages
+
+commit 270c7e7537e0b1c0b9e041797df843e10bc2c3c3
+Author: delao27 <jesusdelao@utexas.edu>
+Date:   Mon Jul 6 16:32:42 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 7813107926a702e7df0ecde5875c7fd5710a013f
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Mon Jul 6 01:40:46 2015 -0500
+
+    added more static recipes
+
+commit 40b713663d782aea7eb642d415b449814c849429
+Author: Peter Wong <peterp@cs.utexas.edu>
+Date:   Sun Jul 5 21:23:01 2015 -0500
+
+    adding initial django setup
+
+commit 9fbcdfbb3dc9cdbddd7b44ad300aa46b4bd2466a
+Merge: ca2ab84 6e445b7
+Author: Peter Wong <peterp@cs.utexas.edu>
+Date:   Sun Jul 5 20:47:06 2015 -0500
+
+    Merge branch 'master' into dev
+
+commit 6e445b7fd66ce3239dc0b44c56670fe5e7dfc5ee
+Author: Peter P Wong <wong.peterpaul@gmail.com>
+Date:   Sun Jul 5 20:09:32 2015 -0500
+
+    updating api to have gets for 3 model types
+
+commit 8f632c79630d9540a15efac1e0aaf625e48070aa
+Author: Mario <mario771@cs.utexas.edu>
+Date:   Sun Jul 5 19:35:19 2015 -0500
+
+    added some html files,need more
+
+commit ca2ab843236b2a5d6921d9c58d8ecf5aeafab3ff
+Author: Peter Wong <peterp@cs.utexas.edu>
+Date:   Thu Jul 2 16:14:45 2015 -0500
+
+    connecting repo to travis ci, fixes #3
+
+commit 220ead92509b13c78f678c0357f79e904a4af365
+Author: Peter Wong <peterp@cs.utexas.edu>
+Date:   Thu Jul 2 16:08:56 2015 -0500
+
+    adding the initial config files: gitignore,makefile,.travis.yml
+
+commit 0b13b771f21d64800ed4d55e1f8512ddf4248e30
+Author: Peter P Wong <wong.peterpaul@gmail.com>
+Date:   Thu Jul 2 15:37:00 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 80ca2dfc75b96f92ad7fcacddc0276556dcfcb57
+Author: Peter P Wong <wong.peterpaul@utexas.edu>
+Date:   Wed Jul 1 21:00:14 2015 -0500
+
+    Initial commit
