@@ -30,8 +30,6 @@ config:
 test: 
 	python3 food/manage.py test foodApp
 
-models.html: models.py
-	pydoc3 -w models
 
 IDB.log:
 	git log > IDB.log
