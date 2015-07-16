@@ -15,10 +15,17 @@ sudo:
 before_install:
     - sudo apt-get update
 
+env:
+  - DJANGO=1.8
+
 install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - pip install django
+    - pip3 install djangorestframework
+    - pip3 install markdown
+    - pip3 install django-filter
 
 before_script:
     - uname -a
