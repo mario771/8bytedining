@@ -43,5 +43,5 @@ script:
     - ls -al
     - touch IDB.log
     - ls -al
-    - make test
+    #- make test
     - ls -al
