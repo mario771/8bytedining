@@ -1,17 +1,24 @@
+#Test for models.py
 import os
 import sys
 import json
+import django.test
 from django.test.utils import setup_test_environment
+from django.test import TestCase
+from django.test import RequestFactory
 from django.core.urlresolvers import reverse
 from django.core.management import call_command
+from rest_framework import status
+from rest_framework.test import APITestCase
 
-from django.utils import unittest
-from django.test import TestCase
+#from django.utils import unittest
+import unittest
 from django.http import HttpResponse
 
 from json import dumps, loads
+from django.contrib.auth.models import *
 
-from models.py import *
+from foodApp.models import *
 
 
 class ModelTestCase(TestCase):
@@ -149,7 +156,7 @@ class ModelTestCase(TestCase):
             'reci': "{'danish-pastries': ['Danish Pastries', 'danish-pastries']}",
             }
         Cuisines.objects.create(**test_dic)
-        cuisine_get = Cuisines.objects.get(test_dic['id'])
+        cuisine_get = Cuisines.objects.get(id = test_dic['id'])
         self.assertEqual(cuisine_get.name, test_dic['name'])
         self.assertEqual(cuisine_get.id_cusine, test_dic['id_cusine'])
         self.assertEqual(cuisine_get.url, test_dic['url'])
@@ -169,7 +176,7 @@ class ModelTestCase(TestCase):
             'reci': "{'biscotti': ['Biscotti', 'biscotti'], 'fresh-spinach-pasta-dough': ['Fresh Spinach Pasta Dough', 'fresh-spinach-pasta-dough'], 'ricotta-cheese': ['Ricotta Cheese', 'ricotta-cheese'], 'risotto-milanese': ['Risotto Milanese', 'risotto-milanese'], 'fresh-pasta-sheets': ['Fresh Pasta Sheets', 'fresh-pasta-sheets'], 'basic-pasta-dough': ['Basic Pasta Dough', 'basic-pasta-dough'], 'risotto-cakes': ['Risotto Cakes', 'risotto-cakes'], 'pesto-sauce': ['Pesto Sauce', 'pesto-sauce'], 'fresh-tomato-sauce-for-pasta': ['Fresh Tomato Sauce for Pasta', 'fresh-tomato-sauce-for-pasta'], 'focaccia-roman-flatbread': ['Focaccia (Roman Flatbread)', 'focaccia-roman-flatbread'], 'carpaccio': ['Carpaccio', 'carpaccio'], 'chocolate-italian-buttercream': ['Chocolate Italian Buttercream', 'chocolate-italian-buttercream'], 'eggplant-and-sun-dried-tomato-pizza': ['Eggplant and Sun-Dried Tomato Pizza', 'eggplant-and-sun-dried-tomato-pizza'], 'bolognese-sauce': ['Bolognese Sauce', 'bolognese-sauce'], 'italian-meringue': ['Italian Meringue', 'italian-meringue'], 'barley-risotto': ['Barley Risotto', 'barley-risotto']}",
             }
         Cuisines.objects.create(**test_dic)
-        cuisine_get = Cuisines.objects.get(test_dic['id'])
+        cuisine_get = Cuisines.objects.get(id = test_dic['id'])
         self.assertEqual(cuisine_get.name, test_dic['name'])
         self.assertEqual(cuisine_get.id_cusine, test_dic['id_cusine'])
         self.assertEqual(cuisine_get.url, test_dic['url'])
@@ -188,8 +195,8 @@ class ModelTestCase(TestCase):
             'all_cuisines': "{'n-a': ['N/A', 'n-a'], 'american-mountain-states': ['American: Mountain States', 'american-mountain-states'], 'american': ['American', 'american'], 'scandinavian': ['Scandinavian', 'scandinavian'], 'mexican': ['Mexican', 'mexican'], 'american-the-melting-pot': ['American: The Melting Pot', 'american-the-melting-pot'], 'asian': ['Asian', 'asian'], 'american-new-england': ['American: New England', 'american-new-england'], 'italian': ['Italian', 'italian'], 'indian': ['Indian', 'indian'], 'american-southwest': ['American: Southwest', 'american-southwest'], 'french': ['French', 'french'], 'vietnamese': ['Vietnamese', 'vietnamese']}",
             'all_recipes': "{'risotto-cakes': ['Risotto Cakes', 'risotto-cakes'], 'caramelized-berry-sauce': ['Caramelized Berry Sauce', 'caramelized-berry-sauce'], 'sugar-syrup-medium': ['Sugar Syrup (medium)', 'sugar-syrup-medium'], 'focaccia-roman-flatbread': ['Focaccia (Roman Flatbread)', 'focaccia-roman-flatbread'], 'lamb-jus-lia': ['Lamb Jus Li', 'lamb-jus-lia'], 'chicken-stock': ['Chicken Stock', 'chicken-stock'], 'white-chocolate-buttercream': ['White Chocolate Buttercream', 'white-chocolate-buttercream'], 'white-chicken-stock': ['White Chicken Stock', 'white-chicken-stock'], 'shallot-curry-oil': ['Shallot Curry Oil', 'shallot-curry-oil'], 'crunchy-granola': ['Crunchy Granola', 'crunchy-granola'], 'shellfish-stock': ['Shellfish Stock', 'shellfish-stock'], 'cream-of-tomato-soup': ['Cream Of Tomato Soup', 'cream-of-tomato-soup'], 'brown-stock': ['Brown Stock', 'brown-stock'], 'creole-ra-moulade': ['Creole Rmoulade', 'creole-ra-moulade'], 'watermelon-and-cherry-salad-with-fresh-mint-syrup': ['Watermelon and Cherry Salad with Fresh Mint Syrup', 'watermelon-and-cherry-salad-with-fresh-mint-syrup'], 'curried-chickpea-crisps': ['Curried Chickpea Crisps', 'curried-chickpea-crisps'], 'veal-stock': ['Veal Stock', 'veal-stock'], 'fish-fumet': ['Fish Fumet', 'fish-fumet'], 'danish-pastries': ['Danish Pastries', 'danish-pastries'], 'rabbit-stock': ['Rabbit Stock', 'rabbit-stock'], 'simple-syrup': ['Simple Syrup', 'simple-syrup'], 'soy-dipping-sauce': ['Soy Dipping Sauce', 'soy-dipping-sauce'], 'french-or-italian-bread': ['French or Italian Bread', 'french-or-italian-bread'], 'shrimp-stock': ['Shrimp Stock', 'shrimp-stock'], 'black-bean-spread': ['Black Bean Spread', 'black-bean-spread'], 'minted-cheese-mousse': ['Minted Cheese Mousse', 'minted-cheese-mousse'], 'redfish-sopa-base': ['Redfish Sopa Base', 'redfish-sopa-base'], 'court-bouillon': ['Court Bouillon', 'court-bouillon'], 'beef-stock': ['Beef Stock', 'beef-stock'], 'candied-citrus-rind': ['Candied Citrus Rind', 'candied-citrus-rind'], 'diplomat-cream-filling': ['Diplomat Cream Filling', 'diplomat-cream-filling'], 'apple-salsa': ['Apple Salsa', 'apple-salsa'], 'beet-vinaigrette': ['Beet Vinaigrette', 'beet-vinaigrette'], 'savory-crepes': ['Savory Crepes', 'savory-crepes'], 'new-england-style-clam-chowder': ['New England-Style Clam Chowder', 'new-england-style-clam-chowder'], 'tomatillo-salsa': ['Tomatillo Salsa', 'tomatillo-salsa'], 'rhubarb-preserves': ['Rhubarb Preserves', 'rhubarb-preserves'], 'lobster-stock': ['Lobster Stock', 'lobster-stock'], 'passion-fruit-cra-me-chiboust': ['Passion Fruit Crme Chiboust', 'passion-fruit-cra-me-chiboust'], 'simmered-rice': ['Simmered Rice', 'simmered-rice'], 'mustard-vinaigrette-dressing': ['Mustard Vinaigrette Dressing', 'mustard-vinaigrette-dressing'], 'caramel-sauce': ['Caramel Sauce', 'caramel-sauce'], 'hollandaise': ['Hollandaise', 'hollandaise'], 'brown-veal-stock': ['Brown Veal Stock', 'brown-veal-stock'], 'orange-gastrique': ['Orange Gastrique', 'orange-gastrique'], 'barley-risotto': ['Barley Risotto', 'barley-risotto'], 'lime-chiffon': ['Lime Chiffon', 'lime-chiffon'], 'soft-yeast-dinner-rolls': ['Soft Yeast Dinner Rolls', 'soft-yeast-dinner-rolls'], 'white-stock': ['White Stock', 'white-stock'], 'pizza-dough': ['Pizza Dough', 'pizza-dough'], 'dark-chocolate-syrup': ['Dark Chocolate Syrup', 'dark-chocolate-syrup'], 'turtle-cheesecake': ['Turtle Cheesecake', 'turtle-cheesecake'], 'whole-wheat-bread': ['Whole-Wheat Bread', 'whole-wheat-bread'], 'fresh-cranberry-orange-relish': ['Fresh Cranberry-Orange Relish', 'fresh-cranberry-orange-relish'], 'puff-pastry': ['Puff Pastry', 'puff-pastry'], 'breadsticks': ['Breadsticks', 'breadsticks'], 'english-muffin-loaves': ['English Muffin Loaves', 'english-muffin-loaves'], 'duck-stock': ['Duck Stock', 'duck-stock'], 'risotto-milanese': ['Risotto Milanese', 'risotto-milanese'], 'nuoc-cham-vietnamese-dipping-sauce': ['Nuoc Cham (Vietnamese Dipping Sauce)', 'nuoc-cham-vietnamese-dipping-sauce'], 'dough-for-pa-ta': ['Dough for Pt', 'dough-for-pa-ta'], 'fish-stock': ['Fish Stock', 'fish-stock'], 'smoked-bacon-and-black-quinoa-pilaf': ['Smoked Bacon and Black Quinoa Pilaf', 'smoked-bacon-and-black-quinoa-pilaf'], 'poached-eggs': ['Poached Eggs', 'poached-eggs'], 'pork-stock': ['Pork Stock', 'pork-stock'], 'mushroom-sauce': ['Mushroom Sauce', 'mushroom-sauce'], 'powdered-sugar-glaze': ['Powdered Sugar Glaze', 'powdered-sugar-glaze'], 'toffee-caramel-flan': ['Toffee Caramel Flan', 'toffee-caramel-flan'], 'vegetable-stock': ['Vegetable Stock', 'vegetable-stock'], 'brioche-dough': ['Brioche Dough', 'brioche-dough'], 'pinto-beans': ['Pinto Beans', 'pinto-beans'], 'white-veal-stock': ['White Veal Stock', 'white-veal-stock'], 'basic-fudge-frosting': ['Basic Fudge Frosting', 'basic-fudge-frosting'], 'cooked-long-grain-rice': ['Cooked Long-Grain Rice', 'cooked-long-grain-rice'], 'game-stock': ['Game Stock', 'game-stock'], 'brioche': ['Brioche', 'brioche'], 'white-sandwich-bread': ['White Sandwich Bread', 'white-sandwich-bread'], 'jus-lia': ['Jus Li', 'jus-lia'], 'san-francisco-sourdough-bread': ['San Francisco Sourdough Bread', 'san-francisco-sourdough-bread'], 'naan-indian-flatbread': ['Naan (Indian Flatbread)', 'naan-indian-flatbread'], 'gingered-dal': ['Gingered Dal', 'gingered-dal'], 'cra-me-chiboust': ['Crme Chiboust', 'cra-me-chiboust'], 'pho-bo-hanoi-beef-and-noodle-soup': ['Pho Bo (Hanoi Beef and Noodle Soup)', 'pho-bo-hanoi-beef-and-noodle-soup'], 'harvest-lobster-and-corn-chowder': ['Harvest Lobster and Corn Chowder', 'harvest-lobster-and-corn-chowder'], 'lamb-stock': ['Lamb Stock', 'lamb-stock'], 'chocolate-italian-buttercream': ['Chocolate Italian Buttercream', 'chocolate-italian-buttercream'], 'dried-fruit-compote': ['Dried Fruit Compote', 'dried-fruit-compote'], 'light-rye-bread': ['Light Rye Bread', 'light-rye-bread'], 'pheasant-stock': ['Pheasant Stock', 'pheasant-stock'], 'matzo-balls': ['Matzo Balls', 'matzo-balls'], 'italian-meringue': ['Italian Meringue', 'italian-meringue'], 'cra-pes': ['Crpes', 'cra-pes'], 'challah': ['Challah', 'challah'], 'peanut-sauce': ['Peanut Sauce', 'peanut-sauce']}",
             }
-        Ingredient.objects.create(**test_dict)
-        ingredients_get = Ingredient.objects.get(id=test_dict['id'])
+        Ingredients.objects.create(**test_dict)
+        ingredients_get = Ingredients.objects.get(id=test_dict['id'])
         self.assertEqual(ingredients_get.ing_id, test_dict['ing_id'])
         self.assertEqual(ingredients_get.name, test_dict['name'])
         self.assertEqual(ingredients_get.quant_data,
@@ -211,8 +218,8 @@ class ModelTestCase(TestCase):
             'all_cuisines': "{'french': ['French', 'french']}",
             'all_recipes': "{'frangelico-custard-sauce': ['Frangelico Custard Sauce', 'frangelico-custard-sauce']}",
             }
-        Ingredient.objects.create(**test_dict)
-        ingredients_get = Ingredient.objects.get(id=test_dict['id'])
+        Ingredients.objects.create(**test_dict)
+        ingredients_get = Ingredients.objects.get(id=test_dict['id'])
         self.assertEqual(ingredients_get.ing_id, test_dict['ing_id'])
         self.assertEqual(ingredients_get.name, test_dict['name'])
         self.assertEqual(ingredients_get.quant_data,
@@ -234,8 +241,8 @@ class ModelTestCase(TestCase):
             'all_cuisines': "{'austrian': ['Austrian', 'austrian'], 'n-a': ['N/A', 'n-a'], 'american': ['American', 'american'], 'italian': ['Italian', 'italian'], 'american-southern': ['American: Southern', 'american-southern'], 'british-isles': ['British Isles', 'british-isles'], 'french': ['French', 'french'], 'indian': ['Indian', 'indian'], 'russian-eastern-european': ['Russian / Eastern European', 'russian-eastern-european'], 'american-new-england': ['American: New England', 'american-new-england']}",
             'all_recipes': '{\'savory-fruit-compote\': [\'Savory Fruit Compote\', \'savory-fruit-compote\'], \'new-york-cheesecake\': [\'New York Cheesecake\', \'new-york-cheesecake\'], \'orange-gastrique\': [\'Orange Gastrique\', \'orange-gastrique\'], \'barley-risotto\': [\'Barley Risotto\', \'barley-risotto\'], \'breaded-veal-cutlets\': [\'Breaded Veal Cutlets\', \'breaded-veal-cutlets\'], \'cherry-confit\': [\'Cherry Confit\', \'cherry-confit\'], \'soubise-sauce\': [\'Soubise Sauce\', \'soubise-sauce\'], \'beurre-rouge\': [\'Beurre Rouge\', \'beurre-rouge\'], \'cheese-blintzes\': [\'Cheese Blintzes\', \'cheese-blintzes\'], \'beurre-mania\': [\'Beurre Mani\', \'beurre-mania\'], \'velouta\': [\'Velout\', \'velouta\'], \'phyllo-crisps\': [\'Phyllo Crisps\', \'phyllo-crisps\'], \'sorrel-sauce\': [\'Sorrel Sauce\', \'sorrel-sauce\'], \'mashed-potatoes\': [\'Mashed Potatoes\', \'mashed-potatoes\'], \'cream-of-tomato-soup\': [\'Cream Of Tomato Soup\', \'cream-of-tomato-soup\'], \'whole-wheat-bread\': [\'Whole-Wheat Bread\', \'whole-wheat-bread\'], \'garlic-croutons\': [\'Garlic Croutons\', \'garlic-croutons\'], \'goat-cheese-and-potato-custard\': [\'Goat Cheese and Potato Custard\', \'goat-cheese-and-potato-custard\'], \'streusel-topping\': [\'Streusel Topping\', \'streusel-topping\'], \'milanaise-sauce\': [\'Milanaise Sauce\', \'milanaise-sauce\'], \'shortcakes\': [\'Shortcakes\', \'shortcakes\'], \'brennan-s-red-wine-and-mushroom-sauce\': ["Brennan\'s Red-Wine and Mushroom Sauce", \'brennan-s-red-wine-and-mushroom-sauce\'], \'spiced-pecans\': [\'Spiced Pecans\', \'spiced-pecans\'], \'fish-velouta\': [\'Fish Velout\', \'fish-velouta\'], \'chocolate-souffla-s\': [\'Chocolate Souffls\', \'chocolate-souffla-s\'], \'risotto-milanese\': [\'Risotto Milanese\', \'risotto-milanese\'], \'hungarian-sauce\': [\'Hungarian Sauce\', \'hungarian-sauce\'], \'vichyssoise-cold-potato-leek-soup\': [\'Vichyssoise (Cold Potato-Leek Soup)\', \'vichyssoise-cold-potato-leek-soup\'], \'thyme-scented-celery-essence\': [\'Thyme-Scented Celery Essence\', \'thyme-scented-celery-essence\'], \'duchesse-potatoes\': [\'Duchesse Potatoes\', \'duchesse-potatoes\'], \'horseradish-cream-sauce\': [\'Horseradish Cream Sauce\', \'horseradish-cream-sauce\'], \'mint-and-celeriac-sauce\': [\'Mint and Celeriac Sauce\', \'mint-and-celeriac-sauce\'], \'aurora-sauce\': [\'Aurora Sauce\', \'aurora-sauce\'], \'tulipe-cookies\': [\'Tulipe Cookies\', \'tulipe-cookies\'], \'fish-fumet\': [\'Fish Fumet\', \'fish-fumet\'], \'parsnip-pura-e\': [\'Parsnip Pure\', \'parsnip-pura-e\'], \'tomato-butter-sauce-with-thyme\': [\'Tomato Butter Sauce with Thyme\', \'tomato-butter-sauce-with-thyme\'], \'bolognese-sauce\': [\'Bolognese Sauce\', \'bolognese-sauce\'], \'garlic-tuiles\': [\'Garlic Tuiles\', \'garlic-tuiles\'], \'poulette-sauce\': [\'Poulette Sauce\', \'poulette-sauce\'], \'veal-velouta\': [\'Veal Velout\', \'veal-velouta\'], \'entreca-tes-bordelaise\': [\'Entrectes Bordelaise\', \'entreca-tes-bordelaise\'], \'mushroom-sauce\': [\'Mushroom Sauce\', \'mushroom-sauce\'], \'strawberry-cra-pes-fitzgerald\': [\'Strawberry Crpes Fitzgerald\', \'strawberry-cra-pes-fitzgerald\'], \'beurre-blanc\': [\'Beurre Blanc\', \'beurre-blanc\'], \'persillade\': [\'Persillade\', \'persillade\'], \'chasseur-hunter-s-sauce\': ["Chasseur (Hunter\'s Sauce)", \'chasseur-hunter-s-sauce\'], \'mornay-sauce\': [\'Mornay Sauce\', \'mornay-sauce\'], \'minute-steak-dijonaise\': [\'Minute Steak Dijonaise\', \'minute-steak-dijonaise\'], \'carrot-pura-e\': [\'Carrot Pure\', \'carrot-pura-e\'], \'chevreuil-sauce\': [\'Chevreuil Sauce\', \'chevreuil-sauce\'], \'shirred-eggs-with-ham\': [\'Shirred Eggs with Ham\', \'shirred-eggs-with-ham\'], \'blond-roux\': [\'Blond Roux\', \'blond-roux\'], \'chocolate-italian-buttercream\': [\'Chocolate Italian Buttercream\', \'chocolate-italian-buttercream\'], \'rolled-souffla\': [\'Rolled Souffl\', \'rolled-souffla\'], \'clarified-butter\': [\'Clarified Butter\', \'clarified-butter\'], \'cheddar-and-leek-soup\': [\'Cheddar and Leek Soup\', \'cheddar-and-leek-soup\'], \'honey-cardamom-butter\': [\'Honey Cardamom Butter\', \'honey-cardamom-butter\'], \'robert-sauce\': [\'Robert Sauce\', \'robert-sauce\'], \'smoked-corn-pudding\': [\'Smoked Corn Pudding\', \'smoked-corn-pudding\'], \'new-england-style-clam-chowder\': [\'New England-Style Clam Chowder\', \'new-england-style-clam-chowder\'], \'brennan-s-lemon-butter-sauce\': ["Brennan\'s Lemon Butter Sauce", \'brennan-s-lemon-butter-sauce\'], \'filet-of-beef-with-coffee-beans\': [\'Filet of Beef with Coffee Beans\', \'filet-of-beef-with-coffee-beans\'], \'crumb-pie-crust\': [\'Crumb Pie Crust\', \'crumb-pie-crust\'], \'veal-marsala\': [\'Veal Marsala\', \'veal-marsala\'], \'lobster-stock\': [\'Lobster Stock\', \'lobster-stock\'], \'gingered-dal\': [\'Gingered Dal\', \'gingered-dal\'], \'white-roux\': [\'White Roux\', \'white-roux\'], \'potato-and-celeriac-pura-e\': [\'Potato and Celeriac Pure\', \'potato-and-celeriac-pura-e\'], \'harvest-lobster-and-corn-chowder\': [\'Harvest Lobster and Corn Chowder\', \'harvest-lobster-and-corn-chowder\'], \'cha-teaubriand-sauce\': [\'Chteaubriand Sauce\', \'cha-teaubriand-sauce\'], \'boeuf-a-la-ficelle-beef-poached-on-a-string\': [\'Boeuf \\xa0 la Ficelle (Beef Poached on a String)\', \'boeuf-a-la-ficelle-beef-poached-on-a-string\'], \'ra-sti-potatoes\': [\'Rsti Potatoes\', \'ra-sti-potatoes\'], \'bordelaise-sauce\': [\'Bordelaise Sauce\', \'bordelaise-sauce\'], \'popovers\': [\'Popovers\', \'popovers\'], \'hearty-vegetable-beef-soup\': [\'Hearty Vegetable Beef Soup\', \'hearty-vegetable-beef-soup\'], \'bercy-sauce\': [\'Bercy Sauce\', \'bercy-sauce\'], \'cream-of-broccoli-soup\': [\'Cream Of Broccoli Soup\', \'cream-of-broccoli-soup\'], \'togarishi-yams\': [\'Togarishi Yams\', \'togarishi-yams\'], \'duxelles\': [\'Duxelles\', \'duxelles\'], \'sweetbreads-grenoble\': [\'Sweetbreads Grenoble\', \'sweetbreads-grenoble\'], \'poivrade-sauce\': [\'Poivrade Sauce\', \'poivrade-sauce\'], \'roux\': [\'Roux\', \'roux\']}',
             }
-        Ingredient.objects.create(**test_dict)
-        ingredients_get = Ingredient.objects.get(id=test_dict['id'])
+        Ingredients.objects.create(**test_dict)
+        ingredients_get = Ingredients.objects.get(id=test_dict['id'])
         self.assertEqual(ingredients_get.ing_id, test_dict['ing_id'])
         self.assertEqual(ingredients_get.name, test_dict['name'])
         self.assertEqual(ingredients_get.quant_data,
@@ -257,8 +264,8 @@ class ModelTestCase(TestCase):
             'all_cuisines': "{'n-a': ['N/A', 'n-a']}",
             'all_recipes': "{'turkey-breast-scallops-3-oz': ['Turkey Breast Scallops (3 oz)', 'turkey-breast-scallops-3-oz']}",
             }
-        Ingredient.objects.create(**test_dict)
-        ingredients_get = Ingredient.objects.get(id=test_dict['id'])
+        Ingredients.objects.create(**test_dict)
+        ingredients_get = Ingredients.objects.get(id=test_dict['id'])
         self.assertEqual(ingredients_get.ing_id, test_dict['ing_id'])
         self.assertEqual(ingredients_get.name, test_dict['name'])
         self.assertEqual(ingredients_get.quant_data,
@@ -280,8 +287,8 @@ class ModelTestCase(TestCase):
             'all_cuisines': "{'french': ['French', 'french']}",
             'all_recipes': "{'tarragon-aa-oli': ['Tarragon Aoli', 'tarragon-aa-oli']}",
             }
-        Ingredient.objects.create(**test_dict)
-        ingredients_get = Ingredient.objects.get(id=test_dict['id'])
+        Ingredients.objects.create(**test_dict)
+        ingredients_get = Ingredients.objects.get(id=test_dict['id'])
         self.assertEqual(ingredients_get.ing_id, test_dict['ing_id'])
         self.assertEqual(ingredients_get.name, test_dict['name'])
         self.assertEqual(ingredients_get.quant_data,
