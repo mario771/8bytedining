@@ -393,7 +393,7 @@ class ModelTestCase(TestCase):
         expectedData = {"id":5,"ing_id":"chocolate-unsweetened","name":"unsweetened chocolate","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 501.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '12.9 g per 100g ', 'carbohydrates': '29.84 g per 100g ', 'saturated fat': '32.351 g per 100g ', 'fat': '52.31 g per 100g ', 'iron': '17.4 mg per 100g ', 'calories from fat': '470.79 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '0.0 mg per 100g ', 'calories': '501.0 kcal per 100g ', 'vitamin a': '0.0 IU per 100g ', 'vitamin c': '0.0 mg per 100g ', 'calcium': '101.0 mg per 100g ', 'sodium': '24.0 mg per 100g '}","all_cuisines":"{'french': ['French', 'french']}","all_recipes":"{'chocolate-caramel-mousse': ['Chocolate Caramel Mousse', 'chocolate-caramel-mousse']}"}
         r = requests.get("http://0.0.0.0:8000/api/ingredients/5/?format=json")
         data = r.json()
-                        
+            
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["ing_id"] , data["ing_id"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -405,10 +405,11 @@ class ModelTestCase(TestCase):
 
     def test_get_cuisine1(self):
 
-        expectedData = {"id":4,"id_cusine":"american-california","name":"American: California","url":"","quant_data":"{'diversity': 2.644628099173554, 'diveristy': 2.644628099173554, 'popularity': 0.4, 'number_of_recipes': 2, 'number_of_ingredients': 16, 'avg_salt': 247.08333333333334}","ingr":"{'pepper-jalapeno-chile': ['jalapeno chile pepper', 'pepper-jalapeno-chile'], 'cumin-ground': ['ground cumin to taste', 'cumin-ground'], 'shrimp-16-20-ct': ['16-20 ct shrimp', 'shrimp-16-20-ct'], 'clarified-butter': ['Clarified Butter', 'clarified-butter'], 'onion-green': ['green onion', 'onion-green'], 'garlic': ['garlic', 'garlic'], 'chicken-breast-boneless-skinless': ['boneless skinless chicken breast', 'chicken-breast-boneless-skinless'], 'butter-unsalted': ['unsalted butter', 'butter-unsalted'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'mushrooms-medium': ['medium mushrooms', 'mushrooms-medium'], 'cheese-monterey-jack': ['monterey jack cheese', 'cheese-monterey-jack'], 'cilantro-fresh': ['fresh cilantro', 'cilantro-fresh'], 'avocado': ['avocado', 'avocado']}","reci":"{'shrimp-and-avocado-omelet': ['Shrimp and Avocado Omelet', 'shrimp-and-avocado-omelet'], 'garden-frittata': ['Garden Frittata', 'garden-frittata']}"}
+        expectedData ={"id":4,"id_cusine":"american-california","name":"American: California","url":"","quant_data":"{'diversity': 2.644628099173554, 'diveristy': 2.644628099173554, 'popularity': 0.4, 'number_of_recipes': 2, 'number_of_ingredients': 16, 'avg_salt': 247.08333333333334}","ingr":"{'pepper-jalapeno-chile': ['jalapeno chile pepper', 'pepper-jalapeno-chile'], 'cumin-ground': ['ground cumin to taste', 'cumin-ground'], 'shrimp-16-20-ct': ['16-20 ct shrimp', 'shrimp-16-20-ct'], 'clarified-butter': ['Clarified Butter', 'clarified-butter'], 'onion-green': ['green onion', 'onion-green'], 'garlic': ['garlic', 'garlic'], 'chicken-breast-boneless-skinless': ['boneless skinless chicken breast', 'chicken-breast-boneless-skinless'], 'butter-unsalted': ['unsalted butter', 'butter-unsalted'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'mushrooms-medium': ['medium mushrooms', 'mushrooms-medium'], 'cheese-monterey-jack': ['monterey jack cheese', 'cheese-monterey-jack'], 'cilantro-fresh': ['fresh cilantro', 'cilantro-fresh'], 'avocado': ['avocado', 'avocado']}","reci":"{'shrimp-and-avocado-omelet': ['Shrimp and Avocado Omelet', 'shrimp-and-avocado-omelet'], 'garden-frittata': ['Garden Frittata', 'garden-frittata']}"}
         r = requests.get("http://0.0.0.0:8000/api/cuisines/4/?format=json")
         data = r.json()
-    
+
+        self.maxdiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -421,7 +422,8 @@ class ModelTestCase(TestCase):
         expectedData = {"id":5,"id_cusine":"american-hawaii","name":"American: Hawaii","url":"","quant_data":"{'diversity': 0.0, 'diveristy': 0.0, 'popularity': 0.0, 'number_of_recipes': 0, 'number_of_ingredients': 0, 'avg_salt': 0.0}","ingr":"{}","reci":"{}"}
         r = requests.get("http://0.0.0.0:8000/api/cuisines/5/?format=json")
         data = r.json()
-    
+
+        self.maxdiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -431,10 +433,11 @@ class ModelTestCase(TestCase):
 
     def test_get_cuisine3(self):
 
-        expectedData = {"id":6,"id_cusine":"american-mid-atlantic","name":"American: Mid-Atlantic","url":"","quant_data":"{'diversity': 2.1487603305785123, 'diveristy': 2.1487603305785123, 'popularity': 0.2, 'number_of_recipes': 1, 'number_of_ingredients': 13, 'avg_salt': 141.715}","ingr":"{'worcestershire-sauce': ['worcestershire sauce to taste', 'worcestershire-sauce'], 'onion-green': ['green onion', 'onion-green'], 'pepper-green-bell': ['green bell pepper', 'pepper-green-bell'], 'mustard-dijon': ['Dijon mustard', 'mustard-dijon'], 'tabasco-sauce': ['tabasco sauce to taste', 'tabasco-sauce'], 'clarified-butter': ['Clarified Butteras needed', 'clarified-butter'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'fresh-bread-crumbs': ['Fresh Bread Crumbs', 'fresh-bread-crumbs'], 'crabmeat-lump': ['lump crabmeat', 'crabmeat-lump'], 'cream-heavy': ['heavy cream', 'cream-heavy']}","reci":"{'blue-crab-cakes': ['Blue Crab Cakes', 'blue-crab-cakes']}"}
+        expectedData ={"id":6,"id_cusine":"american-mid-atlantic","name":"American: Mid-Atlantic","url":"","quant_data":"{'diversity': 2.1487603305785123, 'diveristy': 2.1487603305785123, 'popularity': 0.2, 'number_of_recipes': 1, 'number_of_ingredients': 13, 'avg_salt': 141.715}","ingr":"{'worcestershire-sauce': ['worcestershire sauce to taste', 'worcestershire-sauce'], 'onion-green': ['green onion', 'onion-green'], 'pepper-green-bell': ['green bell pepper', 'pepper-green-bell'], 'mustard-dijon': ['Dijon mustard', 'mustard-dijon'], 'tabasco-sauce': ['tabasco sauce to taste', 'tabasco-sauce'], 'clarified-butter': ['Clarified Butteras needed', 'clarified-butter'], 'pepper-ground-black': ['ground black pepper to taste', 'pepper-ground-black'], 'salt': ['salt to taste', 'salt'], 'eggs': ['eggs', 'eggs'], 'pepper-red-bell': ['red bell pepper', 'pepper-red-bell'], 'fresh-bread-crumbs': ['Fresh Bread Crumbs', 'fresh-bread-crumbs'], 'crabmeat-lump': ['lump crabmeat', 'crabmeat-lump'], 'cream-heavy': ['heavy cream', 'cream-heavy']}","reci":"{'blue-crab-cakes': ['Blue Crab Cakes', 'blue-crab-cakes']}"}
         r = requests.get("http://0.0.0.0:8000/api/cuisines/6/?format=json")
         data = r.json()
-    
+
+        self.maxdiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
