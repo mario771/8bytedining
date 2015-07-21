@@ -42,6 +42,11 @@ urlpatterns = [
     url(r'^api/ingredients/$',api.IngredientList.as_view()),
     url(r'^api/ingredients/(?P<pk>[-\w]+)/$', api.IngredientDetail.as_view()),
 
+    #CrossFIt
+
+   url(r'^crossFit', views.crossFit, name='crossFit'),
+
+ 
    
 ]
 
