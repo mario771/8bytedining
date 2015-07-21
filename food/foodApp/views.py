@@ -165,8 +165,9 @@ def crossfit(request):
     region = athlete['region']
     print("*********")
     print(region)
-    print("*********")
-    crossFitDict['region'] = regionList[region]
+    print("*********"):
+    regionList[region-2]
+    #crossFitDict['region'] = 
     #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
     
     #For each athlete have their image pop up in a box along with
