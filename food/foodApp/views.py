@@ -144,7 +144,7 @@ def crossfit(request):
   responseAthletes = requestAthletes.read().decode("utf-8")
   athleteList = json.loads(responseAthletes)
 
-  responseInstagrams = requestInstagram.read().decode("utf-8")
+  responseInstagrams = requestInstagrams.read().decode("utf-8")
   instagramList = json.loads(responseInstagrams)
 
 
