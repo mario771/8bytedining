@@ -1,3 +1,129 @@
+<!doctype html>
 <html>
-Look Behind you
+  <head>
+
+    <title> Unit Tests </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/foodApp/grid/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/foodApp/grid/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
+    <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
+    <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="/static/foodApp/grid/assets/js/jquery.min.js"></script>
+  
+
+         
+  </head>
+
+  <body style="background-image:url(http://i.imgur.com/KfbZan0.jpg);background-repeat:no-repeat;background-attachment:fixed">
+
+  		 <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="http://8bytedining.me" target="_self">Home </a>
+            </li>
+            <li>
+                <a href="#search" onclick = $("#menu-close").click();>Search<i class="glyphicon glyphicon-search"></i> </a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/ingredients" onclick = $("#menu-close").click(); > Ingredients</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/cuisines" onclick = $("#menu-close").click(); >Cuisines</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/crossfit" onclick = $("#menu-close").click(); >Get in Shape!</a>
+            </li>
+        </ul>
+    </nav>
+
+      <br>
+      <div class="row">
+        <br>
+        <h1 class="centered" style="font-size:48px; color:white"> <strong>Unit Tests</strong></h1>
+        <hr style="border-color:black">
+        <h2 class="centered"class="centered" style="font-size:48px; color:white"><strong>....................</strong></h2>
+        <h2 class="centered"class="centered" style="font-size:48px; color:white">--------------------------------------------------------------</h2>
+        <h2 class="centered"class="centered" style=" color:white"><strong>Ran 20 tests in 1.035s</strong></h2>
+        <h2 class="centered"class="centered" style=" color:white"><button  class="btn btn-primary"><strong>OK</strong></button></h2>
+
+        <br>
+        <br>
+      </div><!-- /row -->
+
+        <div id="search">
+            <form action="/search">
+                <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+   
+    </script>
+    <script>
+
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+
+    </script>
+
+
+  </body>
 </html>
