@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="/static/foodApp/css/landing-page.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,7 +47,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
+                <a href="#top"  onclick = $("#menu-close").click(); > Home </a>
             </li>
             <li>
                 <a href="http://8bytedining.me" target="_self">Home </a>
