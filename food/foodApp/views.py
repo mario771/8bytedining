@@ -177,5 +177,5 @@ def crossfit(request):
   return render_to_response('crossFit.html', {'d': finalDict}, context)
  
 
-def runTests(request) :
+
 
