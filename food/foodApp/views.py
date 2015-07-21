@@ -203,7 +203,7 @@ def runTests(request) :
   return render_to_response(request, 'runtests.html',context)
 """
 
-def unit_tests(request):
+def runTests(request):
 
 	BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 	command = "python3 " + os.path.join(BASE_DIR, 'manage.py') + " test populate_content -v 2 --keepdb"
