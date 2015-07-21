@@ -6,7 +6,7 @@ from rest_framework import generics
 from .models import Cuisines, Recipes, Ingredients
 import urllib
 import json
-import os
+import os, subprocess,re
 
 def home(request):
    context = RequestContext(request)
