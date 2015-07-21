@@ -214,5 +214,5 @@ def runTests(request):
    
    print("****************************************************")
 
-   return render_to_response('recipes.html', {'result': result})
+   return render_to_response('runtests.html', {'result': result})
 
