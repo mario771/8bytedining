@@ -166,7 +166,7 @@ def crossfit(request):
       if (instagram['athlete']['id'] == athlete['id']) : 
          post = instagram['post']
   
-    crossFitdict['post'] = post 
+    crossFitDict['post'] = post 
      
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
@@ -176,6 +176,7 @@ def crossfit(request):
 
   return render_to_response('crossFit.html', {'d': finalDict}, context)
  
-
-#def runTests(request) :
-
+"""
+def runTests(request) :
+  context = {"results": tests.unittests()   
+"""  
