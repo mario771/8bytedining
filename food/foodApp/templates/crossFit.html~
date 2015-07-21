@@ -8,7 +8,7 @@
     {% if d %}
       {% for key, value in d %}
         {{ key }} </br>
-        {{ value }}
+        {{ result }}
       {% endfor %}
     {% else %}
       Didn't recieve anything..
