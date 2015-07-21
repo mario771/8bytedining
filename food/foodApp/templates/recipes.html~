@@ -1,5 +1,7 @@
 <html>
    <body>
-  {{  result }}
+	result <br><br><br>
+  {{ for r in result }}
+	r <br>
   </body>
 </html>
