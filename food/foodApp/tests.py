@@ -25,7 +25,7 @@ from foodApp.models import *
 
 
 class ModelTestCase(TestCase):
-
+    """
     def test_recipes_model1(self):
 
         test_cuisine = {
@@ -87,7 +87,7 @@ class ModelTestCase(TestCase):
                          )
         self.assertEqual(recipe_get.cuisine_ori,
                          "['American', 'american']")
-
+    """
     def test_cuisine_model1(self):
         test_dic = {
             'id': 2,
