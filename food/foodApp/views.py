@@ -176,8 +176,8 @@ def crossfit(request):
 
   return render_to_response('crossfit.html', {'d': finalDict}, context)
  
-
+"""
 def runTests(request) :
   context = {"results": tests.unittests()}  
   return render_to_response(request, "runtests.html',context)
- 
+"""
