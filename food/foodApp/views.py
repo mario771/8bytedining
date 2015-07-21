@@ -153,6 +153,11 @@ def crossfit(request):
   finalDict = {}
   #Right now we're getting all the athletes, maybe just a subset?
 
+  print("AMMEERRRRICAAAA***********")
+  for r in regionList : 
+    print(r['id'])
+  print("THEEE BEAUTIFUL***********")
+
   for athlete in athleteList :
     
     crossFitDict = {}
