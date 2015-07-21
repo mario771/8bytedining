@@ -132,7 +132,7 @@ def crossfit(request):
 
   context = RequestContext(request)
 
-  teamApiUrl = "crossfit.social/"
+  teamApiUrl = "http://crossfit.social/"
   requestRegions = urllib.request.urlopen(teamApiUrl+"api/regions/?format=json")
   requestAthletes = urllib.request.urlopen(teamApiUrl+"api/athletes/?format=json")
   requestInstagrams = urlib.request.urlopen(teamApiUrl+"api/instagram/?format=json")
