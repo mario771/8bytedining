@@ -248,6 +248,8 @@
 			<div class="container">
 			<div class="row">	
 			
+	{{ d.sample }}
+
 	{% for id, values in d.sample.items %}
 
 		<!-- SUGGESTED RECIPE X -->
