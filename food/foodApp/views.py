@@ -197,8 +197,17 @@ def crossfit(request):
 
   return render_to_response('crossfit.html', {'d': finalDict}, context)
  
-
+"""
 def runTests(request) :
   context = {"results": tests.unittests()}  
   return render_to_response(request, 'runtests.html',context)
+"""
+
+def unit_tests(request):
+
+	BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+	command = "python3 " + os.path.join(BASE_DIR, 'manage.py') + " test populate_content -v 2 --keepdb"
+	pipe = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	result = pipe.stdout.readlines() + pipe.stderr.readlines()
+	return render_to_response('runtests.html', {'result': result})
 
