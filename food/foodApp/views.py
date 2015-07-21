@@ -154,7 +154,8 @@ def crossfit(request):
   #Right now we're getting all the athletes, maybe just a subset?
 
   print("AMMEERRRRICAAAA***********")
-  print(regionList)
+  for r in regionList : 
+    print(r['id'])
   print("THEEE BEAUTIFUL***********")
 
   for athlete in athleteList :
