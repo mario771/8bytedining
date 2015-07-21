@@ -157,8 +157,8 @@ def crossfit(request):
   for athlete in athleteList :
     
     crossFitDict['athlete_name'] = athlete['name']
-    crossFitDict['region'] = regionList[athlete["region"] 
-    crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
+    crossFitDict['region'] = regionList[athlete["region"]] 
+    #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
     
     #For each athlete have their image pop up in a box along with
     # height and affiliation and weight
