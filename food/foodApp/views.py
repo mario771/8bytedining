@@ -168,7 +168,7 @@ def crossfit(request):
     crossFitDict['weight'] = athlete.weight
     """ 
 
-    print(athlete)
+    print(athlete["name"])
     
 
   return render_to_response('crossFit.html', {'d': crossFitDict}, context)
