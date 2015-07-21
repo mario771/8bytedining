@@ -36,16 +36,6 @@ test:
 IDB.log:
 	git log > IDB.log
 
-#RunCollatz.out: RunCollatz.py
-#	cat RunCollatz.in
-#	./RunCollatz.py < RunCollatz.in > RunCollatz.out
-#	cat RunCollatz.out
-
-#TestCollatz.out: TestCollatz.py
-#	coverage3 run    --branch TestCollatz.py >  TestCollatz.out 2>&1
-#	coverage3 report -m                      >> TestCollatz.out
-#	cat TestCollatz.out
-
 login:
 	ssh -i .ssh/id_rsa_rackspace test@${IP}
 
