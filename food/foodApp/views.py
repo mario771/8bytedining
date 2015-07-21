@@ -210,7 +210,9 @@ def runTests(request):
    pipe = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
    result = pipe.stdout.readlines() + pipe.stderr.readlines()
    print("****************************************************")
-   print(result)  
+   del result[0]
+   del result[1]
+   del result[2] 
    print("****************************************************")
 
    return render_to_response('recipes.html', {'result': result})
