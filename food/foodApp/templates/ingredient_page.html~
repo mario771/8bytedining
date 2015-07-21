@@ -47,6 +47,10 @@
   </head>
 
   <body>
+
+	Items: <br>
+	{{ d.sample }}
+
   <div>
 
     <title> {{ d.name }} </title>
@@ -248,7 +252,6 @@
 			<div class="container">
 			<div class="row">	
 			
-	{{ d.sample }}
 
 	{% for id, values in d.sample.items %}
 
