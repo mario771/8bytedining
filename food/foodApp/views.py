@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from rest_framework import generics
 from .models import Cuisines, Recipes, Ingredients
 import urllib
+import json
 
 def home(request):
    context = RequestContext(request)
