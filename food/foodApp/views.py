@@ -210,7 +210,7 @@ def runTests(request):
    pipe = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
    result = pipe.stdout.readlines() + pipe.stderr.readlines()
    print("****************************************************")
-   del result[0:1]
+   del result[0:2]
    
    print("****************************************************")
 
