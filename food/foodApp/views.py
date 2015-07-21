@@ -153,21 +153,13 @@ def crossfit(request):
   finalDict = {}
   #Right now we're getting all the athletes, maybe just a subset?
 
-  print("AMMEERRRRICAAAA***********")
-  for r in regionList : 
-    print(r['id'])
-  print("THEEE BEAUTIFUL***********")
-
   for athlete in athleteList :
     
     crossFitDict = {}
     crossFitDict['athlete_name'] = athlete['name']
     region = athlete['region']
-    print("*********")
-    print(region)
-    print("*********")
     regionList[region-2]
-    #crossFitDict['region'] = 
+    #crossFitDict['region'] = regionList[region-2]["name"] 
     #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
     
     #For each athlete have their image pop up in a box along with
