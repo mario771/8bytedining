@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
     <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -30,7 +31,7 @@
 
   </head>
 
-  <body style="background-image:url(http://joshuareis.com/word/wp-content/uploads/2014/09/IMG_7286_L2.jpg)">
+  <body style="background-image:url(/static/foodApp/img/recipe_model_picture.jpg); background-repeat:no-repeat; background-attachment:fixed">
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -38,10 +39,10 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
+                <a href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a href="http://8bytedining.me" target="_self">Home </a>
+                <a href="#search" onclick = $("#menu-close").click();>Search<i class="glyphicon glyphicon-search"></i> </a>
             </li>
             <li>
                 <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
@@ -54,6 +55,9 @@
             </li>
             <li>
                 <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/crossfit" onclick = $("#menu-close").click(); >Get in Shape!</a>
             </li>
         </ul>
     </nav>
@@ -85,12 +89,18 @@
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.price }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.Serves }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.number_of_ingredients }} </td>
-            <td style= "font-size: 14px; color:black"> {{ v.quant_data.total_fat }} </td>
+            <td style= "font-size: 14px; color:black"> {{ v.quant_data.total_fat|floatformat:"-2" }} </td>
             <td style= "font-size: 14px; color:black"> {{ v.quant_data.calories_per_100g|floatformat:"-2" }} </td>
           </tr>
 	  {% endfor %}
         </table>
 
+  <div id="search">
+    <form>
+      <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

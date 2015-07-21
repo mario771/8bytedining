@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
     <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -119,7 +120,7 @@
 			</div><!-- container -->
 		</section>
 
-		<div class="row">
+		<div class="row" style="background-color:#EFE6E6">
                 <br>
                 <h1 class="centered"><a data-toggle="modal" href="#nMod" class="btn btn-primary btn-lg" margin-left="100px" width="auto" style="padding:0px 50px"><h1 style="color:white">Nutritional Info</h1></a> </h1>
                 <hr>

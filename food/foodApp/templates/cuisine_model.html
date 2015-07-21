@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
     <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -38,10 +39,10 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); > Menu </a>
+                <a href="http://8bytedining.me" target="_self">Home </a>
             </li>
             <li>
-                <a href="http://8bytedining.me" target="_self">Home </a>
+                <a href="#search" onclick = $("#menu-close").click();>Search<i class="glyphicon glyphicon-search"></i> </a>
             </li>
             <li>
                 <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
@@ -54,6 +55,9 @@
             </li>
             <li>
                 <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/crossfit" onclick = $("#menu-close").click(); >Get in Shape!</a>
             </li>
         </ul>
     </nav>
@@ -90,6 +94,13 @@
 	  {% endfor %}
         </table>
 
+  <div id="search">
+    <form>
+      <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -117,6 +128,22 @@
     });
    
     </script>
+
+  <script>
+
+    $('a[href="#search"]').on('click', function(event) {
+      event.preventDefault();
+      $('#search').addClass('open');
+      $('#search > form > input[type="search"]').focus();
+    });
+
+    $('#search, #search button.close').on('click keyup', function(event) {
+      if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+        $(this).removeClass('open');
+      }
+    });
+
+  </script>
 
     <script src="/static/foodApp/js/sorttable.js"></script>
 
