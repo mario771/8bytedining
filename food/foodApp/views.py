@@ -90,7 +90,7 @@ def ingredient(request, i_name):
    ingredient_dict['recipes'] = eval(ingredient.all_recipes)
    ingredient_dict['cuisines'] = eval(ingredient.all_cuisines)
    sample = {}
-   temp = (ingredient_dict['field'])['recipes']
+   temp = ingredient_dict['recipes']
    count = 0
    for x in temp:
       sample[x] = temp[x]
@@ -138,7 +138,7 @@ def cuisine(request, c_name):
    cuisine_dict['recipes'] = eval(cuisine.reci)
    cuisine_dict['ingredients'] = eval(cuisine.ingr)
    sample = {}
-   temp = (cuisine_dict['field'])['reci']
+   temp = cuisine_dict['reci']
    count = 0
    for x in temp:
       sample[x] = temp[x]
