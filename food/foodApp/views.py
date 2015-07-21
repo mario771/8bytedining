@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from rest_framework import generics
 from .models import Cuisines, Recipes, Ingredients
+import urllib
 
 def home(request):
    context = RequestContext(request)
