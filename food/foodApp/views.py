@@ -6,7 +6,7 @@ from rest_framework import generics
 from .models import Cuisines, Recipes, Ingredients
 import urllib
 import json
-import tests
+import unittest
 
 def home(request):
    context = RequestContext(request)
