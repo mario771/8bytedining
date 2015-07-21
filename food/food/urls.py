@@ -42,7 +42,10 @@ urlpatterns = [
     url(r'^api/ingredients/$',api.IngredientList.as_view()),
     url(r'^api/ingredients/(?P<pk>[-\w]+)/$', api.IngredientDetail.as_view()),
 
-   
+
+    #Search
+    url(r'^search$',views.search,name='search')
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
