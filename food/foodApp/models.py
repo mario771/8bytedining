@@ -14,11 +14,11 @@ class Ingredients (models.Model) :
    all_cuisines = models.TextField(default="")
    all_recipes = models.TextField(default="")  
    def get_absolute_url(self):
-        url_name = self.full_name.replace(' ', '_')
+        url_name = self.name.replace(' ', '_')
         return "/ingredients/%s/" % url_name
 
    def __str__ (self):
-        return self.full_name
+        return self.name 
 #------------
 #Cuisines Model
 #------------
