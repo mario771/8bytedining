@@ -126,3 +126,42 @@ def cuisine(request, c_name):
    cuisine_dict['ingredients'] = eval(cuisine.ingr)
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
+
+def crossFit():
+
+  context = RequestContext(request)
+
+  teamApiUrl = "crossfit.social/"
+  requestRegions = urllib.request.urlopen(teamApiUrl+"api/regions/?format=json")
+  requestAthletes = urllib.request.urlopen(teamApiUrl+"api/athletes/?format=json")
+  requestInstagrams = urlib.request.urlopen(teamApiUrl+"api/instagram/?format=json")
+
+  responseRegions = requestDivisions.read().decode("utf-8")
+  regionList = json.loads(responseDivisions)
+
+  responseAthletes = requestAthletes.read().decode("utf-8")
+  athleteList = json.loads(responseAthletes)
+
+  responseInstagrams = requestInstagram.read().decode("utf-8")
+  instagramList = json.loads(responseInstagrams)
+
+
+
+  #this will pass in a list containing an athlete name, region, and an instagram post
+  crossFitDict = {}
+
+  #Right now we're getting all the athletes, maybe just a subset?
+
+  for athlete in athleteList :
+    crossFitDict['athlete_name'] = athlete.name
+    crossFitDict['region'] = regionList[athlete.region] 
+    crossFitdict['post'] = instagramList.athlete.id[athlete.id].post 
+    #For each athlete have their image pop up in a box along with
+    # height and affiliation and weight
+    crossFitDict['img'] = athlete.img 
+    crossFitDict['height'] = athlete.height
+    crossFitDict['weight'] = athlete.weight
+
+  return render_to_response('crossFit.html', {'d': crossFitDict}, context)
+ 
+
