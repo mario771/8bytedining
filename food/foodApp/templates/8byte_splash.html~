@@ -18,7 +18,7 @@
     <!-- Custom CSS -->
     <link href="/static/foodApp/css/landing-page.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
-    <link href="css/searchbar.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -82,6 +82,15 @@
                         <h3></h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="/recipes" class="btn btn-default btn-lg"> <span class="network-name">Recipes</span></a>
+                            </li>
+                            <li>
+                                <a href="/ingredients" class="btn btn-default btn-lg"> <span class="network-name">Ingredients</span></a>
+                            </li>
+                            <li>
+                                <a href="/cuisines" class="btn btn-default btn-lg"></i> <span class="network-name">Cuisines</span></a>
+                            </li>
 <!-- Search bar on home -->
 	<div class="container" style="width:50%">
 	    <form action="/search" role="form">
@@ -93,15 +102,6 @@
 	    </form>
 	</div><!-- /.col-lg-6 -->
 <!-- End search bar -->
-                            <li>
-                                <a href="/recipes" class="btn btn-default btn-lg"> <span class="network-name">Recipes</span></a>
-                            </li>
-                            <li>
-                                <a href="/ingredients" class="btn btn-default btn-lg"> <span class="network-name">Ingredients</span></a>
-                            </li>
-                            <li>
-                                <a href="/cuisines" class="btn btn-default btn-lg"></i> <span class="network-name">Cuisines</span></a>
-                            </li>
                         </ul>
                     </div>
                 </div>
