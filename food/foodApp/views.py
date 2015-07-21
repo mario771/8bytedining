@@ -127,7 +127,7 @@ def cuisine(request, c_name):
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
 
-def crossFit():
+def crossfit(request):
 
   context = RequestContext(request)
 
