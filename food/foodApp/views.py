@@ -137,7 +137,7 @@ def crossfit(request):
   requestAthletes = urllib.request.urlopen(teamApiUrl+"api/athletes/?format=json")
   requestInstagrams = urllib.request.urlopen(teamApiUrl+"api/instagram/?format=json")
 
-  responseRegions = requestDivisions.read().decode("utf-8")
+  responseRegions = requestRegions.read().decode("utf-8")
   regionList = json.loads(responseDivisions)
 
   responseAthletes = requestAthletes.read().decode("utf-8")
