@@ -159,12 +159,15 @@ def crossfit(request):
     crossFitDict['athlete_name'] = athlete['name']
     region = athlete['region']
     regionList[region-2]
-    crossFitDict['region'] = regionList[region-2]["name"] 
-    #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
-    
-    #For each athlete have their image pop up in a box along with
-    # height and affiliation and weight
-    
+    crossFitDict['region'] = regionList[region-2]["name"]
+  
+    #Obtain the post
+    for instagram in instagramList:
+      if (instagram['athlete']['id'] == athlete['id']) : 
+         post = instagram['post']
+  
+    crossFitdict['post'] = post 
+     
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
     crossFitDict['weight'] = athlete["weight"]
