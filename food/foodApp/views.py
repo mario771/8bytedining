@@ -89,16 +89,6 @@ def ingredient(request, i_name):
    ingredient_dict['nut_info'] = eval(ingredient.nut_info)
    ingredient_dict['recipes'] = eval(ingredient.all_recipes)
    ingredient_dict['cuisines'] = eval(ingredient.all_cuisines)
-   sample = {}
-   temp = (ingredient_dict['fields'])['recipes']
-   count = 0
-   for x in temp:
-      sample[x] = temp[x]
-      count += 1
-      if(count ==2):
-         break
-   ingredient_dict['sample'] = sample
-   
 
    return render_to_response('ingredient_page.html',{'d':ingredient_dict}, context)
    
@@ -116,7 +106,6 @@ def cuisines(request) :
        cuisine_dict['quant_data'] = eval(cuisine.quant_data)
        cuisine_dict['recipes'] = eval(cuisine.reci)
        cuisine_dict['ingredients'] = eval(cuisine.ingr)
-    
    
        context_dict[cuisine.id_cusine] = cuisine_dict
 
@@ -137,15 +126,6 @@ def cuisine(request, c_name):
    cuisine_dict['quant_data'] = eval(cuisine.quant_data)
    cuisine_dict['recipes'] = eval(cuisine.reci)
    cuisine_dict['ingredients'] = eval(cuisine.ingr)
-   sample = {}
-   temp = (cuisine_dict['fields'])['reci']
-   count = 0
-   for x in temp:
-      sample[x] = temp[x]
-      count += 1
-      if(count ==2):
-         break
-   cuisine_dict['sample'] = sample
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
 
@@ -182,18 +162,22 @@ def crossfit(request):
     crossFitDict['region'] = regionList[region-2]["name"]
  
     post = "" 
+    postImg = ""
     #Obtain the post
     for instagram in instagramList:
       if (instagram['athlete']['id'] == athlete['id']) : 
          post = instagram['post']
+         postImg = instagram['img']
          break
   
     crossFitDict['post'] = post 
-     
+    crossFitDict['postImg'] = postImg    
+    crossFitDict['id'] = athlete['id']
+    crossFitDict['age']= athlete['age'] 
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
     crossFitDict['weight'] = athlete["weight"]
-    #Age, fix post, #image of post     
+         
     finalDict[str(athlete['name'])] = crossFitDict
 
   return render_to_response('crossfit.html', {'d': finalDict}, context)
