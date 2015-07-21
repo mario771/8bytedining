@@ -92,7 +92,7 @@
           </tr>
 
 
-          <div class="modal fade" id="bioModal{{ values.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal fade" id="bioModal{{ values.id }}" tabindex="-1" role="dialog" aria-labelledby="bioModal{{values.id}}Label" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header"style="background:#2B2B2B">

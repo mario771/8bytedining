@@ -85,6 +85,8 @@
 	  
 	  {% for name,values in d.items %}
 
+	  {% if values.post %}
+
 	  <tr>
             <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal{{ values.id }}" margin-left="100px"> {{ values.athlete_name }}</a> </td>
             <td style= "font-size: 14px; color:black"> {{ values.region }} </td>
@@ -120,7 +122,8 @@
                               </div><!-- /.modal-content -->
                             </div><!-- /.modal-dialog -->
               </div>
-	  
+
+	    {% endif %}	  
 	    {% endfor %}
 
         </table>
