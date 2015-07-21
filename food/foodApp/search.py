@@ -18,7 +18,7 @@ def dprint(a):
     print(str(a))
     print("======================")
 
-def get_query(query_string, search_fields):
+def get_query(both, query_string, search_fields):
     ''' Returns a query, that is a combination of Q objects. That combination
         aims to search keywords within a model by testing the given search fields.
     
@@ -29,11 +29,9 @@ def get_query(query_string, search_fields):
     for term in terms:
         or_query = None # Query to search for a given term in each field
         for field_name in search_fields:
-            #dprint("term is "+str(term)
             if term in field_name: 
                 right_fields += field_name
             q = Q(**{"%s__icontains" % field_name: term})
-            dprint("q is "+str(q)+", field_name "+str(field_name))
             if or_query is None:
                 or_query = q
             else:
@@ -41,26 +39,10 @@ def get_query(query_string, search_fields):
         if query is None:
             query = or_query
         else:
-            query = query & or_query
-    dprint("RIGHT FIELDS "+str(right_fields))
+            if both == 1 :
+                query = query & or_query
+            if both == 0 :
+                query = query | or_query
+            else :
+                query = query
     return query
-#def get_query(query_string, search_fields):
-#    ''' Returns a query, that is a combination of Q objects. That combination
-#        aims to search keywords within a model by testing the given search fields.
-#    
-#    '''
-#    query = None # Query to search for every search term        
-#    terms = normalize_query(query_string)
-#    for term in terms:
-#        or_query = None # Query to search for a given term in each field
-#        for field_name in search_fields:
-#            q = Q(**{"%s__icontains" % field_name: term})
-#            if or_query is None:
-#                or_query = q
-#            else:
-#                or_query = or_query | q
-#        if query is None:
-#            query = or_query
-#        else:
-#            query = query & or_query
-#    return query
