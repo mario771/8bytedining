@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Results Test Page</title>
+  </head>
+  <body>
+    Testing d:
+    {% if d %}
+      {% for result, snippet in d %}
+        {{ result }}
+      {% endfor %}
+    {% else %}
+      No d found
+    {% endif %}
+  </body>
+</html>
+
