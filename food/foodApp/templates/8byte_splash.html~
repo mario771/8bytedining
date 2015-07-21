@@ -91,6 +91,8 @@
                             <li>
                                 <a href="/cuisines" class="btn btn-default btn-lg"></i> <span class="network-name">Cuisines</span></a>
                             </li>
+			    <br>
+			    <br>
 <!-- Search bar on home -->
 	<div class="container" style="width:50%">
 	    <form action="/search" role="form">
