@@ -6,6 +6,7 @@
   <body>
     Testing results: </br>
     {% if d %}
+      {{ d }} </br>
       {% for key, value in d %}
         {{ key }} </br>
         {{ value }}
