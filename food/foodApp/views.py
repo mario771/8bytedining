@@ -174,7 +174,7 @@ def crossfit(request):
      
     finalDict[str(athlete['name'])] = crossFitDict
 
-  return render_to_response('crossFit.html', {'d': finalDict}, context)
+  return render_to_response('crossfit.html', {'d': finalDict}, context)
  
 """
 def runTests(request) :
