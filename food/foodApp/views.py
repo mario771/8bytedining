@@ -95,7 +95,7 @@ def ingredient(request, i_name):
    for x in temp:
       sample[x] = temp[x]
       count += 1
-      if(count ==2):
+      if(count ==3):
          break
    ingredient_dict['sample'] = sample
    
@@ -143,7 +143,7 @@ def cuisine(request, c_name):
    for x in temp:
       sample[x] = temp[x]
       count += 1
-      if(count ==2):
+      if(count ==3):
          break
    cuisine_dict['sample'] = sample
 
