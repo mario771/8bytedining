@@ -360,10 +360,10 @@ class ModelTestCase(TestCase):
 
     def test_get_ingredient1(self):
 
-        expectedData = {"id":3,"ing_id":"mealy-pie-dough","name":"Mealy Pie Dough","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 131.54, 'number_of_cuisines': 1}","nut_info":"{'protein': '1.89 g per 100g ', 'carbohydrates': '11.78 g per 100g ', 'saturated fat': '5.59 g per 100g ', 'fat': '9.02 g per 100g ', 'iron': '0.68 mg per 100g ', 'calories from fat': '81.19 g per 100g ', 'trans fat': '0 g per 100g ', 'cholesterol': '23.28 mg per 100g ', 'calories': '131.54 kcal per 100g ', 'vitamin a': '277.12 IU per 100g ', 'vitamin c': '0.03 mg per 100g ', 'calcium': '11.6 mg per 100g ', 'sodium': '116.6 mg per 100g '}","all_cuisines":"{'american': ['American', 'american']}","all_recipes":"{'mealy-pie-dough-shell': ['Mealy Pie Dough Shell', 'mealy-pie-dough-shell']}"}
+        expectedData ={"id":3,"ing_id":"mealy-pie-dough","name":"Mealy Pie Dough","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 131.54, 'number_of_cuisines': 1}","nut_info":"{'protein': '1.89 g per 100g ', 'carbohydrates': '11.78 g per 100g ', 'saturated fat': '5.59 g per 100g ', 'fat': '9.02 g per 100g ', 'iron': '0.68 mg per 100g ', 'calories from fat': '81.19 g per 100g ', 'trans fat': '0 g per 100g ', 'cholesterol': '23.28 mg per 100g ', 'calories': '131.54 kcal per 100g ', 'vitamin a': '277.12 IU per 100g ', 'vitamin c': '0.03 mg per 100g ', 'calcium': '11.6 mg per 100g ', 'sodium': '116.6 mg per 100g '}","all_cuisines":"{'american': ['American', 'american']}","all_recipes":"{'mealy-pie-dough-shell': ['Mealy Pie Dough Shell', 'mealy-pie-dough-shell', 'https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg']}"}
         r = requests.get("http://0.0.0.0:8000/api/ingredients/3/?format=json")
         data = r.json()
-                        
+        self.maxDiff = None                       
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["ing_id"] , data["ing_id"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -375,10 +375,11 @@ class ModelTestCase(TestCase):
 
     def test_get_ingredient2(self):
 
-        expectedData = {"id":4,"ing_id":"clams-canned","name":"canned clams","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 2.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '0.4 g per 100g ', 'carbohydrates': '0.1 g per 100g ', 'saturated fat': '0.002 g per 100g ', 'fat': '0.02 g per 100g ', 'iron': '0.3 mg per 100g ', 'calories from fat': '0.18 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '3.0 mg per 100g ', 'calories': '2.0 kcal per 100g ', 'vitamin a': '30.0 IU per 100g ', 'vitamin c': '1.0 mg per 100g ', 'calcium': '13.0 mg per 100g ', 'sodium': '215.0 mg per 100g '}","all_cuisines":"{'american-new-england': ['American: New England', 'american-new-england']}","all_recipes":"{'new-england-style-clam-chowder': ['New England-Style Clam Chowder', 'new-england-style-clam-chowder']}"}
+        expectedData ={"id":4,"ing_id":"clams-canned","name":"canned clams","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 2.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '0.4 g per 100g ', 'carbohydrates': '0.1 g per 100g ', 'saturated fat': '0.002 g per 100g ', 'fat': '0.02 g per 100g ', 'iron': '0.3 mg per 100g ', 'calories from fat': '0.18 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '3.0 mg per 100g ', 'calories': '2.0 kcal per 100g ', 'vitamin a': '30.0 IU per 100g ', 'vitamin c': '1.0 mg per 100g ', 'calcium': '13.0 mg per 100g ', 'sodium': '215.0 mg per 100g '}","all_cuisines":"{'american-new-england': ['American: New England', 'american-new-england']}","all_recipes":"{'new-england-style-clam-chowder': ['New England-Style Clam Chowder', 'new-england-style-clam-chowder', 'https://api.pearson.com/kitchen-manager/v1/images/full/ne-style_clam_chowder.jpg']}"}
         r = requests.get("http://0.0.0.0:8000/api/ingredients/4/?format=json")
         data = r.json()
-                        
+
+        self.maxDiff = None                       
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["ing_id"] , data["ing_id"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -390,10 +391,11 @@ class ModelTestCase(TestCase):
       
     def test_get_ingredient3(self):
 
-        expectedData = {"id":5,"ing_id":"chocolate-unsweetened","name":"unsweetened chocolate","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 501.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '12.9 g per 100g ', 'carbohydrates': '29.84 g per 100g ', 'saturated fat': '32.351 g per 100g ', 'fat': '52.31 g per 100g ', 'iron': '17.4 mg per 100g ', 'calories from fat': '470.79 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '0.0 mg per 100g ', 'calories': '501.0 kcal per 100g ', 'vitamin a': '0.0 IU per 100g ', 'vitamin c': '0.0 mg per 100g ', 'calcium': '101.0 mg per 100g ', 'sodium': '24.0 mg per 100g '}","all_cuisines":"{'french': ['French', 'french']}","all_recipes":"{'chocolate-caramel-mousse': ['Chocolate Caramel Mousse', 'chocolate-caramel-mousse']}"}
+        expectedData ={"id":5,"ing_id":"chocolate-unsweetened","name":"unsweetened chocolate","quant_data":"{'diveristy': 3.0303030303030303, 'number_of_recipes': 1, 'popularity': 0.2, 'calories_per_100g': 501.0, 'number_of_cuisines': 1}","nut_info":"{'protein': '12.9 g per 100g ', 'carbohydrates': '29.84 g per 100g ', 'saturated fat': '32.351 g per 100g ', 'fat': '52.31 g per 100g ', 'iron': '17.4 mg per 100g ', 'calories from fat': '470.79 kcal per 100g ', 'trans fat': '0.0 g per 100g ', 'cholesterol': '0.0 mg per 100g ', 'calories': '501.0 kcal per 100g ', 'vitamin a': '0.0 IU per 100g ', 'vitamin c': '0.0 mg per 100g ', 'calcium': '101.0 mg per 100g ', 'sodium': '24.0 mg per 100g '}","all_cuisines":"{'french': ['French', 'french']}","all_recipes":"{'chocolate-caramel-mousse': ['Chocolate Caramel Mousse', 'chocolate-caramel-mousse', 'https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg']}"}
         r = requests.get("http://0.0.0.0:8000/api/ingredients/5/?format=json")
         data = r.json()
-            
+
+        self.maxDiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["ing_id"] , data["ing_id"])
         self.assertEqual(expectedData["name"], data["name"])
