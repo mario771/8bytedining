@@ -165,7 +165,7 @@ def crossfit(request):
     region = athlete['region']
     print("*********")
     print(region)
-    print("*********"):
+    print("*********")
     regionList[region-2]
     #crossFitDict['region'] = 
     #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
