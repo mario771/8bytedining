@@ -409,7 +409,7 @@ class ModelTestCase(TestCase):
         r = requests.get("http://0.0.0.0:8000/api/cuisines/4/?format=json")
         data = r.json()
 
-        self.maxdiff = None
+        self.maxDiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -423,7 +423,7 @@ class ModelTestCase(TestCase):
         r = requests.get("http://0.0.0.0:8000/api/cuisines/5/?format=json")
         data = r.json()
 
-        self.maxdiff = None
+        self.maxDiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
@@ -437,7 +437,7 @@ class ModelTestCase(TestCase):
         r = requests.get("http://0.0.0.0:8000/api/cuisines/6/?format=json")
         data = r.json()
 
-        self.maxdiff = None
+        self.maxDiff = None
         self.assertEqual(expectedData["id"], data["id"])
         self.assertEqual(expectedData["id_cusine"] , data["id_cusine"])
         self.assertEqual(expectedData["name"], data["name"])
