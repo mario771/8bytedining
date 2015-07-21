@@ -199,5 +199,5 @@ def crossfit(request):
 
 def runTests(request) :
   context = {"results": tests.unittests()}  
-  return render_to_response(request, "runtests.html',context)
+  return render_to_response(request, 'runtests.html',context)
 
