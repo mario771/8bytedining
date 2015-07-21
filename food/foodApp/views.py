@@ -150,14 +150,14 @@ def crossfit(request):
 
 
   #this will pass in a list containing an athlete name, region, and an instagram post
-  crossFitDict = {}
-
+  finalDict = {}
   #Right now we're getting all the athletes, maybe just a subset?
 
   for athlete in athleteList :
     
+    crossFitDict = {}
     crossFitDict['athlete_name'] = athlete['name']
-    #crossFitDict['region'] = regionList[athlete["region"]] 
+    crossFitDict['region'] = regionList[athlete.region] 
     #crossFitdict['post'] = (instagramList.athlete.id[str(athlete["id"])]) 
     
     #For each athlete have their image pop up in a box along with
@@ -166,8 +166,9 @@ def crossfit(request):
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
     crossFitDict['weight'] = athlete["weight"]
-        
+     
+    finalDict[str(athlete['name'])] = crossFitDict
 
-  return render_to_response('crossFit.html', {'d': crossFitDict}, context)
+  return render_to_response('crossFit.html', {'d': finalDict}, context)
  
 
