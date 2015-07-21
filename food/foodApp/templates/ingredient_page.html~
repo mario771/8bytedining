@@ -248,44 +248,41 @@
 			<div class="container">
 			<div class="row">	
 			
-				<!-- SUGGESTED RECIPE 1 -->
-				<div class="col-md-4 " style="width:33%">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
-							<figcaption>
-								<h5>Recipe Name</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->	
+		<!-- SUGGESTED RECIPE 1 -->
+                <div class="col-md-4 " style="width:33%">
+                    <div class="grid mask">
+                        <figure>
+                            <a href="https://www.youtube.com"><img class="img-responsive" src="grid/assets/img/portfolio/folio01.jpg" alt=""></a>
+                            <figcaption>
+                                <h5 style="text-align:center">Recipe Name</h5>
+                            </figcaption><!-- /figcaption -->
+                        </figure><!-- /figure -->
+                    </div><!-- /grid-mask -->
+                </div><!-- /col -->
 
-				<!-- SUGGESTED RECIPE 2 -->
-				<div class="col-md-4"style="width:33%">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
-							<figcaption>
-								<h5>Recipe Name</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"><a href="#">Link to Recipe Page</a></a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+		<!-- SUGGESTED RECIPE 2 -->
+                <div class="col-md-4 " style="width:33%">
+                    <div class="grid mask">
+                        <figure>
+                            <a href="https://www.youtube.com"><img class="img-responsive" src="grid/assets/img/portfolio/folio01.jpg" alt=""></a>
+                            <figcaption>
+                                <h5 style="text-align:center">Recipe Name</h5>
+                            </figcaption><!-- /figcaption -->
+                        </figure><!-- /figure -->
+                    </div><!-- /grid-mask -->
+                </div><!-- /col -->
 
-				<!-- SUGGESTED RECIPE 3 -->
-				<div class="col-md-4"style="width:33%">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="https://api.pearson.com/kitchen-manager/v1/images/full/defaultrecipe.jpg" alt="">
-							<figcaption>
-								<h5>Recipe Name</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg"> <a href="#">Link to Recipe Page</a></a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+		<!-- SUGGESTED RECIPE 3 -->
+                <div class="col-md-4 " style="width:33%">
+                    <div class="grid mask">
+                        <figure>
+                            <a href="https://www.youtube.com"><img class="img-responsive" src="grid/assets/img/portfolio/folio01.jpg" alt=""></a>
+                            <figcaption>
+                                <h5 style="text-align:center">Recipe Name</h5>
+                            </figcaption><!-- /figcaption -->
+                        </figure><!-- /figure -->
+                    </div><!-- /grid-mask -->
+                </div><!-- /col -->
 
 
 			</div><!-- /row -->
@@ -293,7 +290,7 @@
 			<br>
 
   <div id="search">
-    <form>
+    <form action="/search">
       <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
       <button type="submit" class="btn btn-primary">Search</button>
     </form>

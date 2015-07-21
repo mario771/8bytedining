@@ -126,15 +126,6 @@ def cuisine(request, c_name):
    cuisine_dict['quant_data'] = eval(cuisine.quant_data)
    cuisine_dict['recipes'] = eval(cuisine.reci)
    cuisine_dict['ingredients'] = eval(cuisine.ingr)
-   sample = {}
-   temp = (cuisine_dict['fields'])['reci']
-   count = 0
-   for x in temp:
-     sample[x] = temp[x]
-     count += 1
-     if(count ==2):
-       break
-   cuisine_dict['sample'] = sample
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
 
@@ -175,7 +166,7 @@ def crossfit(request):
       if (instagram['athlete']['id'] == athlete['id']) : 
          post = instagram['post']
   
-    crossFitdict['post'] = post 
+    crossFitDict['post'] = post 
      
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
@@ -183,6 +174,9 @@ def crossfit(request):
      
     finalDict[str(athlete['name'])] = crossFitDict
 
-  return render_to_response('crossFit.html', {'d': finalDict}, context)
+  return render_to_response('crossfit.html', {'d': finalDict}, context)
  
-
+"""
+def runTests(request) :
+  context = {"results": tests.unittests()   
+"""  

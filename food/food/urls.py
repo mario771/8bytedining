@@ -44,9 +44,11 @@ urlpatterns = [
 
     #CrossFIt
 
-   url(r'^crossfit', views.crossfit, name='crossfit'),
+    url(r'^crossfit', views.crossfit, name='crossfit'),
 
- 
+    #Run Tests
+     
+    # url(r'^runTests', views.runTests, name='runTests'),
    
 ]
 
