@@ -65,7 +65,7 @@
       <div class="row">
         <br>
         <h1 class="centered" style="font-size:48px; color:white"> <strong>Unit Tests</strong></h1>
-        <hr style="border-color:black">
+        <hr style="border-color:black"> <br> <br> <br> <br>
         <h2 class="centered"class="centered" style="font-size:48px; color:white"><strong>{{ result.0 }}</strong></h2>
         <h2 class="centered"class="centered" style="font-size:48px; color:white">{{ result.1 }}</h2>
         <h2 class="centered"class="centered" style=" color:white"><strong>{{ result.2 }}</strong></h2>
