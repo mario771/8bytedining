@@ -75,7 +75,7 @@
       </div><!-- /row -->
 {{ d }}
 
-      <title> Recipe Model </title>
+      <title> Crossfit Social </title>
       
         <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 100px; margin-right: 100px; margin-bottom: 100px; text-align:center ">
           <tr>
@@ -84,11 +84,11 @@
             <th style="color:black; text-align:center">Instagram Post</th>
           </tr>
 	  
-	  {{ d }}
+	  {% for name,values in d.items %}
 
 	  <tr>
-            <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal" margin-left="100px">Derek Cornelius</a> </td>
-            <td style= "font-size: 14px; color:black"> Deutschland </td>
+            <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal" margin-left="100px"> {{name }}</a> </td>
+            <td style= "font-size: 14px; color:black"> {{ values['region'] }} </td>
             <td style= "font-size: 14px; color:black; text-align:left"> <img src="http://profilepicsbucket.crossfit.com/35d67-P11435_11-184.jpg"><p>Full of vexation come I, with complaint Against my child, my daughter Hermia. Stand forth, Demetrius. My noble lord,This man hath my consent to marry her.Stand forth, Lysander: and my gracious duke, This man hath bewitch'd the bosom of my child;Thou, thou, Lysander, thou hast given her rhymes,And interchanged love-tokens with my child: Thou hast by moonlight at her window sung, With feigning voice verses of feigning love,And stolen the impression of her fantasy </p> </td>
           </tr>
 
