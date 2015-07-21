@@ -27,6 +27,8 @@ clean:
 config:
 	git config -l
 
+
+
 test: 
 	python3 food/manage.py test foodApp
 
@@ -94,6 +96,16 @@ load:
 	./manage.py loaddata ingredients_list_models.json
 	./manage.py loaddata cuisine_models.json 
 	./manage.py loaddata Recipe_addedID_models_data.json
+
+migrate_travis:
+	python3 food/manage.py makemigrations
+	python3 food/manage.py migrate
+	python3 food/manage.py loaddata ingredients_list_models.json
+	python3 food/manage.py loaddata cuisine_models.json 
+	python3 food/manage.py loaddata Recipe_addedID_models_data.json
+
+run_travis:
+	python3 food/manage.py runserver 0.0.0.0:8000>log.txt &2>1
 
 reload: migrate load
 
