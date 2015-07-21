@@ -38,7 +38,7 @@ before_script:
     - uname -a
     - printenv
     - pip3 --version
-    - psql -c 'create database test;' -U postgres
+    - psql -c 'create database food_db;' -U postgres
     - psql -c 'CREATE ROLE lambda SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;' -U postgres
     - pip3 freeze
     - python3 --version
