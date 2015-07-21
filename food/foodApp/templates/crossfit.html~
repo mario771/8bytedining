@@ -86,12 +86,13 @@
 	  {% for name,values in d.items %}
 
 	  <tr>
-            <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal_{{ name }}" margin-left="100px"> {{ values.athlete_name }}</a> </td>
+            <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal{{ values.id }}" margin-left="100px"> {{ values.athlete_name }}</a> </td>
             <td style= "font-size: 14px; color:black"> {{ values.region }} </td>
-            <td style= "font-size: 14px; color:black; text-align:left"> <img src=""><p> {{ values.post }} </p> </td>
+            <td style= "font-size: 14px; color:black; text-align:left"> <img src="{{ values.postImg }}""><p> {{ values.post }} </p> </td>
           </tr>
 
-          <div class="modal fade" id="bioModal_{{ name }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+          <div class="modal fade" id="bioModal{{ values.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header"style="background:#2B2B2B">
@@ -120,7 +121,7 @@
                             </div><!-- /.modal-dialog -->
               </div>
 	  
-	  {% endfor %}
+	    {% endfor %}
 
         </table>
 
