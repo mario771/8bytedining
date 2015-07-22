@@ -217,20 +217,22 @@ def crossfit(request):
   #Right now we're getting all the athletes, maybe just a subset?
 
   athletes = athleteList["results"]
+  regions = regionList["results"]
+  instagrams = instagramList["results"]
 
   for athlete in athletes :
     
     crossFitDict = {}
     crossFitDict['athlete_name'] = athlete['name']
     region = athlete['region']
-    regionList[region-2]
-    crossFitDict['region'] = regionList[region-2]["name"]
+    regions[region-2]
+    crossFitDict['region'] = regions[region-2]["name"]
   
 
     post = {}
     postImg = {}
     #Obtain the post
-    for instagram in instagramList:
+    for instagram in instagrams:
       if (instagram['athlete']['id'] == athlete['id']) : 
          post = instagram['post']
          postImg = instagram['img']
