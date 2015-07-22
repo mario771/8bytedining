@@ -313,6 +313,7 @@
         </div>
   <!-- script references -->
 
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/bootstrap.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
