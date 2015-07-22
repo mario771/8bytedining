@@ -38,3 +38,4 @@ def get_query(is_and, query_string, search_fields):
             else :
                 query = query | or_query
     return query
+
