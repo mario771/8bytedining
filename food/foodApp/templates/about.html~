@@ -6,10 +6,9 @@
     <title>About Us</title>
     <meta name="generator" content="Bootply" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="/static/foodApp/about_page/css_about/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+    <link href="/static/foodApp/about_page/css_about/bootstrap.css" rel="stylesheet">
+
     <link href="/static/foodApp/about_page/css_about/styles.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -18,6 +17,15 @@
     <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
     <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/foodApp/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="/static/foodApp/grid/assets/js/jquery.min.js"></script>
 
 
   </head>
