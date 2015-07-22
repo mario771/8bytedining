@@ -39,7 +39,6 @@
   </head>
   <body style="background-image:url(http://i.imgur.com/ISoLtoj.jpg); background-repeat:no-repeat; background-attachment:fixed">
 
-	{{ d }}
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -80,6 +79,7 @@
 				<br>
 			</div><!-- /row -->
 	
+	{% if (d.3 > 0) %}
 
 	<table style="background-color:transparent; margin-left: 100px; margin-right: 100px; margin-bottom: 100px; text-align:center">
 		<thead>
@@ -134,7 +134,11 @@
       	</tbody>
 	</table>
 
+	{% else %}
+
 	 <h2 class="centered"> No results were found for <strong>"derek my little pony"..sorry :(</strong> <h2>
+
+	{% endif %}
 
 
 
