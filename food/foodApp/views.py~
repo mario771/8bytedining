@@ -182,7 +182,9 @@ def search(request) :
       for j in range(0,len(found_entries[i])):
          anon_list.append(str(found_entries[i][j]))
       result_list.append(set(anon_list))
-    
+    count = len(result_list[0]) + len(result_list[1]) + len(result_list[2])
+    result_list.append(count)
+    result_list.append(query_string)
     #TODO: for each element in result list, search fields for substring
     #for item in result_list:
         #somehow access item's fields
