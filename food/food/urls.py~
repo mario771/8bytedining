@@ -14,18 +14,41 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home,name='home'),
     url(r'^about$', views.about, name='about'),
-
-    url(r'^recipes/model$', views.model, name='recipes/model'),
-    url(r'^ingredients/model$', views.model, name='ingredients/model'),
-    url(r'^cuisines/model$', views.model, name='cuisines/model'),
-
-    url(r'^recipes$', views.recipe_page, name='recipes'),
-    url(r'^ingredients$', views.ingredient_page, name='ingredients'),
-    url(r'^cuisines$', views.cuisine_page, name='cuisines'),
+    #recipes/model is going to be the model page
     
+
+    #Recipe
+    url(r'^recipes/(?P<r_name>[-\w]+)/$', views.recipe, name='recipe'),
+    url(r'^recipes$', views.recipes, name='recipes'),
+
+    
+    #Ingredients 
+    url(r'^ingredients/(?P<i_name>[-\w]+)/$', views.ingredient, name='ingredient'),
+    url(r'^ingredients$', views.ingredients, name='ingredients'),
+   
+    #Cuisine 
+    url(r'^cuisines/(?P<c_name>[-\w]+)/$', views.cuisine, name='cuisine'),
+    url(r'^cuisines$', views.cuisines, name='cuisines'),
+    
+    
+    #API URLs
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     url(r'^api/recipes/$',api.RecipeList.as_view()),
     url(r'^api/recipes/(?P<pk>[0-9]+)/$', api.RecipeDetail.as_view()),
+
+    url(r'^api/cuisines/$',api.CuisineList.as_view()),
+    url(r'^api/cuisines/(?P<pk>[-\w]+)/$', api.CuisineDetail.as_view()),
+
+    url(r'^api/ingredients/$',api.IngredientList.as_view()),
+    url(r'^api/ingredients/(?P<pk>[-\w]+)/$', api.IngredientDetail.as_view()),
+
+    #CrossFIt
+
+    url(r'^crossfit', views.crossfit, name='crossfit'),
+
+    #Run Tests
+     
+    url(r'^runTests', views.runTests, name='runTests'),
    
 ]
 

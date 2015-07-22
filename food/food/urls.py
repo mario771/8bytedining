@@ -49,6 +49,10 @@ urlpatterns = [
     #Run Tests
      
     url(r'^runTests', views.runTests, name='runTests'),
+
+    #Search
+  
+    url(r'^search', views.search, name='search'),
    
 ]
 
