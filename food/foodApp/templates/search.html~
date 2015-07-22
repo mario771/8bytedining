@@ -123,8 +123,18 @@
 	</table>
 
 	{% else %}
-
+<!--
 	 <h2 class="centered"> No results were found for <strong>{{ d.4 }}..sorry :(</strong> <h2>
+-->
+
+	<table border="5px" style="background-color:white; margin-left: auto; margin-right: auto; margin-bottom: 100px; text-align:center; opacity:0.75">
+		<thead>
+			<tr>
+		        <th class="text-center" style="color:black"> <h2><strong>No</strong> results were found for <strong> {{ d.4 }} </strong>...sorry :(<h2><br>
+		        </th>
+          	</tr>
+      	</thead>
+	</table>
 
 	{% endif %}
 

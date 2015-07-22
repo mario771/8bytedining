@@ -65,7 +65,7 @@
       <br>
       <div class="row">
         <br>
-        <h1 class="centered" style="font-size:36px; color:white">Recipe Model</h1>
+        <h1 class="centered" style="font-size:36px; color:white">Recipes</h1>
         <hr>
         <br>
         <br>
@@ -74,7 +74,7 @@
 
       <title> Recipe Model </title>
       
-        <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: auto; margin-right: auto; margin-bottom: 100px; text-align: center">
+        <table class="sortable" border="5px" style="background-color:white; opacity:0.85; margin-left: auto; margin-right: auto; margin-bottom: 100px; text-align: center">
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Price </th>
@@ -96,7 +96,7 @@
         </table>
 
   <div id="search">
-    <form>
+    <form action="/search">
       <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
       <button type="submit" class="btn btn-primary">Search</button>
     </form>

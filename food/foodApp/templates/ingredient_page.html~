@@ -48,9 +48,6 @@
 
   <body>
 
-	Items: <br>
-	{{ d.sample }}
-
   <div>
 
     <title> {{ d.name }} </title>
