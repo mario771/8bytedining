@@ -189,9 +189,10 @@ def crossfit(request):
     for instagram in instagramList:
       if (instagram['athlete']['id'] == athlete['id']) : 
          post = instagram['post']
+         postImg = instagram['img']
          break
     crossFitDict['post'] = post 
-    crossFitDict['age'] = age   
+    crossFitDict['age'] = athlete['age']   
     crossFitDict['postImg'] = postImg
     crossFitDict['img'] = athlete["img"] 
     crossFitDict['height'] = athlete["height"]
