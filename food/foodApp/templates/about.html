@@ -171,7 +171,7 @@
                             <h3>Derek Cornelius : AngularJS, HTML/CSS, UI/UX</h3>
                             <ul>
 
-                            <li><small class="text-muted">"Ich bin Derek Cornelius und ich bin einen Deutscher"</small> </li>
+                            <li><small class="text-muted">"Ich bin Derek Cornelius und ich bin ein Deutscher"</small> </li>
                             <li><small class="text-muted">Favorite Shane(1953) Quote: "I'll kill him if I have to." "You mean I'll kill him if you have to." </small> </li>
                             <li> <small class="text-muted"># of commits: 211</small> </li>
                             <li> <small class="text-muted"># of issues: 15</small> </li>
@@ -316,12 +316,12 @@
     </div>
 </div>
 
-        <div id="search">
-            <form action="/search">
-                <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
-                <button type="submit" class="btn btn-primary">Search</button>
-            </form>
-        </div>
+  <div id="search">
+    <form action="/search">
+      <input type="search" value="{{request.GET.q}}" style="color:#EFE6E6; font-family:Arial" name="q">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
   <!-- script references -->
 
     <script type="text/javascript" src="/static/foodApp/grid/assets/js/bootstrap.min.js"></script>
