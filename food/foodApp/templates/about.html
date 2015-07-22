@@ -11,7 +11,15 @@
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="/static/foodApp/about_page/css_about/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/foodApp/grid/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
+    <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
+    <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -305,6 +313,22 @@
         </div>
   <!-- script references -->
 
+    <script type="text/javascript" src="/static/foodApp/grid/assets/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+   
+    </script>
     <script>
 
     $('a[href="#search"]').on('click', function(event) {

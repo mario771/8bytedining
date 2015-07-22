@@ -11,7 +11,15 @@
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="/static/foodApp/about_page/css_about/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/foodApp/grid/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/foodApp/grid/assets/css/icomoon.css">
+    <link href="/static/foodApp/grid/assets/css/animate-custom.css" rel="stylesheet">
+    <link href="/static/foodApp/css/stylish-portfolio.css" rel="stylesheet">
     <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -296,7 +304,46 @@
         </div>
     </div>
 </div>
+
+        <div id="search">
+            <form action="/search">
+                <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
   <!-- script references -->
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+   
+    </script>
+    <script>
+
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+
+    </script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="/static/foodApp/about_page/js_about/bootstrap.min.js"></script>
   </body>
