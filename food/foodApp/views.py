@@ -136,96 +136,46 @@ def dprint(a):
 
 def search(request) :
     query_string = ''
-    found_entries = None
+    found_entries = []
     if ('q' in request.GET) and request.GET['q'].strip():
         query_string = request.GET['q']
         
-        entry_query = get_query(query_string, ['directions', 'name',])
-        
-        found_entries = Recipes.objects.filter(entry_query).order_by('name')
+        entry_query_recipes = get_query(0,query_string, ['name','recipe_id','directions','nut_info','quant_data'])
+        entry_query_recipes_and = get_query(1,query_string, ['name','recipe_id','directions','nut_info','quant_data'])
+        found_entries_recipes = list(Recipes.objects.filter(entry_query_recipes).order_by('name').iterator())
+        found_entries_recipes +=list(Recipes.objects.filter(entry_query_recipes_and).order_by('name').iterator())
 
+        found_entries.append(found_entries_recipes)
+
+        entry_query_ingredients = get_query(0,query_string, ['ing_id','name','quant_data','nut_info'])
+        entry_query_ingredients_and = get_query(1,query_string, ['ing_id','name','quant_data','nut_info'])
+        found_entries_ingredients = list(Ingredients.objects.filter(entry_query_ingredients).order_by('name').iterator())
+        found_entries_ingredients += list(Ingredients.objects.filter(entry_query_ingredients_and).order_by('name').iterator())
+
+        found_entries.append(found_entries_ingredients)
+
+        entry_query_cuisines = get_query(0, query_string, ['id_cusine','name','quant_data','ingr','reci'])
+        entry_query_cuisines_and = get_query(1, query_string, ['id_cusine','name','quant_data','ingr','reci'])
+        found_entries_cuisines = list(Cuisines.objects.filter(entry_query_cuisines).order_by('name').iterator())
+        found_entries_cuisines +=list(Cuisines.objects.filter(entry_query_cuisines_and).order_by('name').iterator())
+        found_entries.append(found_entries_cuisines)
+
+    dprint(str((found_entries[0])[1]))
+    result_list = []
+    for i in range(0,len(found_entries)):
+        anon_list = []
+        for j in range(0,len(found_entries[i])):
+            anon_list.append(str(found_entries[i][j]))
+        result_list.append(set(anon_list))
+    
+    #TODO: for each element in result list, search fields for substring
+    #for item in result_list:
+        #somehow access item's fields
+        
     length = 0
     final_dict = {'d':found_entries,'query': query_string, 'length': length}
-    return render_to_response('search.html', {'d': found_entries}, context_instance=RequestContext(request))
+    return render_to_response('search.html', {'d': result_list}, context_instance=RequestContext(request))
 
-#def search(request):
-#    query_string = ''
-#    found_entries = None
-#    results = {}
-#
-#    rfields = ['name','recipe_id','directions','nut_info','quant_data']
-#    ifields = ['ing_id','name','quant_data','nut_info']
-#    cfields = ['id_cusine','name','quant_data','ingr','reci']
-#    allfields = [rfields, ifields, cfields]
-#
-#    dprint(request.GET)
-#    if ('q' in request.GET) :
-#        query_string = request.GET['q']
-#        dprint("query string is "+str(query_string))
-#
-#        rfound_and = submit_requests(query_string, Recipes, rfields, 1)
-##        ifound_and = submit_requests(query_string, Ingredients, ifields, 1)
-##        cfound_and = submit_requests(query_string, Cuisines, cfields, 1)
-#
-#        rfound_or = submit_requests(query_string, Recipes, rfields, 0)
-##        ifound_or = submit_requests(query_string, Ingredients, ifields, 0)
-##        cfound_or = submit_requests(query_string, Cuisines, cfields, 0)
-#        
-#        print("found_and recipes: "+str(rfound_and))
-##        print("found_and ingredients: "+str(ifound_and))
-##        print("found_and cuisines: "+str(cfound_and))
-#
-#        print("found_or recipes: "+str(rfound_or))
-##        print("found_or ingredients: "+str(ifound_or))
-##        print("found_or cuisines: "+str(cfound_or))
-#        
-##        or_results = { 'query_string': query_string, 'found_or_recipes': rfound_or, 'found_or_ingredients': ifound_or, 'found_or_cuisines': cfound_or}
-#
-##        and_results = { 'query_string': query_string, 'found_and_recipes': rfound_and, 'found_and_ingredients': ifound_and, 'found_and_cuisines': cfound_and}
-#        #results = { 'query_string': query_string, 'found_recipes': rfound, 'found_ingredients': ifound, 'found_cuisines': cfound}
-#    else :
-#        results = {}
-#        dprint("NOOOOOOO")
-#
-#    rlen = len(rfound_and)
-##    ilen = len(ifound_and)
-##    clen = len(cfound_and)
-#
-#    rlen_or = len(rfound_or)
-##    ilen_or = len(ifound_or)
-##    clen_or = len(cfound_or)
-#
-#    length = max(rlen_or, ilen_or, clen_or)
-#
-#    #Zip snippets here
-#    #lengthOfResults = len(results)
-#    snippets = {}
-#    results = zip(results,snippets)
-#    print("AND RESULTS")
-#    dprint(str(and_results))
-#    print("OR RESULTS")
-#    dprint(str(or_results))
-#
-#    final_dict = {'d':results,'query': query_string, 'length': length}
-#    print(str(final_dict))
-#    return render_to_response('search.html',final_dict, context_instance=RequestContext(request))  
-#
-#
-#
-#def submit_requests(query_string, model, fieldlist, both):
-#    query = []
-#    idx = 0
-#    found = []
-#    for field in fieldlist :
-#        query += [get_query(both, query_string, [field])]
-##        if model == 'Recipes':
-#        found = Recipes.objects.filter(query[idx]).order_by('name')
-##        if model == 'Ingredients':
-##            found += Ingredients.objects.filter(query[idx]).order_by('name')
-##        if model == 'Cuisines':
-##            found += Cuisines.objects.filter(query[idx]).order_by('name')
-#        idx = idx + 1
-#    return found
 
 
 def crossFit():
