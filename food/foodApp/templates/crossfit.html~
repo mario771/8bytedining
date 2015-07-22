@@ -34,7 +34,7 @@
          
   </head>
 
-  <body style="background-image:url(http://i.imgur.com/drAoL3f.jpg);background-repeat:no-repeat;background-attachment:fixed">
+  <body style="background-image:url(/static/foodApp/img/crossfit.jpg);background-repeat:no-repeat;background-attachment:fixed">
 
   		 <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -70,13 +70,15 @@
         <br>
         <h1 class="centered" style="font-size:36px; color:white"> <strong>Crossfit Social</strong></h1>
         <hr>
+        <h3 class ="centered" style="color:white"> <strong>Crossfit Social is a website that helps crossfitters connect with other athletes by location and social media outlets such as Instagram </strong></h3>
+        <h3 class ="centered" style="color:white"> <strong> Visit site at <a href="http://crossfit.social" target="_blank" style="color:black">crossfit.social</a> </strong> </h3>
         <br>
         <br>
       </div><!-- /row -->
       <title> Crossfit Social </title>
 
       
-        <table class="sortable" border="5px" style="background-color:white; opacity:0.65; margin-left: 100px; margin-right: 100px; margin-bottom: 100px; text-align:center ">
+        <table class="sortable" border="5px" style="background-color:white; opacity:0.85; margin-left: 100px; margin-right: 100px; margin-bottom: 100px; text-align:center ">
           <tr>
             <th style="color:black; text-align:center">Name</th>
             <th style="color:black; text-align:center">Region </th>
@@ -90,7 +92,7 @@
 	  <tr>
             <td style= "font-size: 14px"> <a data-toggle="modal" href="#bioModal{{ values.id }}" margin-left="100px"> {{ values.athlete_name }}</a> </td>
             <td style= "font-size: 14px; color:black"> {{ values.region }} </td>
-            <td style= "font-size: 14px; color:black; text-align:left"> <img src="{{ values.postImg }}""><p> {{ values.post }} </p> </td>
+            <td style= "font-size: 14px; color:black; text-align:left"> <img src="{{ values.postImg }}"><p> {{ values.post }} </p> </td>
           </tr>
 
 
