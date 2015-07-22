@@ -18,7 +18,7 @@ class Ingredients (models.Model) :
         return "/ingredients/%s/" % url_name
 
    def __str__ (self):
-        return self.name
+        return self.full_name
 #------------
 #Cuisines Model
 #------------
