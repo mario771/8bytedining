@@ -14,7 +14,7 @@ class Ingredients (models.Model) :
    all_cuisines = models.TextField(default="")
    all_recipes = models.TextField(default="")  
    def get_absolute_url(self):
-        url_name = self.full_name.replace(' ', '_')
+        url_name = self.name.replace(' ', '_')
         return "/ingredients/%s/" % url_name
 
    def __str__ (self):
@@ -36,7 +36,7 @@ class Cuisines(models.Model) :
    reci = models.TextField()
 
    def get_absolute_url(self):
-        #url_name = self.full_name.replace(' ', '_')
+        #url_name = self.name.replace(' ', '_')
         return "/cuisine/%s/" % id_cusine
 
    def __str__ (self):
@@ -64,7 +64,7 @@ class Recipes (models.Model) :
    cuisine_ori = models.CharField(max_length=5000, default = "")
 
    def get_absolute_url(self):
-        #url_name = self.name.replace(' ', '_')
+        url_name = self.name.replace(' ', '_')
         return "/Recipes/%s/" % recipe_id
 
    def __str__ (self):

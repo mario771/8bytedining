@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from rest_framework import generics
 from .models import Cuisines, Recipes, Ingredients
+from .search import normalize_query, get_query
 import urllib
 import json
 import os, subprocess,re
@@ -149,6 +150,45 @@ def cuisine(request, c_name):
    cuisine_dict['sample'] = sample
 
    return render_to_response('cuisine_page.html', {'d':cuisine_dict}, context)
+
+def search(request) :
+   query_string = ''
+   found_entries = []
+   if ('q' in request.GET) and request.GET['q'].strip():
+      query_string = request.GET['q']
+      entry_query_recipes = get_query(0,query_string, ['name','recipe_id','directions','nut_info','quant_data','cuisine_ori','ingredient_amount'])
+      entry_query_recipes_and = get_query(1,query_string, ['name','recipe_id','directions','nut_info','quant_data', 'cuisine_ori','ingredient_amount'])
+      found_entries_recipes = list(Recipes.objects.filter(entry_query_recipes).order_by('name').iterator())
+      found_entries_recipes +=list(Recipes.objects.filter(entry_query_recipes_and).order_by('name').iterator())
+
+      found_entries.append(found_entries_recipes)
+
+      entry_query_ingredients = get_query(0,query_string, ['ing_id','name','quant_data','nut_info','all_recipes', 'all_cuisines'])
+      entry_query_ingredients_and = get_query(1,query_string, ['ing_id','name','quant_data','nut_info','all_recipes','all_cuisines'])
+      found_entries_ingredients = list(Ingredients.objects.filter(entry_query_ingredients).order_by('name').iterator())
+      found_entries_ingredients += list(Ingredients.objects.filter(entry_query_ingredients_and).order_by('name').iterator())
+
+      found_entries.append(found_entries_ingredients)
+
+      entry_query_cuisines = get_query(0, query_string, ['id_cusine','name','quant_data','ingr','reci'])
+      entry_query_cuisines_and = get_query(1, query_string, ['id_cusine','name','quant_data','ingr','reci'])
+      found_entries_cuisines = list(Cuisines.objects.filter(entry_query_cuisines).order_by('name').iterator())
+      found_entries_cuisines +=list(Cuisines.objects.filter(entry_query_cuisines_and).order_by('name').iterator())
+      found_entries.append(found_entries_cuisines)
+
+   result_list = []
+   for i in range(0,len(found_entries)):
+      anon_list = []
+      for j in range(0,len(found_entries[i])):
+         anon_list.append(str(found_entries[i][j]))
+      result_list.append(set(anon_list))
+    
+    #TODO: for each element in result list, search fields for substring
+    #for item in result_list:
+        #somehow access item's fields
+
+   return render_to_response('search.html', {'d': result_list}, context_instance=RequestContext(request))
+
 
 def crossfit(request):
 
