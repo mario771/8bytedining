@@ -191,6 +191,7 @@ def crossfit(request):
          post = instagram['post']
          postImg = instagram['img']
          break
+    crossFitDict['id'] = athlete['id']
     crossFitDict['post'] = post 
     crossFitDict['age'] = athlete['age']   
     crossFitDict['postImg'] = postImg
