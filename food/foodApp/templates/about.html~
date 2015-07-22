@@ -11,8 +11,39 @@
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="/static/foodApp/about_page/css_about/styles.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
   </head>
   <body>
+
+  		 <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="http://8bytedining.me" target="_self">Home </a>
+            </li>
+            <li>
+                <a href="#search" onclick = $("#menu-close").click();>Search<i class="glyphicon glyphicon-search"></i> </a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/ingredients" onclick = $("#menu-close").click(); > Ingredients</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/cuisines" onclick = $("#menu-close").click(); >Cuisines</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/crossfit" onclick = $("#menu-close").click(); >Get in Shape!</a>
+            </li>
+        </ul>
+    </nav>
+
 <div class="wrapper">
     <div class="box">
         <div class="row">
@@ -41,7 +72,7 @@
                         
                         <div class="col-sm-12" id="featured">   
                           <div class="page-header text-muted"> 
-                            <h3 style= "color:black"> <center> 8byte Dining Team: aka "MaryHadALittleLambda" <center> </h3>
+                            <h3 style= "color:black"> <center> 8byte Dining Team <center> </h3>
                           </div> 
                         </div>
                         
@@ -54,6 +85,7 @@
                             <ul>
 
                             <li><small class="text-muted">Senior CS Student at University of Texas at Austin </small> </li>
+                            <li><small class="text-muted">Favorite Shane(1953) Quote: "Don't go Shane!"</small> </li>
                             <li> <small class="text-muted"># of commits: 64</small> </li>
                             <li> <small class="text-muted"># of issues: 26</small> </li>
                             <li> <small class="text-muted"># of unit tests: 2</small> </li>
@@ -76,6 +108,7 @@
                             <ul>
 
                             <li><small class="text-muted">Senior CS Student at University of Texas at Austin </small> </li>
+                            <li><small class="text-muted">Favorite Shane(1953) Quote: "Don't go Shane!"</small> </li>
                             <li> <small class="text-muted"># of commits: 42</small> </li>
                             <li> <small class="text-muted"># of issues: 11</small> </li>
                             <li> <small class="text-muted"># of unit tests: 5</small> </li>
@@ -98,6 +131,7 @@
                             <ul>
 
                             <li><small class="text-muted">Junior CS Student at University of Texas at Austin </small> </li>
+                            <li><small class="text-muted">Favorite Shane(1953) Quote: "Don't go Shane!"</small> </li>
                             <li> <small class="text-muted"># of commits: 38</small> </li>
                             <li> <small class="text-muted"># of issues: 11</small> </li>
                             <li> <small class="text-muted"># of unit tests: 3</small> </li>
@@ -121,6 +155,7 @@
                             <ul>
 
                             <li><small class="text-muted">Junior CS Student at University of Texas at Austin </small> </li>
+                            <li><small class="text-muted">Favorite Shane(1953) Quote: "Don't go Shane!"</small> </li>
                             <li> <small class="text-muted"># of commits: 211</small> </li>
                             <li> <small class="text-muted"># of issues: 10</small> </li>
                             <li> <small class="text-muted"># of unit tests: 5</small> </li>
@@ -178,6 +213,31 @@
                      
                         </div>
 
+                        <div class="col-sm-12">
+                          <div class="page-header text-muted divider">
+                             <h3 style="color:black">Tools</h3>
+                          </div>
+                        </div>
+
+                        <div class="row">    
+                          <div class="col-sm-10">
+                            <ul>
+
+                            <li><small class="text-muted">Apiary</small> </li>
+                            <li> <small class="text-muted">Bootstrap</small> </li>
+                            <li> <small class="text-muted">Django</small> </li>
+                            <li> <small class="text-muted">HTML 5</small> </li>
+                            <li> <small class="text-muted">Nginx</small> </li>
+                            <li> <small class="text-muted">PostgreSQL</small> </li>
+                            <li> <small class="text-muted">Rackspace</small> </li>
+                          
+
+                            <ul>
+                          </div>
+                     
+                        </div>
+
+
                           <div class="col-sm-12">
                           <div class="page-header text-muted divider">
                             <h3 style="color:black">Database</h3>
@@ -187,7 +247,7 @@
                         <div class="row">    
                           <div class="col-sm-10">
                             <ul>
-                            <li> <small class="text-muted"><a href ="http://developer.pearson.com/apis/pearson-kitchen-manager"> Pearson Kitchen Manager</a>  </small> </li>
+                            <li> <small class="text-muted"><a href ="http://developer.pearson.com/apis/pearson-kitchen-manager" target="_blank"> Pearson Kitchen Manager</a>  </small> </li>
                             <li><small class="text-muted">API calls to the Pearson Kitchen Manager API return JSON files which are then parsed into multiple JSON file caches.</small> </li>
 
                             <ul>
@@ -195,6 +255,26 @@
                           </div>
                      
                         </div>
+
+
+                         <div class="col-sm-12">
+                          <div class="page-header text-muted divider">
+                            <h3 style="color:black">Unit Tests</h3>
+                          </div>
+                        </div>
+
+                        <div class="row">    
+                          <div class="col-sm-10">
+                            <ul>
+                            <li> <small class="text-muted"><a href ="http://8bytedining.me/runTests"> Run Unit Tests</a>  </small> </li>
+
+                            <ul>
+
+                          </div>
+                     
+                        </div>
+
+                        
                       
                         <div class="row" id="footer">    
                           <div class="col-sm-6">
@@ -202,7 +282,7 @@
                           </div>
                           <div class="col-sm-6">
                             <p>
-                            <a href="#" class="pull-right">©Copyright © 8byteDining 2015. All Rights Reserved</a>
+                            <a href="#" class="pull-right">Copyright © 8byteDining 2015. All Rights Reserved</a>
                             </p>
                           </div>
                         </div>

@@ -11,8 +11,39 @@
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="/static/foodApp/about_page/css_about/styles.css" rel="stylesheet">
+    <link href="/static/foodApp/css/searchbar.css" rel="stylesheet">
   </head>
   <body>
+
+  		 <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="http://8bytedining.me" target="_self">Home </a>
+            </li>
+            <li>
+                <a href="#search" onclick = $("#menu-close").click();>Search<i class="glyphicon glyphicon-search"></i> </a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/recipes" onclick = $("#menu-close").click(); > Recipes</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/ingredients" onclick = $("#menu-close").click(); > Ingredients</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/cuisines" onclick = $("#menu-close").click(); >Cuisines</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="http://8bytedining.me/crossfit" onclick = $("#menu-close").click(); >Get in Shape!</a>
+            </li>
+        </ul>
+    </nav>
+
 <div class="wrapper">
     <div class="box">
         <div class="row">
@@ -265,7 +296,31 @@
         </div>
     </div>
 </div>
+
+        <div id="search">
+            <form action="/search">
+                <input type="search" value="" style="color:#EFE6E6; font-family:Arial" name="search">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
   <!-- script references -->
+
+    <script>
+
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+
+    </script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="/static/foodApp/about_page/js_about/bootstrap.min.js"></script>
   </body>
