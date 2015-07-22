@@ -216,7 +216,7 @@ def crossfit(request):
   finalDict = {}
   #Right now we're getting all the athletes, maybe just a subset?
 
-  for athlete in athleteList :
+  for athlete in athleteList.results :
     
     crossFitDict = {}
     crossFitDict['athlete_name'] = athlete['name']
